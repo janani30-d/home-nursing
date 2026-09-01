@@ -931,3 +931,62 @@ document.addEventListener("DOMContentLoaded", function () {
 
 })();
 
+
+
+
+/* =========================================================
+   SCROLL TO TOP BUTTON
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const scrollTopBtn = document.getElementById("scrollTop");
+
+    if (!scrollTopBtn) {
+        return;
+    }
+
+
+    /* =====================================================
+       SHOW / HIDE BUTTON
+    ===================================================== */
+
+    function toggleScrollTop() {
+
+        if (window.scrollY > 300) {
+            scrollTopBtn.classList.add("show");
+        } else {
+            scrollTopBtn.classList.remove("show");
+        }
+
+    }
+
+
+    /* =====================================================
+       SCROLL EVENT
+    ===================================================== */
+
+    window.addEventListener("scroll", toggleScrollTop);
+
+
+    /* =====================================================
+       INITIAL CHECK
+    ===================================================== */
+
+    toggleScrollTop();
+
+
+    /* =====================================================
+       SCROLL TO TOP
+    ===================================================== */
+
+    scrollTopBtn.addEventListener("click", function () {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+});
