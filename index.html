@@ -67,7 +67,7 @@
                 <li class="nav-item has-dropdown">
 
                     <button
-                        class="nav-link dropdown-toggle"
+                        class="nav-link dropdown-toggle active"
                         type="button"
                         aria-expanded="false"
                         aria-haspopup="true"
@@ -79,7 +79,7 @@
                     <ul class="dropdown-menu home-dropdown">
 
                         <li>
-                            <a href="index.html" class="dropdown-link">
+                            <a href="index.html" class="dropdown-link active">
                                 Home 1
                             </a>
                         </li>
@@ -109,7 +109,7 @@
                 <li class="nav-item has-dropdown">
 
                     <button
-                        class="nav-link dropdown-toggle active"
+                        class="nav-link dropdown-toggle"
                         type="button"
                         aria-expanded="false"
                         aria-haspopup="true"
@@ -139,7 +139,7 @@
                         </li>
 
                         <li>
-                            <a href="wound-dressing.html" class="dropdown-link active">
+                            <a href="wound-dressing.html" class="dropdown-link">
                                 Wound Dressing
                             </a>
                         </li>
@@ -273,7 +273,7 @@
 
                         <button
                             type="button"
-                            class="mobile-nav-link mobile-dropdown-toggle"
+                            class="mobile-nav-link mobile-dropdown-toggle active"
                             aria-expanded="false"
                         >
 
@@ -287,7 +287,7 @@
                         <ul class="mobile-dropdown-menu">
 
                             <li>
-                                <a href="index.html" class="mobile-dropdown-link">
+                                <a href="index.html" class="mobile-dropdown-link active">
                                     Home 1
                                 </a>
                             </li>
@@ -318,7 +318,7 @@
 
                         <button
                             type="button"
-                            class="mobile-nav-link mobile-dropdown-toggle active"
+                            class="mobile-nav-link mobile-dropdown-toggle"
                             aria-expanded="false"
                         >
 
@@ -361,7 +361,7 @@
                             <li>
                                 <a
                                     href="wound-dressing.html"
-                                    class="mobile-dropdown-link active"
+                                    class="mobile-dropdown-link"
                                 >
                                     Wound Dressing
                                 </a>
@@ -468,67 +468,60 @@
 
 </header>
 <!-- =========================================================
-     WOUND DRESSING CARE
-     SECTION 1: HERO
-     PART 1 - HTML
+     HOME 1 - HERO SECTION
+     2 SLIDES | CENTER CONTENT | IMAGE BACKGROUND
+     NO PREVIOUS / NEXT BUTTONS
 ========================================================= -->
 
-<section class="wound-dressing-hero">
+<section class="hero-section" id="homeHero">
 
-    <div class="wound-dressing-hero-container">
+    <div class="hero-slider">
 
         <!-- =================================================
-             HERO CONTENT
+             SLIDE 1
         ================================================== -->
 
-        <div class="wound-dressing-hero-content">
+        <div class="hero-slide active"
+             style="background-image: url('images/hero-home1.jpg');">
 
-            <span class="wound-dressing-hero-subtitle">
-                Wound Dressing Care
-            </span>
+            <div class="hero-overlay"></div>
 
-            <h1 class="wound-dressing-hero-title">
-                Professional Wound Dressing
-                <span>Care at Home</span>
-            </h1>
+            <div class="hero-content">
 
-            <p class="wound-dressing-hero-description">
-                Receive careful and dependable wound dressing
-                assistance in the comfort of your home, with
-                support focused on hygiene, comfort, and recovery.
-            </p>
+                <span class="hero-subtitle">
+                    Compassionate Care at Home
+                </span>
 
+                <h1 class="hero-title">
+                    Compassionate Care,
+                    <br>
+                    Right at Home
+                </h1>
 
-            <!-- =================================================
-                 HERO ACTIONS
-            ================================================== -->
+                <p class="hero-description">
+                    Professional home nursing and patient care
+                    designed around comfort, dignity, and trust.
+                </p>
 
-            <div class="wound-dressing-hero-actions">
+                <div class="hero-actions">
 
-                <a href="contact.html"
-                   class="wound-dressing-hero-btn
-                          wound-dressing-hero-btn-primary">
+                    <a href="contact.html"
+                       class="hero-primary-button">
 
-                    <i class="fa-solid fa-calendar-check"></i>
+                        <span>Get Care Now</span>
 
-                    <span>
-                        Request Assistance
-                    </span>
+                        <i class="fa-solid fa-arrow-right"></i>
 
-                </a>
+                    </a>
 
+                    <a href="#services"
+                       class="hero-secondary-button">
 
-                <a href="contact.html"
-                   class="wound-dressing-hero-btn
-                          wound-dressing-hero-btn-secondary">
+                        <span>Our Services</span>
 
-                    <i class="fa-solid fa-phone"></i>
+                    </a>
 
-                    <span>
-                        Contact Us
-                    </span>
-
-                </a>
+                </div>
 
             </div>
 
@@ -536,18 +529,226 @@
 
 
         <!-- =================================================
-             HERO VISUAL
+             SLIDE 2
         ================================================== -->
 
-        <div class="wound-dressing-hero-visual">
+        <div class="hero-slide"
+             style="background-image: url('images/hero1-home1.jpg');">
 
-            <div class="wound-dressing-hero-image-wrapper">
+            <div class="hero-overlay"></div>
 
-                <img
-                    src="images/wound-dressing-care.jpg"
-                    alt="Professional wound dressing care at home"
-                    class="wound-dressing-hero-image"
-                >
+            <div class="hero-content">
+
+                <span class="hero-subtitle">
+                    Trusted Support for Every Journey
+                </span>
+
+                <h2 class="hero-title">
+                    Trusted Support for
+                    <br>
+                    Every Stage of Recovery
+                </h2>
+
+                <p class="hero-description">
+                    From post-surgery care to elderly assistance,
+                    our caregivers are here to support you and
+                    your family.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="caregivers.html"
+                       class="hero-primary-button">
+
+                        <span>Book a Caregiver</span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                    <a href="about.html"
+                       class="hero-secondary-button">
+
+                        <span>Learn More</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         SLIDE INDICATORS
+         NO PREVIOUS / NEXT BUTTONS
+    ================================================== -->
+
+    <div class="hero-indicators"
+         aria-label="Hero slides">
+
+        <button
+            type="button"
+            class="hero-indicator active"
+            data-slide="0"
+            aria-label="Slide 1">
+        </button>
+
+        <button
+            type="button"
+            class="hero-indicator"
+            data-slide="1"
+            aria-label="Slide 2">
+        </button>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     HOME 1 - WHY CHOOSE US
+     PART 1: HTML
+========================================================= -->
+
+<section class="why-choose-section" id="whyChoose">
+
+    <div class="why-choose-container">
+
+        <!-- =================================================
+             LEFT CONTENT
+        ================================================== -->
+
+        <div class="why-choose-content">
+
+            <span class="section-subtitle">
+                About Us
+            </span>
+
+            <h2 class="section-title">
+                Care You Can Trust,
+                <br>
+                Comfort You Can Feel
+            </h2>
+
+            <p class="why-choose-description">
+                We provide compassionate and dependable home
+                nursing and patient care designed to support
+                patients and their families with comfort,
+                dignity, and peace of mind.
+            </p>
+
+            <a href="about.html"
+               class="why-choose-button">
+
+                <span>Learn More</span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+
+        <!-- =================================================
+             RIGHT BENEFITS
+        ================================================== -->
+
+        <div class="why-choose-grid">
+
+            <!-- Benefit 1 -->
+
+            <div class="why-choose-card">
+
+                <div class="why-choose-icon">
+                    <i class="fa-solid fa-user-nurse"></i>
+                </div>
+
+                <div class="why-choose-card-content">
+
+                    <h3>
+                        Experienced Caregivers
+                    </h3>
+
+                    <p>
+                        Trained and compassionate professionals
+                        dedicated to providing dependable care.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Benefit 2 -->
+
+            <div class="why-choose-card">
+
+                <div class="why-choose-icon">
+                    <i class="fa-solid fa-hand-holding-heart"></i>
+                </div>
+
+                <div class="why-choose-card-content">
+
+                    <h3>
+                        Personalized Care
+                    </h3>
+
+                    <p>
+                        Care plans designed around each
+                        patient's individual needs and comfort.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Benefit 3 -->
+
+            <div class="why-choose-card">
+
+                <div class="why-choose-icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+
+                <div class="why-choose-card-content">
+
+                    <h3>
+                        24/7 Support
+                    </h3>
+
+                    <p>
+                        Reliable assistance whenever you and
+                        your family need support at home.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Benefit 4 -->
+
+            <div class="why-choose-card">
+
+                <div class="why-choose-icon">
+                    <i class="fa-solid fa-house-chimney-medical"></i>
+                </div>
+
+                <div class="why-choose-card-content">
+
+                    <h3>
+                        Comfort at Home
+                    </h3>
+
+                    <p>
+                        Quality care delivered in a familiar,
+                        comfortable, and reassuring environment.
+                    </p>
+
+                </div>
 
             </div>
 
@@ -557,182 +758,35 @@
 
 </section>
 <!-- =========================================================
-     WOUND DRESSING CARE
-     SECTION 2: WHY HOME WOUND CARE
-     PART 1 - HTML
+     HOME 1 - OUR SERVICES
+     PART 1: HTML
+     IMAGE BASED SERVICE CARDS
 ========================================================= -->
 
-<section class="wound-dressing-why-home">
+<section class="services-section" id="services">
 
-    <div class="wound-dressing-why-home-container">
+    <div class="services-container">
 
         <!-- =================================================
              SECTION HEADER
         ================================================== -->
 
-        <div class="wound-dressing-why-home-header">
+        <div class="services-header">
 
-            <span class="wound-dressing-why-home-subtitle">
-                Why Home Wound Care
+            <span class="section-subtitle">
+                Our Services
             </span>
 
-            <h2 class="wound-dressing-why-home-title">
-                Comfortable Care in a Familiar Environment
+            <h2 class="section-title">
+                Professional Care Designed
+                <br>
+                Around You
             </h2>
 
-            <p class="wound-dressing-why-home-description">
-                Professional assistance at home can make routine
-                wound care more convenient while helping maintain
-                cleanliness, comfort, and a consistent care routine.
-            </p>
-
-        </div>
-
-
-        <!-- =================================================
-             BENEFITS GRID
-        ================================================== -->
-
-        <div class="wound-dressing-why-home-grid">
-
-
-            <!-- =================================================
-                 CARD 1
-            ================================================== -->
-
-            <article class="wound-dressing-why-home-card">
-
-                <div class="wound-dressing-why-home-icon">
-                    <i class="fa-solid fa-house"></i>
-                </div>
-
-                <div class="wound-dressing-why-home-card-content">
-
-                    <h3>
-                        Comfort &amp; Convenience
-                    </h3>
-
-                    <p>
-                        Receive wound dressing assistance
-                        without unnecessary travel.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- =================================================
-                 CARD 2
-            ================================================== -->
-
-            <article class="wound-dressing-why-home-card">
-
-                <div class="wound-dressing-why-home-icon">
-                    <i class="fa-solid fa-shield-heart"></i>
-                </div>
-
-                <div class="wound-dressing-why-home-card-content">
-
-                    <h3>
-                        Hygiene-Focused Care
-                    </h3>
-
-                    <p>
-                        Support with maintaining a clean and
-                        organized wound-care routine.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- =================================================
-                 CARD 3
-            ================================================== -->
-
-            <article class="wound-dressing-why-home-card">
-
-                <div class="wound-dressing-why-home-icon">
-                    <i class="fa-solid fa-user-check"></i>
-                </div>
-
-                <div class="wound-dressing-why-home-card-content">
-
-                    <h3>
-                        Personalized Attention
-                    </h3>
-
-                    <p>
-                        Assistance based on your individual
-                        needs and care instructions.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- =================================================
-                 CARD 4
-            ================================================== -->
-
-            <article class="wound-dressing-why-home-card">
-
-                <div class="wound-dressing-why-home-icon">
-                    <i class="fa-solid fa-heart"></i>
-                </div>
-
-                <div class="wound-dressing-why-home-card-content">
-
-                    <h3>
-                        Peace of Mind
-                    </h3>
-
-                    <p>
-                        Dependable support for you and
-                        your family at home.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-</section>
-<!-- =========================================================
-     WOUND DRESSING CARE
-     SECTION 3: WOUND DRESSING SERVICES
-     PART 1 - HTML
-========================================================= -->
-
-<section class="wound-dressing-services">
-
-    <div class="wound-dressing-services-container">
-
-        <!-- =================================================
-             SECTION HEADER
-        ================================================== -->
-
-        <div class="wound-dressing-services-header">
-
-            <span class="wound-dressing-services-subtitle">
-                Our Wound Care Services
-            </span>
-
-            <h2 class="wound-dressing-services-title">
-                Professional Support for Different Wound Care Needs
-            </h2>
-
-            <p class="wound-dressing-services-description">
-                Careful assistance designed to support safe,
-                comfortable, and consistent wound dressing routines
-                at home.
+            <p class="services-intro">
+                Compassionate and reliable home-care services
+                designed to support your health, comfort, and
+                everyday well-being.
             </p>
 
         </div>
@@ -742,39 +796,45 @@
              SERVICES GRID
         ================================================== -->
 
-        <div class="wound-dressing-services-grid">
+        <div class="services-grid">
 
 
             <!-- =================================================
-                 CARD 1
+                 SERVICE 1 - ELDERLY CARE
             ================================================== -->
 
-            <article class="wound-dressing-services-card">
+            <article class="service-card">
 
-                <div class="wound-dressing-services-image-wrapper">
+                <div class="service-image">
 
                     <img
-                        src="images/routine-wound-dressing.jpg"
-                        alt="Routine wound dressing care"
-                        class="wound-dressing-services-image"
+                        src="images/service-elderly-care.jpg"
+                        alt="Elderly care at home"
+                        loading="lazy"
                     >
 
                 </div>
 
-                <div class="wound-dressing-services-card-content">
-
-                    <div class="wound-dressing-services-icon">
-                        <i class="fa-solid fa-bandage"></i>
-                    </div>
+                <div class="service-content">
 
                     <h3>
-                        Routine Wound Dressing
+                        Elderly Care
                     </h3>
 
                     <p>
-                        Assistance with regular dressing changes
-                        according to the recommended care routine.
+                        Compassionate daily support and
+                        companionship to help seniors live
+                        comfortably at home.
                     </p>
+
+                    <a href="services.html#elderly-care"
+                       class="service-link">
+
+                        <span>Learn More</span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
 
                 </div>
 
@@ -782,35 +842,41 @@
 
 
             <!-- =================================================
-                 CARD 2
+                 SERVICE 2 - POST SURGERY CARE
             ================================================== -->
 
-            <article class="wound-dressing-services-card">
+            <article class="service-card">
 
-                <div class="wound-dressing-services-image-wrapper">
+                <div class="service-image">
 
                     <img
-                        src="images/post-surgical-wound-care.jpg"
-                        alt="Post-surgical wound care"
-                        class="wound-dressing-services-image"
+                        src="images/service-post-surgery.jpg"
+                        alt="Post-surgery care at home"
+                        loading="lazy"
                     >
 
                 </div>
 
-                <div class="wound-dressing-services-card-content">
-
-                    <div class="wound-dressing-services-icon">
-                        <i class="fa-solid fa-kit-medical"></i>
-                    </div>
+                <div class="service-content">
 
                     <h3>
-                        Post-Surgical Wound Care
+                        Post-Surgery Care
                     </h3>
 
                     <p>
-                        Support for maintaining proper care of
-                        wounds following surgery and after surgery.
+                        Professional assistance and support
+                        during your recovery in the comfort
+                        of your home.
                     </p>
+
+                    <a href="services.html#post-surgery-care"
+                       class="service-link">
+
+                        <span>Learn More</span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
 
                 </div>
 
@@ -818,35 +884,41 @@
 
 
             <!-- =================================================
-                 CARD 3
+                 SERVICE 3 - NURSING CARE
             ================================================== -->
 
-            <article class="wound-dressing-services-card">
+            <article class="service-card">
 
-                <div class="wound-dressing-services-image-wrapper">
+                <div class="service-image">
 
                     <img
-                        src="images/pressure-wound-care.jpg"
-                        alt="Pressure wound care"
-                        class="wound-dressing-services-image"
+                        src="images/service-nursing-care.jpg"
+                        alt="Professional nursing care at home"
+                        loading="lazy"
                     >
 
                 </div>
 
-                <div class="wound-dressing-services-card-content">
-
-                    <div class="wound-dressing-services-icon">
-                        <i class="fa-solid fa-hand-holding-medical"></i>
-                    </div>
+                <div class="service-content">
 
                     <h3>
-                        Pressure Wound Care
+                        Nursing Care
                     </h3>
 
                     <p>
-                        Attentive assistance for individuals
-                        requiring ongoing pressure-wound care.
+                        Skilled and dependable nursing support
+                        tailored to individual care needs
+                        at home.
                     </p>
+
+                    <a href="services.html#nursing-care"
+                       class="service-link">
+
+                        <span>Learn More</span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
 
                 </div>
 
@@ -854,35 +926,125 @@
 
 
             <!-- =================================================
-                 CARD 4
+                 SERVICE 4 - MEDICATION ASSISTANCE
             ================================================== -->
 
-            <article class="wound-dressing-services-card">
+            <article class="service-card">
 
-                <div class="wound-dressing-services-image-wrapper">
+                <div class="service-image">
 
                     <img
-                        src="images/infection-prevention.jpg"
-                        alt="Infection prevention support"
-                        class="wound-dressing-services-image"
+                        src="images/service-medication.jpg"
+                        alt="Medication assistance at home"
+                        loading="lazy"
                     >
 
                 </div>
 
-                <div class="wound-dressing-services-card-content">
-
-                    <div class="wound-dressing-services-icon">
-                        <i class="fa-solid fa-shield-heart"></i>
-                    </div>
+                <div class="service-content">
 
                     <h3>
-                        Infection Prevention Support
+                        Medication Assistance
                     </h3>
 
                     <p>
-                        Hygiene-focused assistance to help maintain
-                        a clean wound-care environment.
+                        Helping patients stay organized with
+                        their prescribed medication routines
+                        and daily care.
                     </p>
+
+                    <a href="services.html#medication-assistance"
+                       class="service-link">
+
+                        <span>Learn More</span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 SERVICE 5 - PHYSIOTHERAPY SUPPORT
+            ================================================== -->
+
+            <article class="service-card">
+
+                <div class="service-image">
+
+                    <img
+                        src="images/service-physiotherapy.jpg"
+                        alt="Physiotherapy support at home"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="service-content">
+
+                    <h3>
+                        Physiotherapy Support
+                    </h3>
+
+                    <p>
+                        Support with recovery, mobility, and
+                        prescribed exercises to encourage
+                        safe progress at home.
+                    </p>
+
+                    <a href="services.html#physiotherapy"
+                       class="service-link">
+
+                        <span>Learn More</span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 SERVICE 6 - PERSONAL CARE
+            ================================================== -->
+
+            <article class="service-card">
+
+                <div class="service-image">
+
+                    <img
+                        src="images/service-personal-care.jpg"
+                        alt="Personal care assistance at home"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <div class="service-content">
+
+                    <h3>
+                        Personal Care
+                    </h3>
+
+                    <p>
+                        Respectful assistance with everyday
+                        personal activities while maintaining
+                        comfort and dignity.
+                    </p>
+
+                    <a href="services.html#personal-care"
+                       class="service-link">
+
+                        <span>Learn More</span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
 
                 </div>
 
@@ -894,34 +1056,172 @@
     </div>
 
 </section>
-<!=========================================================
-   WOUND DRESSING CARE
-   SECTION 4: CARE PROCESS
-   PART 1 - HTML
-========================================================= !>
+<!-- =========================================================
+     HOME 1 - WHY FAMILIES TRUST US
+     PART 1: HTML
+========================================================= -->
 
-<section class="wound-dressing-process">
+<section class="trust-section" id="whyTrust">
 
-    <div class="wound-dressing-process-container">
+    <div class="trust-container">
+
+        <!-- =================================================
+             LEFT IMAGE
+        ================================================== -->
+
+        <div class="trust-image-wrapper">
+
+            <img
+                src="images/why-families-trust.jpg"
+                alt="Caregiver providing compassionate care at home"
+                loading="lazy"
+            >
+
+        </div>
+
+
+        <!-- =================================================
+             RIGHT CONTENT
+        ================================================== -->
+
+        <div class="trust-content">
+
+            <span class="section-subtitle">
+                Why Families Trust Us
+            </span>
+
+            <h2 class="section-title">
+                Trusted Care That Puts
+                <br>
+                Your Family First
+            </h2>
+
+            <p class="trust-description">
+                We are committed to providing dependable,
+                compassionate, and personalized care that
+                helps patients feel comfortable while giving
+                families greater peace of mind.
+            </p>
+
+
+            <!-- =================================================
+                 TRUST STATS
+            ================================================== -->
+
+            <div class="trust-stats">
+
+
+                <!-- STAT 1 -->
+
+                <div class="trust-stat">
+
+                    <strong>
+                        10+
+                    </strong>
+
+                    <span>
+                        Years of Experience
+                    </span>
+
+                </div>
+
+
+                <!-- STAT 2 -->
+
+                <div class="trust-stat">
+
+                    <strong>
+                        500+
+                    </strong>
+
+                    <span>
+                        Families Supported
+                    </span>
+
+                </div>
+
+
+                <!-- STAT 3 -->
+
+                <div class="trust-stat">
+
+                    <strong>
+                        24/7
+                    </strong>
+
+                    <span>
+                        Care &amp; Support
+                    </span>
+
+                </div>
+
+
+                <!-- STAT 4 -->
+
+                <div class="trust-stat">
+
+                    <strong>
+                        100%
+                    </strong>
+
+                    <span>
+                        Compassionate Care
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 CTA
+            ================================================== -->
+
+            <a href="about.html"
+               class="trust-button">
+
+                <span>
+                    Learn More About Us
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     HOME 1 - HOW IT WORKS
+     PART 1: HTML
+     4 STEP CARE PROCESS
+========================================================= -->
+
+<section class="how-it-works-section" id="howItWorks">
+
+    <div class="how-it-works-container">
 
         <!-- =================================================
              SECTION HEADER
         ================================================== -->
 
-        <div class="wound-dressing-process-header">
+        <div class="how-it-works-header">
 
-            <span class="wound-dressing-process-subtitle">
-                Our Care Process
+            <span class="section-subtitle">
+                How It Works
             </span>
 
-            <h2 class="wound-dressing-process-title">
-                Simple Steps Toward Comfortable Wound Care
+            <h2 class="section-title">
+                Simple Steps to Better Care
             </h2>
 
-            <p class="wound-dressing-process-description">
-                Our home-care approach follows a clear and organized
-                process to make wound dressing assistance convenient
-                and comfortable.
+            <p class="how-it-works-intro">
+                Getting reliable home care is simple.
+                We guide you through every step to find
+                the right support for you or your loved one.
             </p>
 
         </div>
@@ -931,45 +1231,34 @@
              PROCESS STEPS
         ================================================== -->
 
-        <div class="wound-dressing-process-list">
+        <div class="how-it-works-steps">
 
 
             <!-- =================================================
                  STEP 1
             ================================================== -->
 
-            <article class="wound-dressing-process-step">
+            <div class="care-step">
 
-                <div class="wound-dressing-process-number">
-                    <span>01</span>
+                <div class="care-step-number">
+                    01
                 </div>
 
-                <div class="wound-dressing-process-icon">
-                    <i class="fa-solid fa-clipboard-check"></i>
-                </div>
+                <div class="care-step-line"></div>
 
-                <div class="wound-dressing-process-content">
+                <div class="care-step-content">
 
                     <h3>
-                        Initial Assessment
+                        Tell Us Your Needs
                     </h3>
 
                     <p>
-                        Understand the wound-care requirements
-                        and existing care instructions.
+                        Share your care requirements and
+                        let us understand how we can help in correct way.
                     </p>
 
                 </div>
 
-            </article>
-
-
-            <!-- =================================================
-                 CONNECTOR 1
-            ================================================== -->
-
-            <div class="wound-dressing-process-connector"
-                 aria-hidden="true">
             </div>
 
 
@@ -977,38 +1266,27 @@
                  STEP 2
             ================================================== -->
 
-            <article class="wound-dressing-process-step">
+            <div class="care-step">
 
-                <div class="wound-dressing-process-number">
-                    <span>02</span>
+                <div class="care-step-number">
+                    02
                 </div>
 
-                <div class="wound-dressing-process-icon">
-                    <i class="fa-solid fa-box-open"></i>
-                </div>
+                <div class="care-step-line"></div>
 
-                <div class="wound-dressing-process-content">
+                <div class="care-step-content">
 
                     <h3>
-                        Prepare the Supplies
+                        Care Assessment
                     </h3>
 
                     <p>
-                        Organize the required dressing materials
-                        and maintain a clean setup.
+                        We understand your needs and recommend
+                        suitable care and support options.
                     </p>
 
                 </div>
 
-            </article>
-
-
-            <!-- =================================================
-                 CONNECTOR 2
-            ================================================== -->
-
-            <div class="wound-dressing-process-connector"
-                 aria-hidden="true">
             </div>
 
 
@@ -1016,38 +1294,27 @@
                  STEP 3
             ================================================== -->
 
-            <article class="wound-dressing-process-step">
+            <div class="care-step">
 
-                <div class="wound-dressing-process-number">
-                    <span>03</span>
+                <div class="care-step-number">
+                    03
                 </div>
 
-                <div class="wound-dressing-process-icon">
-                    <i class="fa-solid fa-hand-holding-medical"></i>
-                </div>
+                <div class="care-step-line"></div>
 
-                <div class="wound-dressing-process-content">
+                <div class="care-step-content">
 
                     <h3>
-                        Dressing Assistance
+                        Choose Your Caregiver
                     </h3>
 
                     <p>
-                        Provide careful assistance with the dressing
-                        routine as instructed by the professional.
+                        Find a suitable caregiver based on
+                        your family's individual requirements.
                     </p>
 
                 </div>
 
-            </article>
-
-
-            <!-- =================================================
-                 CONNECTOR 3
-            ================================================== -->
-
-            <div class="wound-dressing-process-connector"
-                 aria-hidden="true">
             </div>
 
 
@@ -1055,31 +1322,45 @@
                  STEP 4
             ================================================== -->
 
-            <article class="wound-dressing-process-step">
+            <div class="care-step">
 
-                <div class="wound-dressing-process-number">
-                    <span>04</span>
+                <div class="care-step-number">
+                    04
                 </div>
 
-                <div class="wound-dressing-process-icon">
-                    <i class="fa-solid fa-heart-circle-check"></i>
-                </div>
-
-                <div class="wound-dressing-process-content">
+                <div class="care-step-content">
 
                     <h3>
-                        After-Care Guidance
+                        Start Care at Home
                     </h3>
 
                     <p>
-                        Help maintain the recommended care routine
-                        and provide guidance on the next steps.
+                        Begin receiving compassionate and
+                        dependable care in your own home.
                     </p>
 
                 </div>
 
-            </article>
+            </div>
 
+
+        </div>
+
+
+        <!-- =================================================
+             CTA
+        ================================================== -->
+
+        <div class="how-it-works-action">
+
+            <a href="contact.html"
+               class="how-it-works-button">
+
+                <span>Get Started</span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </a>
 
         </div>
 
@@ -1087,30 +1368,25 @@
 
 </section>
 <!-- =========================================================
-     WOUND DRESSING CARE
-     SECTION 5: CARE & SAFETY
-     PART 1 - HTML
+     HOME 1 - PERSONALIZED CARE
+     PART 1: HTML
 ========================================================= -->
 
-<section class="wound-dressing-safety">
+<section class="personalized-care-section" id="personalizedCare">
 
-    <div class="wound-dressing-safety-container">
+    <div class="personalized-care-container">
 
         <!-- =================================================
              IMAGE
         ================================================== -->
 
-        <div class="wound-dressing-safety-visual">
+        <div class="personalized-care-image">
 
-            <div class="wound-dressing-safety-image-wrapper">
-
-                <img
-                    src="images/wound-care-safety.jpg"
-                    alt="Professional wound care assistance at home"
-                    class="wound-dressing-safety-image"
-                >
-
-            </div>
+            <img
+                src="images/personalized-care.jpg"
+                alt="Caregiver providing personalized care at home"
+                loading="lazy"
+            >
 
         </div>
 
@@ -1119,48 +1395,50 @@
              CONTENT
         ================================================== -->
 
-        <div class="wound-dressing-safety-content">
+        <div class="personalized-care-content">
 
-            <span class="wound-dressing-safety-subtitle">
-                Care &amp; Safety
+            <span class="section-subtitle">
+                Personalized Care
             </span>
 
-            <h2 class="wound-dressing-safety-title">
-                Supporting Safe and Consistent Wound Care
+            <h2 class="section-title">
+                Care That's Designed
+                <br>
+                Around You
             </h2>
 
-            <p class="wound-dressing-safety-description">
-                Following the recommended care instructions and
-                maintaining a clean routine can help make wound
-                dressing assistance more organized and comfortable.
+            <p class="personalized-care-description">
+                Every individual has different needs. Our
+                personalized approach creates a care experience
+                focused on comfort, independence, safety, and
+                everyday well-being.
             </p>
 
 
             <!-- =================================================
-                 GUIDANCE LIST
+                 CARE FEATURES
             ================================================== -->
 
-            <div class="wound-dressing-safety-list">
+            <div class="personalized-care-features">
 
 
-                <!-- ITEM 1 -->
+                <!-- FEATURE 1 -->
 
-                <div class="wound-dressing-safety-item">
+                <div class="personalized-care-feature">
 
-                    <div class="wound-dressing-safety-icon">
-                        <i class="fa-solid fa-clipboard-check"></i>
+                    <div class="personalized-care-feature-number">
+                        01
                     </div>
 
-                    <div class="wound-dressing-safety-item-content">
+                    <div class="personalized-care-feature-content">
 
                         <h3>
-                            Follow Care Instructions
+                            Individualized Support
                         </h3>
 
                         <p>
-                            Wound dressing should follow the
-                            instructions provided by the appropriate
-                            healthcare professional.
+                            Care plans designed around personal
+                            needs, preferences, and daily routines.
                         </p>
 
                     </div>
@@ -1168,23 +1446,23 @@
                 </div>
 
 
-                <!-- ITEM 2 -->
+                <!-- FEATURE 2 -->
 
-                <div class="wound-dressing-safety-item">
+                <div class="personalized-care-feature">
 
-                    <div class="wound-dressing-safety-icon">
-                        <i class="fa-solid fa-hand-sparkles"></i>
+                    <div class="personalized-care-feature-number">
+                        02
                     </div>
 
-                    <div class="wound-dressing-safety-item-content">
+                    <div class="personalized-care-feature-content">
 
                         <h3>
-                            Maintain Cleanliness
+                            Comfort &amp; Independence
                         </h3>
 
                         <p>
-                            Keep the wound-care area and required
-                            supplies clean and organized.
+                            Encouraging confidence and independence
+                            while providing the right level of support.
                         </p>
 
                     </div>
@@ -1192,53 +1470,29 @@
                 </div>
 
 
-                <!-- ITEM 3 -->
+                <!-- FEATURE 3 -->
 
-                <div class="wound-dressing-safety-item">
+                <div class="personalized-care-feature">
 
-                    <div class="wound-dressing-safety-icon">
-                        <i class="fa-solid fa-eye"></i>
+                    <div class="personalized-care-feature-number">
+                        03
                     </div>
 
-                    <div class="wound-dressing-safety-item-content">
+                    <div class="personalized-care-feature-content">
 
                         <h3>
-                            Observe Changes
+                            Family Peace of Mind
                         </h3>
 
                         <p>
-                            Pay attention to changes in the wound
-                            and communicate concerns promptly.
+                            Keeping families informed, supported,
+                            and reassured throughout the care journey.
                         </p>
 
                     </div>
 
                 </div>
 
-
-                <!-- ITEM 4 -->
-
-                <div class="wound-dressing-safety-item">
-
-                    <div class="wound-dressing-safety-icon">
-                        <i class="fa-solid fa-user-doctor"></i>
-                    </div>
-
-                    <div class="wound-dressing-safety-item-content">
-
-                        <h3>
-                            Know When to Seek Medical Advice
-                        </h3>
-
-                        <p>
-                            Seek appropriate medical attention if
-                            concerning symptoms or unexpected changes
-                            occur.
-                        </p>
-
-                    </div>
-
-                </div>
 
             </div>
 
@@ -1247,18 +1501,16 @@
                  CTA
             ================================================== -->
 
-            <div class="wound-dressing-safety-actions">
+            <a href="services.html"
+               class="personalized-care-button">
 
-                <a
-                    href="#contact"
-                    class="wound-dressing-safety-btn"
-                >
-                    <span>Get Home Care Assistance</span>
+                <span>
+                    Explore Our Care
+                </span>
 
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
+                <i class="fa-solid fa-arrow-right"></i>
 
-            </div>
+            </a>
 
         </div>
 
@@ -1266,253 +1518,191 @@
 
 </section>
 <!-- =========================================================
-     WOUND DRESSING CARE
-     SECTION 6: FAQ
-     PART 1 - HTML
+     HOME 1 - TESTIMONIALS
+     PART 1: HTML
+     4 TESTIMONIAL CARDS
 ========================================================= -->
 
-<section class="wound-dressing-faq" id="wound-dressing-faq">
+<section class="testimonials-section" id="testimonials">
 
-    <div class="wound-dressing-faq-container">
+    <div class="testimonials-container">
 
         <!-- =================================================
              SECTION HEADER
         ================================================== -->
 
-        <div class="wound-dressing-faq-header">
+        <div class="testimonials-header">
 
-            <span class="wound-dressing-faq-subtitle">
-                Frequently Asked Questions
+            <span class="section-subtitle">
+                Testimonials
             </span>
 
-            <h2 class="wound-dressing-faq-title">
-                Common Questions About Wound Dressing Care
+            <h2 class="section-title">
+                What Families Say About Our Care
             </h2>
 
-            <p class="wound-dressing-faq-description">
-                Find answers to some common questions about
-                receiving wound dressing assistance at home.
+            <p class="testimonials-intro">
+                Real experiences from families who trust us
+                to provide compassionate, reliable, and
+                personalized care.
             </p>
 
         </div>
 
 
         <!-- =================================================
-             FAQ LIST
+             TESTIMONIAL GRID
         ================================================== -->
 
-        <div class="wound-dressing-faq-list">
+        <div class="testimonials-grid">
 
 
             <!-- =================================================
-                 FAQ 1
+                 TESTIMONIAL 1
             ================================================== -->
 
-            <details class="wound-dressing-faq-item">
+            <article class="testimonial-card">
 
-                <summary class="wound-dressing-faq-question">
+                <div class="testimonial-quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
 
-                    <span>
-                        What is wound dressing care at home?
-                    </span>
+                <p class="testimonial-text">
+                    The caregiver was incredibly kind and
+                    attentive. We felt completely comfortable
+                    knowing our loved one was in good hands.
+                </p>
 
-                    <span
-                        class="wound-dressing-faq-toggle"
-                        aria-hidden="true"
-                    >
-                        <i class="fa-solid fa-plus"></i>
-                    </span>
+                <div class="testimonial-divider"></div>
 
-                </summary>
+                <div class="testimonial-author">
 
-                <div class="wound-dressing-faq-answer">
+                    <div class="testimonial-author-info">
 
-                    <p>
-                        Wound dressing care at home provides
-                        assistance with the recommended dressing
-                        routine in a familiar home environment,
-                        following the care instructions provided
-                        by the appropriate healthcare professional.
-                    </p>
+                        <h3>
+                            Exceptional Care
+                        </h3>
+
+                        <span>
+                            Family Care
+                        </span>
+
+                    </div>
 
                 </div>
 
-            </details>
+            </article>
 
 
             <!-- =================================================
-                 FAQ 2
+                 TESTIMONIAL 2
             ================================================== -->
 
-            <details class="wound-dressing-faq-item">
+            <article class="testimonial-card">
 
-                <summary class="wound-dressing-faq-question">
+                <div class="testimonial-quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
 
-                    <span>
-                        Who can benefit from home wound dressing assistance?
-                    </span>
+                <p class="testimonial-text">
+                    The support and communication from the
+                    care team gave our entire family great
+                    peace of mind and feel good.they give more support.
+                </p>
 
-                    <span
-                        class="wound-dressing-faq-toggle"
-                        aria-hidden="true"
-                    >
-                        <i class="fa-solid fa-plus"></i>
-                    </span>
+                <div class="testimonial-divider"></div>
 
-                </summary>
+                <div class="testimonial-author">
 
-                <div class="wound-dressing-faq-answer">
+                    <div class="testimonial-author-info">
 
-                    <p>
-                        Home wound dressing assistance may be
-                        helpful for individuals who have an ongoing
-                        dressing routine and need support at home,
-                        according to their healthcare professional's
-                        recommendations.
-                    </p>
+                        <h3>
+                            Peace of Mind
+                        </h3>
+
+                        <span>
+                            Home Nursing
+                        </span>
+
+                    </div>
 
                 </div>
 
-            </details>
+            </article>
 
 
             <!-- =================================================
-                 FAQ 3
+                 TESTIMONIAL 3
             ================================================== -->
 
-            <details class="wound-dressing-faq-item">
+            <article class="testimonial-card">
 
-                <summary class="wound-dressing-faq-question">
+                <div class="testimonial-quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
 
-                    <span>
-                        How often should a wound dressing be changed?
-                    </span>
+                <p class="testimonial-text">
+                    The care was professional, dependable,
+                    and perfectly suited to our family's
+                    individual needs and take care well.
+                </p>
 
-                    <span
-                        class="wound-dressing-faq-toggle"
-                        aria-hidden="true"
-                    >
-                        <i class="fa-solid fa-plus"></i>
-                    </span>
+                <div class="testimonial-divider"></div>
 
-                </summary>
+                <div class="testimonial-author">
 
-                <div class="wound-dressing-faq-answer">
+                    <div class="testimonial-author-info">
 
-                    <p>
-                        The timing of dressing changes depends on
-                        the type of wound, dressing used, and the
-                        care plan recommended by the appropriate
-                        healthcare professional.
-                    </p>
+                        <h3>
+                            Professional &amp; Reliable
+                        </h3>
+
+                        <span>
+                            Personalized Care
+                        </span>
+
+                    </div>
 
                 </div>
 
-            </details>
+            </article>
 
 
             <!-- =================================================
-                 FAQ 4
+                 TESTIMONIAL 4
             ================================================== -->
 
-            <details class="wound-dressing-faq-item">
+            <article class="testimonial-card">
 
-                <summary class="wound-dressing-faq-question">
+                <div class="testimonial-quote">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
 
-                    <span>
-                        Can wound dressing assistance be provided after surgery?
-                    </span>
+                <p class="testimonial-text">
+                    We are very happy with the care provided
+                    at home. The team has been supportive
+                    throughout our care journey.
+                </p>
 
-                    <span
-                        class="wound-dressing-faq-toggle"
-                        aria-hidden="true"
-                    >
-                        <i class="fa-solid fa-plus"></i>
-                    </span>
+                <div class="testimonial-divider"></div>
 
-                </summary>
+                <div class="testimonial-author">
 
-                <div class="wound-dressing-faq-answer">
+                    <div class="testimonial-author-info">
 
-                    <p>
-                        Yes. Home assistance may be arranged for
-                        post-surgical wound care when it is part of
-                        the recommended care plan and appropriate
-                        support is required.
-                    </p>
+                        <h3>
+                            Highly Recommended
+                        </h3>
+
+                        <span>
+                            Recovery Care
+                        </span>
+
+                    </div>
 
                 </div>
 
-            </details>
-
-
-            <!-- =================================================
-                 FAQ 5
-            ================================================== -->
-
-            <details class="wound-dressing-faq-item">
-
-                <summary class="wound-dressing-faq-question">
-
-                    <span>
-                        When should I contact a healthcare professional?
-                    </span>
-
-                    <span
-                        class="wound-dressing-faq-toggle"
-                        aria-hidden="true"
-                    >
-                        <i class="fa-solid fa-plus"></i>
-                    </span>
-
-                </summary>
-
-                <div class="wound-dressing-faq-answer">
-
-                    <p>
-                        Contact an appropriate healthcare professional
-                        if you notice concerning symptoms, unexpected
-                        changes, or anything that causes concern about
-                        the wound or recovery.
-                    </p>
-
-                </div>
-
-            </details>
-
-
-            <!-- =================================================
-                 FAQ 6
-            ================================================== -->
-
-            <details class="wound-dressing-faq-item">
-
-                <summary class="wound-dressing-faq-question">
-
-                    <span>
-                        How can I arrange home wound dressing assistance?
-                    </span>
-
-                    <span
-                        class="wound-dressing-faq-toggle"
-                        aria-hidden="true"
-                    >
-                        <i class="fa-solid fa-plus"></i>
-                    </span>
-
-                </summary>
-
-                <div class="wound-dressing-faq-answer">
-
-                    <p>
-                        You can contact our home-care team to discuss
-                        your requirements, available services, and
-                        suitable arrangements for assistance at home.
-                    </p>
-
-                </div>
-
-            </details>
+            </article>
 
 
         </div>
@@ -1521,59 +1711,52 @@
 
 </section>
 <!-- =========================================================
-     WOUND DRESSING CARE
-     SECTION 7: FINAL CALL TO ACTION
-     PART 1 - HTML
+     HOME 1 - FINAL CTA
+     PART 1: HTML
 ========================================================= -->
 
-<section class="wound-dressing-cta" id="wound-dressing-cta">
+<section class="final-cta-section" id="getCare">
 
-    <div class="wound-dressing-cta-container">
+    <div class="final-cta-container">
 
-        <!-- =================================================
-             CONTENT
-        ================================================== -->
+        <div class="final-cta-content">
 
-        <div class="wound-dressing-cta-content">
-
-            <span class="wound-dressing-cta-subtitle">
-                Need Home Care Support?
+            <span class="section-subtitle">
+                We're Here to Help
             </span>
 
-            <h2 class="wound-dressing-cta-title">
-                Get Reliable Wound Dressing Assistance at Home
+            <h2 class="section-title">
+                Ready to Find the Right Care
+                <br>
+                for Your Loved One?
             </h2>
 
-            <p class="wound-dressing-cta-description">
-                Make your wound-care routine more comfortable
-                with dependable assistance in the familiar
-                surroundings of your home.
+            <p class="final-cta-description">
+                Our team is here to understand your needs
+                and help you choose the right care and
+                support for your family.
             </p>
 
+            <div class="final-cta-buttons">
 
-            <!-- =================================================
-                 ACTIONS
-            ================================================== -->
+                <a href="contact.html"
+                   class="final-cta-primary">
 
-            <div class="wound-dressing-cta-actions">
-
-                <a
-                    href="#contact"
-                    class="wound-dressing-cta-btn wound-dressing-cta-btn-primary"
-                >
-                    <span>Book Home Care</span>
+                    <span>
+                        Get Started
+                    </span>
 
                     <i class="fa-solid fa-arrow-right"></i>
+
                 </a>
 
+                <a href="contact.html"
+                   class="final-cta-secondary">
 
-                <a
-                    href="contact.html"
-                    class="wound-dressing-cta-btn wound-dressing-cta-btn-secondary"
-                >
-                    <span>Contact Us</span>
+                    <span>
+                        Contact Us
+                    </span>
 
-                    <i class="fa-solid fa-phone"></i>
                 </a>
 
             </div>
