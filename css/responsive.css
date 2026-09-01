@@ -43698,3 +43698,414 @@ html[dir="rtl"] .contact-hero-primary-btn i {
         font-size: 17px;
     }
 }
+
+
+
+/* =========================================================
+   ELDERLY CARE HERO - MOBILE HEADER FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Keep hero below fixed/sticky header */
+    .elderly-companion-hero {
+        padding-top: 95px !important;
+    }
+
+    .elderly-companion-hero-container {
+        padding-top: 20px !important;
+    }
+
+    .elderly-companion-hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .elderly-companion-hero-subtitle {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .elderly-companion-hero-title {
+        margin-top: 0 !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .elderly-companion-hero {
+        padding-top: 90px !important;
+    }
+
+    .elderly-companion-hero-container {
+        padding-top: 15px !important;
+    }
+
+    .elderly-companion-hero-subtitle {
+        margin-bottom: 10px;
+    }
+}
+
+/* =========================================================
+   MOBILE - FIX PHYSIOTHERAPY HERO CONTENT
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------------------------------
+       PHYSIOTHERAPY ASSISTANCE
+    ----------------------------------------------------- */
+
+    .physio-assistance-hero {
+        padding-top: 95px !important;
+    }
+
+    .physio-assistance-hero-container {
+        padding-top: 20px !important;
+    }
+
+
+    /* -----------------------------------------------------
+       KEEP HERO CONTENT ABOVE BACKGROUND
+    ----------------------------------------------------- */
+
+    .physio-assistance-hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+
+    /* -----------------------------------------------------
+       SUBTITLE
+    ----------------------------------------------------- */
+
+    .physio-assistance-hero-subtitle {
+        display: block;
+        margin-top: 0 !important;
+        margin-bottom: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       TITLE
+    ----------------------------------------------------- */
+
+    .physio-assistance-hero-title {
+        margin-top: 0 !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .physio-assistance-hero {
+        padding-top: 90px !important;
+    }
+
+    .physio-assistance-hero-container {
+        padding-top: 15px !important;
+    }
+
+    .physio-assistance-hero-subtitle {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE - FIX WOUND DRESSING HERO CONTENT
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------------------------------
+       WOUND DRESSING CARE
+    ----------------------------------------------------- */
+
+    .wound-dressing-hero {
+        padding-top: 95px !important;
+    }
+
+    .wound-dressing-hero-container {
+        padding-top: 20px !important;
+    }
+
+
+    /* -----------------------------------------------------
+       KEEP HERO CONTENT ABOVE BACKGROUND
+    ----------------------------------------------------- */
+
+    .wound-dressing-hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+
+    /* -----------------------------------------------------
+       SUBTITLE
+    ----------------------------------------------------- */
+
+    .wound-dressing-hero-subtitle {
+        display: block;
+        margin-top: 0 !important;
+        margin-bottom: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       TITLE
+    ----------------------------------------------------- */
+
+    .wound-dressing-hero-title {
+        margin-top: 0 !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .wound-dressing-hero {
+        padding-top: 90px !important;
+    }
+
+    .wound-dressing-hero-container {
+        padding-top: 15px !important;
+    }
+
+    .wound-dressing-hero-subtitle {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   MEDICATION MANAGEMENT HERO
+   MOBILE - CENTER CONTENT + FIX STRUCTURE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .medication-management-hero {
+        width: 100%;
+        min-height: auto !important;
+        padding: 45px 16px 50px !important;
+        margin: 0 !important;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .medication-management-hero-container {
+        width: 100%;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* HERO CONTENT */
+
+    .medication-management-hero-content {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto !important;
+        padding: 0 !important;
+
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* SUBTITLE */
+
+    .medication-management-hero-subtitle {
+        display: block;
+        width: 100%;
+
+        margin: 0 0 12px !important;
+        padding: 0 !important;
+
+        text-align: center;
+    }
+
+
+    /* TITLE */
+
+    .medication-management-hero-title {
+        width: 100%;
+        max-width: 380px;
+
+        margin: 0 auto 16px !important;
+        padding: 0 !important;
+
+        text-align: center;
+        line-height: 1.15 !important;
+    }
+
+
+    /* DESCRIPTION */
+
+    .medication-management-hero-description {
+        width: 100%;
+        max-width: 360px;
+
+        margin: 0 auto 22px !important;
+        padding: 0 !important;
+
+        text-align: center;
+        line-height: 1.5 !important;
+    }
+
+
+    /* ACTION BUTTONS */
+
+    .medication-management-hero-actions {
+        width: 100%;
+        max-width: 360px;
+
+        margin: 0 auto !important;
+        padding: 0 !important;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    .medication-management-hero-actions a {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 !important;
+    }
+
+
+    /* HERO IMAGE */
+
+    .medication-management-hero-image {
+        width: 100%;
+        max-width: 420px;
+
+        margin: 35px auto 0 !important;
+        padding: 0 !important;
+    }
+
+    .medication-management-hero-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .medication-management-hero {
+        padding: 35px 14px 40px !important;
+    }
+
+    .medication-management-hero-content {
+        max-width: 100%;
+    }
+
+    .medication-management-hero-title {
+        max-width: 340px;
+        font-size: 30px !important;
+        line-height: 1.15 !important;
+    }
+
+    .medication-management-hero-description {
+        max-width: 330px;
+        font-size: 14px !important;
+    }
+
+    .medication-management-hero-actions {
+        max-width: 100%;
+    }
+
+    .medication-management-hero-image {
+        margin-top: 30px !important;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   CAREGIVERS HERO - MOBILE TOP HEADING FIX
+   KEEP EXISTING SIZE & STRUCTURE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .caregivers-hero {
+        padding-top: 95px !important;
+    }
+
+    .caregivers-hero-container {
+        padding-top: 20px !important;
+    }
+
+    .caregivers-hero-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .caregivers-hero-eyebrow {
+        display: block;
+        margin-top: 0 !important;
+    }
+
+    .caregivers-hero-title {
+        margin-top: 0 !important;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .caregivers-hero {
+        padding-top: 90px !important;
+    }
+
+    .caregivers-hero-container {
+        padding-top: 15px !important;
+    }
+
+}
