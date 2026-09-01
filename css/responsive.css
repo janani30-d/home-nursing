@@ -35966,511 +35966,6 @@ html[dir="rtl"] .caregivers-service-card {
 /****PRICING***/
 
 /* =========================================================
-   PRICING HERO
-   PART 3 - RESPONSIVE + RTL RESPONSIVE
-========================================================= */
-
-
-/* =========================================================
-   IPAD PRO + IPAD MINI
-   744px - 1024px
-   SAME LEFT + RIGHT HERO STRUCTURE
-========================================================= */
-
-@media (min-width: 744px) and (max-width: 1024px) {
-
-    .pricing-hero-container {
-        width: calc(100% - 48px);
-    }
-
-
-    /* =====================================================
-       HERO CONTENT
-    ===================================================== */
-
-    .pricing-hero-content {
-        min-height: 480px;
-
-        grid-template-columns:
-            minmax(0, 1fr)
-            minmax(300px, 0.85fr);
-
-        gap: 38px;
-    }
-
-
-    /* =====================================================
-       TEXT
-    ===================================================== */
-
-    .pricing-hero-text {
-        max-width: 560px;
-    }
-
-
-    .pricing-hero-eyebrow {
-        margin-bottom: 14px;
-
-        font-size: 10px;
-    }
-
-
-    .pricing-hero-title {
-        max-width: 540px;
-
-        margin-bottom: 17px;
-
-        font-size: 38px;
-
-        line-height: 1.2;
-
-        letter-spacing: -0.6px;
-    }
-
-
-    .pricing-hero-description {
-        max-width: 520px;
-
-        margin-bottom: 26px;
-
-        font-size: 12px;
-
-        line-height: 1.65;
-    }
-
-
-    /* =====================================================
-       BUTTONS
-    ===================================================== */
-
-    .pricing-hero-actions {
-        gap: 10px;
-    }
-
-
-    .pricing-hero-primary-btn,
-    .pricing-hero-secondary-btn {
-        min-height: 52px;
-
-        padding: 0 21px;
-
-        font-size: 12px;
-    }
-
-
-    /* =====================================================
-       IMAGE
-    ===================================================== */
-
-    .pricing-hero-image {
-        height: 420px;
-    }
-}
-
-
-
-/* =========================================================
-   RTL
-   IPAD PRO + IPAD MINI
-========================================================= */
-
-@media (min-width: 744px) and (max-width: 1024px) {
-
-    html[dir="rtl"] .pricing-hero-content {
-        direction: rtl;
-    }
-
-    html[dir="rtl"] .pricing-hero-text {
-        align-items: flex-start;
-
-        text-align: right;
-    }
-
-    html[dir="rtl"] .pricing-hero-actions {
-        direction: rtl;
-
-        justify-content: flex-start;
-    }
-
-    html[dir="rtl"] .pricing-hero-primary-btn i {
-        transform: rotate(180deg);
-    }
-}
-
-
-
-/* =========================================================
-   MOBILE
-   BELOW 743px
-   STACKED HERO
-========================================================= */
-
-@media (max-width: 743px) {
-
-    /* =====================================================
-       HERO
-    ===================================================== */
-
-    .pricing-hero {
-        padding: 0;
-    }
-
-
-    .pricing-hero-container {
-        width: calc(100% - 32px);
-    }
-
-
-    /* =====================================================
-       CONTENT
-    ===================================================== */
-
-    .pricing-hero-content {
-        min-height: auto;
-
-        display: flex;
-        flex-direction: column;
-
-        gap: 34px;
-
-        padding: 44px 0 48px;
-    }
-
-
-    /* =====================================================
-       TEXT
-    ===================================================== */
-
-    .pricing-hero-text {
-        width: 100%;
-        max-width: 100%;
-
-        align-items: center;
-
-        text-align: center;
-    }
-
-
-    .pricing-hero-eyebrow {
-        margin-bottom: 11px;
-
-        font-size: 9px;
-
-        letter-spacing: 0.6px;
-    }
-
-
-    .pricing-hero-title {
-        max-width: 560px;
-
-        margin-bottom: 14px;
-
-        font-size: 29px;
-
-        line-height: 1.2;
-
-        letter-spacing: -0.4px;
-    }
-
-
-    .pricing-hero-description {
-        max-width: 540px;
-
-        margin-bottom: 25px;
-
-        font-size: 10px;
-
-        line-height: 1.65;
-    }
-
-
-    /* =====================================================
-       BUTTONS
-    ===================================================== */
-
-    .pricing-hero-actions {
-        width: 100%;
-
-        justify-content: center;
-
-        gap: 9px;
-    }
-
-
-    .pricing-hero-primary-btn,
-    .pricing-hero-secondary-btn {
-        min-height: 48px;
-
-        padding: 0 19px;
-
-        font-size: 10px;
-    }
-
-
-    .pricing-hero-primary-btn {
-        gap: 7px;
-    }
-
-
-    .pricing-hero-primary-btn i {
-        font-size: 9px;
-    }
-
-
-    /* =====================================================
-       IMAGE
-    ===================================================== */
-
-    .pricing-hero-image {
-        width: 100%;
-
-        height: 320px;
-
-        order: 2;
-    }
-
-
-    .pricing-hero-image img {
-        width: 100%;
-        height: 100%;
-
-        object-fit: cover;
-    }
-}
-
-
-
-/* =========================================================
-   RTL MOBILE
-========================================================= */
-
-@media (max-width: 743px) {
-
-    html[dir="rtl"] .pricing-hero-content {
-        direction: rtl;
-    }
-
-    html[dir="rtl"] .pricing-hero-text {
-        align-items: center;
-
-        text-align: center;
-    }
-
-    html[dir="rtl"] .pricing-hero-actions {
-        direction: rtl;
-
-        justify-content: center;
-    }
-
-    html[dir="rtl"] .pricing-hero-primary-btn i {
-        transform: rotate(180deg);
-    }
-}
-
-
-
-/* =========================================================
-   SMALL MOBILE
-   600px
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .pricing-hero-container {
-        width: calc(100% - 28px);
-    }
-
-
-    .pricing-hero-content {
-        gap: 29px;
-
-        padding: 40px 0 43px;
-    }
-
-
-    .pricing-hero-eyebrow {
-        font-size: 8px;
-    }
-
-
-    .pricing-hero-title {
-        max-width: 500px;
-
-        font-size: 26px;
-    }
-
-
-    .pricing-hero-description {
-        max-width: 470px;
-
-        font-size: 9px;
-
-        line-height: 1.6;
-    }
-
-
-    .pricing-hero-primary-btn,
-    .pricing-hero-secondary-btn {
-        min-height: 45px;
-
-        padding: 0 17px;
-
-        font-size: 9px;
-    }
-
-
-    .pricing-hero-image {
-        height: 285px;
-    }
-}
-
-
-
-/* =========================================================
-   EXTRA SMALL MOBILE
-   480px
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .pricing-hero-container {
-        width: calc(100% - 24px);
-    }
-
-
-    .pricing-hero-content {
-        gap: 25px;
-
-        padding: 36px 0 38px;
-    }
-
-
-    .pricing-hero-eyebrow {
-        font-size: 7.5px;
-    }
-
-
-    .pricing-hero-title {
-        font-size: 23px;
-
-        line-height: 1.18;
-    }
-
-
-    .pricing-hero-description {
-        font-size: 8.5px;
-    }
-
-
-    .pricing-hero-actions {
-        width: 100%;
-
-        gap: 7px;
-    }
-
-
-    .pricing-hero-primary-btn,
-    .pricing-hero-secondary-btn {
-        min-height: 42px;
-
-        padding: 0 14px;
-
-        font-size: 8.5px;
-    }
-
-
-    .pricing-hero-image {
-        height: 250px;
-    }
-}
-
-
-
-/* =========================================================
-   RTL EXTRA SMALL
-========================================================= */
-
-@media (max-width: 480px) {
-
-    html[dir="rtl"] .pricing-hero-content,
-    html[dir="rtl"] .pricing-hero-text {
-        direction: rtl;
-    }
-
-    html[dir="rtl"] .pricing-hero-actions {
-        direction: rtl;
-    }
-}
-
-
-
-/* =========================================================
-   VERY SMALL MOBILE
-   380px
-========================================================= */
-
-@media (max-width: 380px) {
-
-    .pricing-hero-container {
-        width: calc(100% - 20px);
-    }
-
-
-    .pricing-hero-content {
-        gap: 22px;
-
-        padding: 32px 0 34px;
-    }
-
-
-    .pricing-hero-eyebrow {
-        font-size: 7px;
-    }
-
-
-    .pricing-hero-title {
-        font-size: 21px;
-    }
-
-
-    .pricing-hero-description {
-        font-size: 8px;
-    }
-
-
-    .pricing-hero-primary-btn,
-    .pricing-hero-secondary-btn {
-        min-height: 40px;
-
-        padding: 0 12px;
-
-        font-size: 8px;
-    }
-
-
-    .pricing-hero-image {
-        height: 220px;
-    }
-}
-
-
-
-/* =========================================================
-   RTL VERY SMALL
-========================================================= */
-
-@media (max-width: 380px) {
-
-    html[dir="rtl"] .pricing-hero-content {
-        direction: rtl;
-    }
-
-    html[dir="rtl"] .pricing-hero-text {
-        text-align: center;
-    }
-}
-
-/* =========================================================
    PRICING PLANS
    PART 3 - RESPONSIVE + RTL RESPONSIVE
 ========================================================= */
@@ -38269,556 +37764,6 @@ html[dir="rtl"] .caregivers-service-card {
 
 /***CONTACT US****/
 
-/* =========================================================
-   CONTACT US HERO
-   PART 3 - RESPONSIVE + RTL RESPONSIVE
-   EXTRA TOP SPACING
-========================================================= */
-
-
-/* =========================================================
-   IPAD PRO
-   1024px
-========================================================= */
-
-@media (min-width: 1025px) {
-    .contact-hero {
-        padding-top: 125px;
-    }
-}
-
-
-/* =========================================================
-   IPAD PRO + IPAD MINI
-   744px - 1024px
-========================================================= */
-
-@media (min-width: 744px) and (max-width: 1024px) {
-
-    .contact-hero {
-        padding: 105px 0 78px;
-    }
-
-
-    .contact-hero-container {
-        width: calc(100% - 48px);
-    }
-
-
-    .contact-hero-content {
-        width: 100%;
-        max-width: 700px;
-    }
-
-
-    /* EYEBROW */
-
-    .contact-hero-eyebrow {
-        margin-bottom: 20px;
-
-        font-size: 10px;
-
-        line-height: 1.4;
-        letter-spacing: 0.7px;
-    }
-
-
-    /* TITLE */
-
-    .contact-hero-title {
-        width: 100%;
-        max-width: 700px;
-
-        margin-bottom: 21px;
-
-        font-size: 44px;
-
-        line-height: 1.14;
-        letter-spacing: -0.8px;
-    }
-
-
-    /* DESCRIPTION */
-
-    .contact-hero-description {
-        width: 100%;
-        max-width: 620px;
-
-        margin-bottom: 30px;
-
-        font-size: 13px;
-
-        line-height: 1.65;
-    }
-
-
-    /* BUTTONS */
-
-    .contact-hero-actions {
-        gap: 10px;
-    }
-
-
-    .contact-hero-primary-btn,
-    .contact-hero-secondary-btn {
-        min-height: 53px;
-
-        padding: 0 23px;
-
-        font-size: 12px;
-    }
-
-
-    .contact-hero-primary-btn i {
-        font-size: 10px;
-    }
-}
-
-
-/* =========================================================
-   RTL - IPAD
-========================================================= */
-
-@media (min-width: 744px) and (max-width: 1024px) {
-
-    html[dir="rtl"] .contact-hero {
-        direction: rtl;
-    }
-
-
-    html[dir="rtl"] .contact-hero-container {
-        direction: rtl;
-    }
-
-
-    html[dir="rtl"] .contact-hero-content {
-        direction: rtl;
-
-        align-items: flex-start;
-
-        text-align: right;
-    }
-
-
-    html[dir="rtl"] .contact-hero-actions {
-        direction: rtl;
-    }
-}
-
-
-/* =========================================================
-   MOBILE
-   743px AND BELOW
-========================================================= */
-
-@media (max-width: 743px) {
-
-    .contact-hero {
-        padding: 88px 0 65px;
-    }
-
-
-    .contact-hero-container {
-        width: calc(100% - 32px);
-    }
-
-
-    .contact-hero-content {
-        width: 100%;
-        max-width: 100%;
-    }
-
-
-    /* EYEBROW */
-
-    .contact-hero-eyebrow {
-        margin-bottom: 17px;
-
-        font-size: 9px;
-
-        line-height: 1.4;
-        letter-spacing: 0.6px;
-    }
-
-
-    /* TITLE */
-
-    .contact-hero-title {
-        width: 100%;
-
-        margin-bottom: 19px;
-
-        font-size: 33px;
-
-        line-height: 1.16;
-        letter-spacing: -0.5px;
-    }
-
-
-    /* DESCRIPTION */
-
-    .contact-hero-description {
-        width: 100%;
-
-        margin-bottom: 27px;
-
-        font-size: 11px;
-
-        line-height: 1.65;
-    }
-
-
-    /* BUTTONS */
-
-    .contact-hero-actions {
-        width: 100%;
-
-        display: flex;
-        align-items: center;
-
-        gap: 10px;
-    }
-
-
-    .contact-hero-primary-btn,
-    .contact-hero-secondary-btn {
-        min-height: 49px;
-
-        padding: 0 19px;
-
-        font-size: 11px;
-    }
-
-
-    .contact-hero-primary-btn i {
-        font-size: 9px;
-    }
-}
-
-
-/* =========================================================
-   RTL - MOBILE
-========================================================= */
-
-@media (max-width: 743px) {
-
-    html[dir="rtl"] .contact-hero {
-        direction: rtl;
-    }
-
-
-    html[dir="rtl"] .contact-hero-container {
-        direction: rtl;
-    }
-
-
-    html[dir="rtl"] .contact-hero-content {
-        direction: rtl;
-
-        align-items: flex-start;
-
-        text-align: right;
-    }
-
-
-    html[dir="rtl"] .contact-hero-actions {
-        direction: rtl;
-    }
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-   600px
-========================================================= */
-
-@media (max-width: 600px) {
-
-    .contact-hero {
-        padding: 78px 0 58px;
-    }
-
-
-    .contact-hero-container {
-        width: calc(100% - 28px);
-    }
-
-
-    /* EYEBROW */
-
-    .contact-hero-eyebrow {
-        margin-bottom: 14px;
-
-        font-size: 8px;
-
-        letter-spacing: 0.55px;
-    }
-
-
-    /* TITLE */
-
-    .contact-hero-title {
-        margin-bottom: 16px;
-
-        font-size: 29px;
-
-        line-height: 1.18;
-    }
-
-
-    /* DESCRIPTION */
-
-    .contact-hero-description {
-        margin-bottom: 23px;
-
-        font-size: 10px;
-
-        line-height: 1.6;
-    }
-
-
-    /* BUTTONS */
-
-    .contact-hero-actions {
-        gap: 8px;
-    }
-
-
-    .contact-hero-primary-btn,
-    .contact-hero-secondary-btn {
-        min-height: 46px;
-
-        padding: 0 17px;
-
-        font-size: 10px;
-    }
-}
-
-
-/* =========================================================
-   RTL - SMALL MOBILE
-========================================================= */
-
-@media (max-width: 600px) {
-
-    html[dir="rtl"] .contact-hero-content {
-        text-align: right;
-        align-items: flex-start;
-    }
-
-
-    html[dir="rtl"] .contact-hero-actions {
-        direction: rtl;
-    }
-}
-
-
-/* =========================================================
-   EXTRA SMALL MOBILE
-   480px
-========================================================= */
-
-@media (max-width: 480px) {
-
-    .contact-hero {
-        padding: 70px 0 52px;
-    }
-
-
-    .contact-hero-container {
-        width: calc(100% - 24px);
-    }
-
-
-    /* EYEBROW */
-
-    .contact-hero-eyebrow {
-        margin-bottom: 12px;
-
-        font-size: 7.5px;
-
-        letter-spacing: 0.5px;
-    }
-
-
-    /* TITLE */
-
-    .contact-hero-title {
-        margin-bottom: 14px;
-
-        font-size: 26px;
-
-        line-height: 1.18;
-    }
-
-
-    /* DESCRIPTION */
-
-    .contact-hero-description {
-        margin-bottom: 20px;
-
-        font-size: 9px;
-
-        line-height: 1.6;
-    }
-
-
-    /* BUTTONS */
-
-    .contact-hero-actions {
-        gap: 7px;
-    }
-
-
-    .contact-hero-primary-btn,
-    .contact-hero-secondary-btn {
-        min-height: 44px;
-
-        padding: 0 14px;
-
-        font-size: 9px;
-    }
-
-
-    .contact-hero-primary-btn i {
-        font-size: 8px;
-    }
-}
-
-
-/* =========================================================
-   RTL - EXTRA SMALL
-========================================================= */
-
-@media (max-width: 480px) {
-
-    html[dir="rtl"] .contact-hero,
-    html[dir="rtl"] .contact-hero-container,
-    html[dir="rtl"] .contact-hero-content {
-        direction: rtl;
-    }
-
-
-    html[dir="rtl"] .contact-hero-content {
-        align-items: flex-start;
-        text-align: right;
-    }
-
-
-    html[dir="rtl"] .contact-hero-actions {
-        direction: rtl;
-    }
-}
-
-
-/* =========================================================
-   VERY SMALL MOBILE
-   380px
-========================================================= */
-
-@media (max-width: 380px) {
-
-    .contact-hero {
-        padding: 64px 0 48px;
-    }
-
-
-    .contact-hero-container {
-        width: calc(100% - 20px);
-    }
-
-
-    /* EYEBROW */
-
-    .contact-hero-eyebrow {
-        margin-bottom: 11px;
-
-        font-size: 7px;
-
-        letter-spacing: 0.45px;
-    }
-
-
-    /* TITLE */
-
-    .contact-hero-title {
-        margin-bottom: 12px;
-
-        font-size: 23px;
-
-        line-height: 1.18;
-    }
-
-
-    /* DESCRIPTION */
-
-    .contact-hero-description {
-        margin-bottom: 18px;
-
-        font-size: 8.5px;
-
-        line-height: 1.55;
-    }
-
-
-    /* BUTTONS */
-
-    .contact-hero-actions {
-        gap: 6px;
-    }
-
-
-    .contact-hero-primary-btn,
-    .contact-hero-secondary-btn {
-        min-height: 42px;
-
-        padding: 0 12px;
-
-        font-size: 8.5px;
-    }
-}
-
-
-/* =========================================================
-   RTL - VERY SMALL MOBILE
-========================================================= */
-
-@media (max-width: 380px) {
-
-    html[dir="rtl"] .contact-hero-content {
-        direction: rtl;
-
-        align-items: flex-start;
-
-        text-align: right;
-    }
-
-
-    html[dir="rtl"] .contact-hero-actions {
-        direction: rtl;
-    }
-}
-
-
-/* =========================================================
-   REDUCED MOTION
-========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    .contact-hero,
-    .contact-hero-primary-btn,
-    .contact-hero-secondary-btn,
-    .contact-hero-primary-btn i {
-        transition: none;
-    }
-
-
-    .contact-hero-primary-btn:hover,
-    .contact-hero-secondary-btn:hover {
-        transform: none;
-    }
-}
 
 /* =========================================================
    CONTACT US MAIN SECTION
@@ -44256,87 +43201,69 @@ html[dir="rtl"] .pricing-hero-primary-btn i {
 
 /* =========================================================
    CONTACT HERO
-   PART 3 - DARK MODE + RTL + RESPONSIVE
+   PART 3 - OVERRIDE CSS
+   Dark Mode + RTL + Responsive
 ========================================================= */
 
 
 /* =========================================================
-   DARK MODE
+   DESKTOP OVERRIDE
+========================================================= */
+
+.contact-hero {
+    overflow: hidden;
+}
+
+.contact-hero-content {
+    align-items: center;
+}
+
+.contact-hero-text {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   DARK MODE OVERRIDE
 ========================================================= */
 
 html.dark-mode .contact-hero {
     background: var(--background-color);
 }
 
-
-/* Heading */
-
 html.dark-mode .contact-hero-title {
     color: #ffffff;
 }
 
-
-/* Description */
-
-html.dark-mode .contact-hero-description {
-    color: #b8c9c7;
-}
-
-
-/* Trust points */
-
+html.dark-mode .contact-hero-description,
 html.dark-mode .contact-hero-point {
     color: #b8c9c7;
 }
 
-html.dark-mode .contact-hero-point i {
-    color: var(--primary-color);
-}
-
-
-/* Secondary button */
-
 html.dark-mode .contact-hero-secondary-btn {
     color: #ffffff;
-
-    border-color: rgba(255, 255, 255, 0.20);
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.22);
 }
 
 html.dark-mode .contact-hero-secondary-btn:hover {
     color: var(--primary-color);
-
     border-color: var(--primary-color);
 }
 
 
-/* Main image */
-
-html.dark-mode .contact-hero-image {
-    border-color: rgba(91, 190, 181, 0.25);
-
-    box-shadow:
-        0 25px 60px rgba(0, 0, 0, 0.35);
-}
-
-
-/* =========================================================
-   FLOATING CARD - DARK MODE
-========================================================= */
+/* Floating card */
 
 html.dark-mode .contact-hero-floating-card {
     background: #162825;
-
-    border-color: rgba(91, 190, 181, 0.30);
-
-    box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.40);
+    border-color: rgba(91, 190, 181, 0.35);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.40);
 }
-
 
 html.dark-mode .contact-hero-floating-content strong {
     color: #ffffff;
 }
-
 
 html.dark-mode .contact-hero-floating-content span {
     color: #b8c9c7;
@@ -44344,78 +43271,43 @@ html.dark-mode .contact-hero-floating-content span {
 
 
 /* =========================================================
-   24/7 BADGE - DARK MODE
-========================================================= */
-
-html.dark-mode .contact-hero-badge {
-    border-color: var(--background-color);
-
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.40);
-}
-
-
-/* =========================================================
-   RTL MODE
+   RTL OVERRIDE
 ========================================================= */
 
 html[dir="rtl"] .contact-hero {
     direction: rtl;
 }
 
-
 html[dir="rtl"] .contact-hero-content {
     direction: rtl;
 }
-
 
 html[dir="rtl"] .contact-hero-text {
     text-align: right;
 }
 
-
 html[dir="rtl"] .contact-hero-description {
     text-align: right;
 }
 
-
-/* Trust points */
-
 html[dir="rtl"] .contact-hero-points {
     direction: rtl;
 }
-
-
-html[dir="rtl"] .contact-hero-point {
-    direction: rtl;
-}
-
-
-/* Buttons */
 
 html[dir="rtl"] .contact-hero-actions {
     direction: rtl;
 }
 
 
-/* Arrow */
-
-html[dir="rtl"] .contact-hero-primary-btn i {
-    transform: rotate(180deg);
-}
-
-
-/* Floating card */
+/* Move floating card to opposite side */
 
 html[dir="rtl"] .contact-hero-floating-card {
     left: auto;
     right: -45px;
-
-    direction: rtl;
 }
 
 
-/* Badge */
+/* Move badge */
 
 html[dir="rtl"] .contact-hero-badge {
     right: auto;
@@ -44423,83 +43315,62 @@ html[dir="rtl"] .contact-hero-badge {
 }
 
 
+/* Arrow direction */
+
+html[dir="rtl"] .contact-hero-primary-btn i {
+    transform: rotate(180deg);
+}
+
+
 /* =========================================================
-   TABLET
+   TABLET OVERRIDE
 ========================================================= */
 
 @media (max-width: 1000px) {
 
     .contact-hero {
         min-height: auto;
-
-        padding: 90px 28px 80px;
+        padding: 85px 28px 75px;
     }
-
 
     .contact-hero-content {
         grid-template-columns: 1fr;
-
-        gap: 65px;
+        gap: 60px;
     }
-
 
     .contact-hero-text {
-        max-width: 750px;
-
+        max-width: 760px;
         margin: 0 auto;
-
         text-align: center;
     }
-
-
-    .contact-hero-eyebrow {
-        margin-bottom: 18px;
-    }
-
 
     .contact-hero-title {
-        font-size: clamp(48px, 8vw, 68px);
-
         text-align: center;
     }
-
 
     .contact-hero-description {
-        max-width: 680px;
-
         margin-left: auto;
         margin-right: auto;
-
         text-align: center;
     }
-
 
     .contact-hero-points {
         justify-content: center;
     }
 
-
     .contact-hero-actions {
         justify-content: center;
     }
-
 
     .contact-hero-visual {
         min-height: 450px;
     }
 
 
-    .contact-hero-image-card {
-        max-width: 520px;
-    }
-
-
     /* RTL tablet */
 
-    html[dir="rtl"] .contact-hero-text {
-        text-align: center;
-    }
-
+    html[dir="rtl"] .contact-hero-text,
+    html[dir="rtl"] .contact-hero-title,
     html[dir="rtl"] .contact-hero-description {
         text-align: center;
     }
@@ -44507,17 +43378,17 @@ html[dir="rtl"] .contact-hero-badge {
 
 
 /* =========================================================
-   MOBILE
+   MOBILE OVERRIDE
 ========================================================= */
 
 @media (max-width: 600px) {
 
     .contact-hero {
-        width: 100%;
-
         min-height: auto;
 
-        padding: 95px 16px 55px;
+        width: 100%;
+
+        padding: 90px 16px 50px;
 
         box-sizing: border-box;
     }
@@ -44533,15 +43404,15 @@ html[dir="rtl"] .contact-hero-badge {
 
         flex-direction: column;
 
-        gap: 45px;
-
         width: 100%;
+
+        gap: 42px;
     }
 
 
-    /* =====================================================
+    /* -----------------------------------------------------
        TEXT
-    ===================================================== */
+    ----------------------------------------------------- */
 
     .contact-hero-text {
         width: 100%;
@@ -44553,7 +43424,7 @@ html[dir="rtl"] .contact-hero-badge {
 
 
     .contact-hero-eyebrow {
-        margin-bottom: 14px;
+        margin-bottom: 13px;
 
         font-size: 11px;
 
@@ -44564,7 +43435,7 @@ html[dir="rtl"] .contact-hero-badge {
     .contact-hero-title {
         width: 100%;
 
-        margin: 0 0 18px;
+        margin-bottom: 17px;
 
         font-size: 40px;
 
@@ -44586,7 +43457,7 @@ html[dir="rtl"] .contact-hero-badge {
 
         max-width: 100%;
 
-        margin: 0 auto 24px;
+        margin: 0 auto 23px;
 
         font-size: 14px;
 
@@ -44596,9 +43467,9 @@ html[dir="rtl"] .contact-hero-badge {
     }
 
 
-    /* =====================================================
-       POINTS
-    ===================================================== */
+    /* -----------------------------------------------------
+       TRUST POINTS
+    ----------------------------------------------------- */
 
     .contact-hero-points {
         width: 100%;
@@ -44609,9 +43480,9 @@ html[dir="rtl"] .contact-hero-badge {
 
         align-items: center;
 
-        gap: 10px;
+        gap: 9px;
 
-        margin-bottom: 27px;
+        margin-bottom: 25px;
     }
 
 
@@ -44622,9 +43493,9 @@ html[dir="rtl"] .contact-hero-badge {
     }
 
 
-    /* =====================================================
+    /* -----------------------------------------------------
        BUTTONS
-    ===================================================== */
+    ----------------------------------------------------- */
 
     .contact-hero-actions {
         width: 100%;
@@ -44633,9 +43504,9 @@ html[dir="rtl"] .contact-hero-badge {
 
         flex-direction: column;
 
-        align-items: stretch;
-
         gap: 10px;
+
+        align-items: stretch;
     }
 
 
@@ -44645,17 +43516,19 @@ html[dir="rtl"] .contact-hero-badge {
 
         min-height: 52px;
 
-        padding: 0 20px;
+        padding: 0 18px;
 
         box-sizing: border-box;
+
+        justify-content: center;
 
         font-size: 14px;
     }
 
 
-    /* =====================================================
-       VISUAL
-    ===================================================== */
+    /* -----------------------------------------------------
+       IMAGE
+    ----------------------------------------------------- */
 
     .contact-hero-visual {
         width: 100%;
@@ -44681,23 +43554,25 @@ html[dir="rtl"] .contact-hero-badge {
     }
 
 
-    /* =====================================================
+    /* -----------------------------------------------------
        FLOATING CARD
-    ===================================================== */
+    ----------------------------------------------------- */
 
     .contact-hero-floating-card {
         left: 10px;
         right: 10px;
 
-        bottom: 15px;
+        bottom: 14px;
 
         width: auto;
 
-        padding: 14px;
+        padding: 13px;
 
-        gap: 12px;
+        gap: 11px;
 
         border-radius: 14px;
+
+        box-sizing: border-box;
     }
 
 
@@ -44721,12 +43596,13 @@ html[dir="rtl"] .contact-hero-badge {
     }
 
 
-    /* =====================================================
+    /* -----------------------------------------------------
        24/7 BADGE
-    ===================================================== */
+    ----------------------------------------------------- */
 
     .contact-hero-badge {
-        top: -12px;
+        top: -10px;
+
         right: 5px;
 
         width: 78px;
@@ -44751,29 +43627,23 @@ html[dir="rtl"] .contact-hero-badge {
     }
 
 
-    /* =====================================================
+    /* -----------------------------------------------------
        RTL MOBILE
-    ===================================================== */
+    ----------------------------------------------------- */
 
-    html[dir="rtl"] .contact-hero-text {
-        text-align: center;
-    }
-
-
+    html[dir="rtl"] .contact-hero-text,
+    html[dir="rtl"] .contact-hero-title,
     html[dir="rtl"] .contact-hero-description {
         text-align: center;
     }
-
 
     html[dir="rtl"] .contact-hero-points {
         align-items: center;
     }
 
-
     html[dir="rtl"] .contact-hero-actions {
         flex-direction: column;
     }
-
 
     html[dir="rtl"] .contact-hero-floating-card {
         left: 10px;
@@ -44781,7 +43651,6 @@ html[dir="rtl"] .contact-hero-badge {
 
         direction: rtl;
     }
-
 
     html[dir="rtl"] .contact-hero-badge {
         left: 5px;
@@ -44797,40 +43666,33 @@ html[dir="rtl"] .contact-hero-badge {
 @media (max-width: 380px) {
 
     .contact-hero {
-        padding: 85px 14px 45px;
+        padding: 80px 14px 45px;
     }
-
 
     .contact-hero-title {
         font-size: 34px;
     }
 
-
     .contact-hero-description {
         font-size: 13px;
     }
-
 
     .contact-hero-point {
         font-size: 12px;
     }
 
-
     .contact-hero-visual {
         min-height: 280px;
     }
-
 
     .contact-hero-image-card {
         height: 280px;
     }
 
-
     .contact-hero-badge {
         width: 68px;
         height: 68px;
     }
-
 
     .contact-hero-badge strong {
         font-size: 17px;

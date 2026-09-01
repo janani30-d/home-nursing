@@ -126,6 +126,10 @@ mobileDropdownToggles.forEach(function (toggle) {
     });
 
 });
+
+
+
+
     /* =====================================================
        DARK MODE
     ===================================================== */
@@ -652,289 +656,278 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
 /* =========================================================
-   GLOBAL THEME CONTROLLER
-   DARK MODE + RTL
-   Shared across ALL pages
+   GLOBAL THEME + RTL SYNC
+   Keeps header, login, register and Get Care Now controls matched.
 ========================================================= */
 
 (function () {
 
-    /* =====================================================
-       GET SAVED SETTINGS
-    ===================================================== */
+    const html = document.documentElement;
 
-    const savedDarkMode =
-        localStorage.getItem("darkMode") === "true";
+    const themeKeys = [
+        "siteTheme",
+        "theme"
+    ];
 
-    const savedRTL =
-        localStorage.getItem("rtlMode") === "true";
+    const directionKeys = [
+        "siteDirection",
+        "direction"
+    ];
+
+    const oldDarkModeKey = "darkMode";
+    const oldRtlModeKey = "rtlMode";
+
+    const themeSelector =
+        ".theme-toggle, #authDarkModeBtn, #careDarkModeBtn";
+
+    const rtlSelector =
+        ".rtl-toggle, #authRtlBtn, #careRtlBtn";
 
 
-    /* =====================================================
-       APPLY DARK MODE IMMEDIATELY
-    ===================================================== */
+    function getSavedTheme() {
 
-    if (savedDarkMode) {
-        document.documentElement.classList.add("dark-mode");
-    } else {
-        document.documentElement.classList.remove("dark-mode");
+        const siteTheme =
+            localStorage.getItem("siteTheme");
+
+        const authTheme =
+            localStorage.getItem("theme");
+
+        const oldDarkMode =
+            localStorage.getItem(oldDarkModeKey);
+
+        if (siteTheme === "dark" || siteTheme === "light") {
+            return siteTheme;
+        }
+
+        if (authTheme === "dark" || authTheme === "light") {
+            return authTheme;
+        }
+
+        if (oldDarkMode === "true") {
+            return "dark";
+        }
+
+        if (oldDarkMode === "false") {
+            return "light";
+        }
+
+        return html.classList.contains("dark-mode")
+            ? "dark"
+            : "light";
     }
 
 
-    /* =====================================================
-       APPLY RTL IMMEDIATELY
-    ===================================================== */
+    function getSavedDirection() {
 
-    document.documentElement.setAttribute(
-        "dir",
-        savedRTL ? "rtl" : "ltr"
-    );
+        const siteDirection =
+            localStorage.getItem("siteDirection");
+
+        const authDirection =
+            localStorage.getItem("direction");
+
+        const oldRtlMode =
+            localStorage.getItem(oldRtlModeKey);
+
+        if (siteDirection === "rtl" || siteDirection === "ltr") {
+            return siteDirection;
+        }
+
+        if (authDirection === "rtl" || authDirection === "ltr") {
+            return authDirection;
+        }
+
+        if (oldRtlMode === "true") {
+            return "rtl";
+        }
+
+        if (oldRtlMode === "false") {
+            return "ltr";
+        }
+
+        return html.getAttribute("dir") === "rtl"
+            ? "rtl"
+            : "ltr";
+    }
 
 
-    /* =====================================================
-       WAIT FOR PAGE
-    ===================================================== */
+    function saveTheme(theme) {
 
-    document.addEventListener("DOMContentLoaded", function () {
+        themeKeys.forEach(function (key) {
+            localStorage.setItem(key, theme);
+        });
 
-        /* -------------------------------------------------
-           FIND DARK MODE BUTTONS
-           Works with your different pages
-        ------------------------------------------------- */
-
-        const darkButtons = document.querySelectorAll(
-            "#careDarkModeBtn, #darkModeBtn, .dark-mode-btn"
+        localStorage.setItem(
+            oldDarkModeKey,
+            theme === "dark" ? "true" : "false"
         );
+    }
 
 
-        /* -------------------------------------------------
-           FIND RTL BUTTONS
-        ------------------------------------------------- */
+    function saveDirection(direction) {
 
-        const rtlButtons = document.querySelectorAll(
-            "#careRtlBtn, #rtlBtn, .rtl-btn"
+        directionKeys.forEach(function (key) {
+            localStorage.setItem(key, direction);
+        });
+
+        localStorage.setItem(
+            oldRtlModeKey,
+            direction === "rtl" ? "true" : "false"
         );
+    }
 
 
-        /* =================================================
-           UPDATE DARK MODE BUTTON
-        ================================================= */
+    function updateThemeButtons(isDark) {
 
-        function updateDarkButtons() {
+        document
+            .querySelectorAll(themeSelector)
+            .forEach(function (button) {
 
-            const isDark =
-                document.documentElement.classList.contains(
-                    "dark-mode"
-                );
+                const icon = button.querySelector("i");
+                const text = button.querySelector("span");
 
-            darkButtons.forEach(function (button) {
+                button.classList.toggle("active", isDark);
 
-                button.classList.toggle(
-                    "active",
+                button.setAttribute(
+                    "aria-label",
                     isDark
+                        ? "Switch to light mode"
+                        : "Switch to dark mode"
                 );
 
-                const icon =
-                    button.querySelector("i");
+                button.setAttribute(
+                    "title",
+                    isDark ? "Light mode" : "Dark mode"
+                );
 
                 if (icon) {
-
                     icon.className = isDark
                         ? "fas fa-sun"
                         : "fas fa-moon";
                 }
 
+                if (text) {
+                    text.textContent = isDark
+                        ? "Light Mode"
+                        : "Dark Mode";
+                }
             });
-        }
-
-
-        /* =================================================
-           UPDATE RTL BUTTON
-        ================================================= */
-
-        function updateRTLButtons() {
-
-            const isRTL =
-                document.documentElement.getAttribute(
-                    "dir"
-                ) === "rtl";
-
-            rtlButtons.forEach(function (button) {
-
-                button.classList.toggle(
-                    "active",
-                    isRTL
-                );
-
-                const icon =
-                    button.querySelector("i");
-
-                if (icon) {
-
-                    icon.className = isRTL
-                        ? "fas fa-align-left"
-                        : "fas fa-align-right";
-                }
-
-            });
-        }
-
-
-        /* =================================================
-           APPLY INITIAL BUTTON STATE
-        ================================================= */
-
-        updateDarkButtons();
-        updateRTLButtons();
-
-
-        /* =================================================
-           DARK MODE BUTTON
-        ================================================= */
-
-        darkButtons.forEach(function (button) {
-
-            button.addEventListener(
-                "click",
-                function () {
-
-                    const isDark =
-                        !document.documentElement.classList.contains(
-                            "dark-mode"
-                        );
-
-
-                    /* Apply */
-
-                    document.documentElement.classList.toggle(
-                        "dark-mode",
-                        isDark
-                    );
-
-
-                    /* Save globally */
-
-                    localStorage.setItem(
-                        "darkMode",
-                        isDark
-                    );
-
-
-                    /* Update button */
-
-                    updateDarkButtons();
-
-                }
-            );
-
-        });
-
-
-        /* =================================================
-           RTL BUTTON
-        ================================================= */
-
-        rtlButtons.forEach(function (button) {
-
-            button.addEventListener(
-                "click",
-                function () {
-
-                    const isRTL =
-                        document.documentElement.getAttribute(
-                            "dir"
-                        ) !== "rtl";
-
-
-                    /* Apply */
-
-                    document.documentElement.setAttribute(
-                        "dir",
-                        isRTL ? "rtl" : "ltr"
-                    );
-
-
-                    /* Save globally */
-
-                    localStorage.setItem(
-                        "rtlMode",
-                        isRTL
-                    );
-
-
-                    /* Update button */
-
-                    updateRTLButtons();
-
-                }
-            );
-
-        });
-
-    });
-
-})();
-
-
-/* =========================================================
-   SCROLL TO TOP
-========================================================= */
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const scrollTop = document.getElementById("scrollTop");
-
-    if (!scrollTop) return;
-
-
-    /* =====================================================
-       SHOW / HIDE BUTTON
-    ===================================================== */
-
-    function toggleScrollTop() {
-
-        if (window.scrollY > 300) {
-            scrollTop.classList.add("show");
-        } else {
-            scrollTop.classList.remove("show");
-        }
-
     }
 
 
-    /* =====================================================
-       SCROLL EVENT
-    ===================================================== */
+    function updateRtlButtons(isRtl) {
 
-    window.addEventListener(
-        "scroll",
-        toggleScrollTop,
-        { passive: true }
-    );
+        document
+            .querySelectorAll(rtlSelector)
+            .forEach(function (button) {
 
+                const icon = button.querySelector("i");
 
-    /* =====================================================
-       CLICK → SCROLL TO TOP
-    ===================================================== */
+                button.classList.toggle("active", isRtl);
 
-    scrollTop.addEventListener(
-        "click",
-        function () {
+                button.setAttribute(
+                    "aria-label",
+                    isRtl
+                        ? "Switch to LTR mode"
+                        : "Switch to RTL mode"
+                );
 
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
+                button.setAttribute(
+                    "title",
+                    isRtl ? "LTR mode" : "RTL mode"
+                );
+
+                if (icon) {
+                    icon.className = isRtl
+                        ? "fas fa-align-left"
+                        : "fas fa-align-right";
+                }
             });
+    }
 
+
+    function applyTheme(theme) {
+
+        const isDark = theme === "dark";
+
+        html.classList.toggle("dark-mode", isDark);
+        saveTheme(theme);
+        updateThemeButtons(isDark);
+    }
+
+
+    function applyDirection(direction) {
+
+        const isRtl = direction === "rtl";
+
+        html.setAttribute("dir", isRtl ? "rtl" : "ltr");
+        saveDirection(isRtl ? "rtl" : "ltr");
+        updateRtlButtons(isRtl);
+    }
+
+
+    function syncSavedControls() {
+
+        applyTheme(getSavedTheme());
+        applyDirection(getSavedDirection());
+    }
+
+
+    function handleSyncedControlClick(event) {
+
+        const clickedElement =
+            event.target;
+
+        if (!clickedElement || !clickedElement.closest) return;
+
+        const themeButton =
+            clickedElement.closest(themeSelector);
+
+        const rtlButton =
+            clickedElement.closest(rtlSelector);
+
+        if (!themeButton && !rtlButton) return;
+
+        event.preventDefault();
+        event.stopImmediatePropagation();
+
+        if (themeButton) {
+
+            applyTheme(
+                html.classList.contains("dark-mode")
+                    ? "light"
+                    : "dark"
+            );
+
+            return;
         }
+
+        applyDirection(
+            html.getAttribute("dir") === "rtl"
+                ? "ltr"
+                : "rtl"
+        );
+    }
+
+
+    document.addEventListener(
+        "click",
+        handleSyncedControlClick,
+        true
     );
 
+    if (document.readyState === "loading") {
 
-    /* =====================================================
-       INITIAL CHECK
-    ===================================================== */
+        document.addEventListener(
+            "DOMContentLoaded",
+            syncSavedControls
+        );
 
-    toggleScrollTop();
+    } else {
 
-});
+        syncSavedControls();
+    }
+
+})();
+
