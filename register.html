@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareNest | Compassionate Home Nursing & Healthcare</title>
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+<!-- =========================================================
+     AUTH CONTROLS
+========================================================= -->
+
+<div class="auth-controls">
+
+    <!-- DARK MODE -->
+    <button
+        type="button"
+        class="auth-control-btn"
+        id="authDarkModeBtn"
+        aria-label="Toggle dark mode"
+        title="Dark mode"
+    >
+        <i class="fas fa-moon"></i>
+    </button>
+
+
+    <!-- RTL MODE -->
+    <button
+        type="button"
+        class="auth-control-btn"
+        id="authRtlBtn"
+        aria-label="Toggle RTL mode"
+        title="RTL mode"
+    >
+        <i class="fas fa-align-right"></i>
+    </button>
+
+</div>
+<!-- =========================================================
+     REGISTER PAGE
+========================================================= -->
+
+<main class="register-page">
+
+    <section class="register-section">
+
+        <div class="register-container">
+
+            <!-- =================================================
+                 REGISTER CARD
+            ================================================== -->
+
+            <div class="register-card">
+
+                <!-- =================================================
+                     LOGO
+                ================================================== -->
+
+                <div class="register-logo">
+
+                    <a href="home1.html">
+
+                        <img
+                            src="images/logo.png"
+                            alt="HomeNursing & Patient Care Agency"
+                        >
+
+                    </a>
+
+                </div>
+
+
+                <!-- =================================================
+                     REGISTER HEADER
+                ================================================== -->
+
+                <div class="register-header">
+
+                    <span class="register-eyebrow">
+                        GET STARTED
+                    </span>
+
+                    <h1 class="register-title">
+                        Create Your Account
+                    </h1>
+
+                    <p class="register-description">
+                        Create your account to manage care services
+                        and stay connected with your care team.
+                    </p>
+
+                </div>
+
+
+                <!-- =================================================
+                     REGISTER FORM
+                ================================================== -->
+
+                <form
+                    class="register-form"
+                    id="registerForm"
+                >
+
+                    <!-- =================================================
+                         FULL NAME
+                    ================================================== -->
+
+                    <div class="register-form-group">
+
+                        <label for="register-name">
+                            Full Name
+                        </label>
+
+                        <div class="register-input-wrapper">
+
+                            <i class="fas fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="register-name"
+                                name="name"
+                                placeholder="Enter your full name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         EMAIL
+                    ================================================== -->
+
+                    <div class="register-form-group">
+
+                        <label for="register-email">
+                            Email Address
+                        </label>
+
+                        <div class="register-input-wrapper">
+
+                            <i class="fas fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="register-email"
+                                name="email"
+                                placeholder="Enter your email address"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PHONE
+                    ================================================== -->
+
+                    <div class="register-form-group">
+
+                        <label for="register-phone">
+                            Phone Number
+                        </label>
+
+                        <div class="register-input-wrapper">
+
+                            <i class="fas fa-phone"></i>
+
+                            <input
+                                type="tel"
+                                id="register-phone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                autocomplete="tel"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         PASSWORD
+                    ================================================== -->
+
+                    <div class="register-form-group">
+
+                        <label for="register-password">
+                            Password
+                        </label>
+
+                        <div class="register-input-wrapper">
+
+                            <i class="fas fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="register-password"
+                                name="password"
+                                placeholder="Create a password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="register-password-toggle"
+                                aria-label="Show password"
+                            >
+                                <i class="fas fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         CONFIRM PASSWORD
+                    ================================================== -->
+
+                    <div class="register-form-group">
+
+                        <label for="register-confirm-password">
+                            Confirm Password
+                        </label>
+
+                        <div class="register-input-wrapper">
+
+                            <i class="fas fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="register-confirm-password"
+                                name="confirm-password"
+                                placeholder="Confirm your password"
+                                autocomplete="new-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="register-password-toggle"
+                                aria-label="Show password"
+                            >
+                                <i class="fas fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         TERMS
+                    ================================================== -->
+
+                    <div class="register-options">
+
+                        <label class="register-terms">
+
+                            <input
+                                type="checkbox"
+                                id="register-terms"
+                                name="terms"
+                                required
+                            >
+
+                            <span class="register-checkbox"></span>
+
+                            <span>
+                                I agree to the
+                                <a href="#terms">
+                                    Terms & Conditions
+                                </a>
+                                and
+                                <a href="#privacy">
+                                    Privacy Policy
+                                </a>
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         CREATE ACCOUNT BUTTON
+                    ================================================== -->
+
+                    <button
+                        type="submit"
+                        class="register-submit-btn"
+                    >
+
+                        <span>
+                            Create Account
+                        </span>
+
+                        <i class="fas fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+
+                <!-- =================================================
+                     DIVIDER
+                ================================================== -->
+
+                <div class="register-divider">
+
+                    <span>
+                        or continue with
+                    </span>
+
+                </div>
+
+
+                <!-- =================================================
+                     SOCIAL REGISTER
+                ================================================== -->
+
+                <div class="register-social">
+
+                    <!-- GOOGLE -->
+
+                    <a
+                        href="#"
+                        class="register-social-btn register-google"
+                        aria-label="Continue with Google"
+                    >
+
+                        <svg
+                            class="google-logo"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+
+                            <path
+                                d="M21.35 12.27c0-.71-.06-1.4-.18-2.06H12v3.9h5.24a4.48 4.48 0 0 1-1.94 2.94v2.45h3.14c1.84-1.69 2.91-4.18 2.91-7.23Z"
+                                fill="#4285F4"
+                            />
+
+                            <path
+                                d="M12 21.67c2.63 0 4.84-.87 6.45-2.36l-3.14-2.45c-.87.58-1.98.93-3.31.93-2.54 0-4.69-1.72-5.46-4.03H3.3v2.53A9.74 9.74 0 0 0 12 21.67Z"
+                                fill="#34A853"
+                            />
+
+                            <path
+                                d="M6.54 13.76A5.85 5.85 0 0 1 6.23 12c0-.61.11-1.2.31-1.76V7.71H3.3A9.72 9.72 0 0 0 2.27 12c0 1.57.38 3.05 1.03 4.29l3.24-2.53Z"
+                                fill="#FBBC05"
+                            />
+
+                            <path
+                                d="M12 6.21c1.43 0 2.71.49 3.72 1.46l2.79-2.79C16.84 3.29 14.63 2.33 12 2.33a9.74 9.74 0 0 0-8.7 5.38l3.24 2.53C7.31 7.93 9.46 6.21 12 6.21Z"
+                                fill="#EA4335"
+                            />
+
+                        </svg>
+
+                        <span>
+                            Google
+                        </span>
+
+                    </a>
+
+
+                    <!-- FACEBOOK -->
+
+                    <a
+                        href="#"
+                        class="register-social-btn register-facebook"
+                        aria-label="Continue with Facebook"
+                    >
+
+                        <i class="fab fa-facebook-f"></i>
+
+                        <span>
+                            Facebook
+                        </span>
+
+                    </a>
+
+
+                    <!-- APPLE -->
+
+                    <a
+                        href="#"
+                        class="register-social-btn register-apple"
+                        aria-label="Continue with Apple"
+                    >
+
+                        <i class="fab fa-apple"></i>
+
+                        <span>
+                            Apple
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- =================================================
+                     LOGIN LINK
+                ================================================== -->
+
+                <div class="register-login">
+
+                    <span>
+                        Already have an account?
+                    </span>
+
+                    <a href="login.html">
+                        Sign In
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+
+
+<script>
+/* =========================================================
+   AUTH CONTROL
+   DARK MODE + RTL MODE
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const darkModeBtn = document.getElementById("authDarkModeBtn");
+    const rtlBtn = document.getElementById("authRtlBtn");
+
+    const html = document.documentElement;
+
+
+    /* =====================================================
+       DARK MODE
+    ===================================================== */
+
+    function updateDarkModeButton() {
+
+        if (!darkModeBtn) return;
+
+        const icon = darkModeBtn.querySelector("i");
+
+        if (html.classList.contains("dark-mode")) {
+
+            darkModeBtn.classList.add("active");
+
+            darkModeBtn.setAttribute(
+                "aria-label",
+                "Switch to light mode"
+            );
+
+            darkModeBtn.setAttribute(
+                "title",
+                "Light mode"
+            );
+
+            if (icon) {
+                icon.className = "fas fa-sun";
+            }
+
+        } else {
+
+            darkModeBtn.classList.remove("active");
+
+            darkModeBtn.setAttribute(
+                "aria-label",
+                "Switch to dark mode"
+            );
+
+            darkModeBtn.setAttribute(
+                "title",
+                "Dark mode"
+            );
+
+            if (icon) {
+                icon.className = "fas fa-moon";
+            }
+        }
+    }
+
+
+    /* =====================================================
+       RTL BUTTON
+    ===================================================== */
+
+    function updateRtlButton() {
+
+        if (!rtlBtn) return;
+
+        const icon = rtlBtn.querySelector("i");
+
+        const isRTL = html.getAttribute("dir") === "rtl";
+
+        if (isRTL) {
+
+            rtlBtn.classList.add("active");
+
+            rtlBtn.setAttribute(
+                "aria-label",
+                "Switch to LTR mode"
+            );
+
+            rtlBtn.setAttribute(
+                "title",
+                "LTR mode"
+            );
+
+            if (icon) {
+                icon.className = "fas fa-align-left";
+            }
+
+        } else {
+
+            rtlBtn.classList.remove("active");
+
+            rtlBtn.setAttribute(
+                "aria-label",
+                "Switch to RTL mode"
+            );
+
+            rtlBtn.setAttribute(
+                "title",
+                "RTL mode"
+            );
+
+            if (icon) {
+                icon.className = "fas fa-align-right";
+            }
+        }
+    }
+
+
+    /* =====================================================
+       LOAD SAVED DARK MODE
+    ===================================================== */
+
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+
+        html.classList.add("dark-mode");
+
+    } else {
+
+        html.classList.remove("dark-mode");
+    }
+
+
+    /* =====================================================
+       LOAD SAVED RTL
+    ===================================================== */
+
+    const savedDirection = localStorage.getItem("direction");
+
+    if (savedDirection === "rtl") {
+
+        html.setAttribute("dir", "rtl");
+
+    } else {
+
+        html.setAttribute("dir", "ltr");
+    }
+
+
+    /* =====================================================
+       INITIAL BUTTON STATE
+    ===================================================== */
+
+    updateDarkModeButton();
+    updateRtlButton();
+
+
+    /* =====================================================
+       DARK MODE CLICK
+    ===================================================== */
+
+    if (darkModeBtn) {
+
+        darkModeBtn.addEventListener("click", function () {
+
+            html.classList.toggle("dark-mode");
+
+            const isDark =
+                html.classList.contains("dark-mode");
+
+            localStorage.setItem(
+                "theme",
+                isDark ? "dark" : "light"
+            );
+
+            updateDarkModeButton();
+        });
+    }
+
+
+    /* =====================================================
+       RTL CLICK
+    ===================================================== */
+
+    if (rtlBtn) {
+
+        rtlBtn.addEventListener("click", function () {
+
+            const isRTL =
+                html.getAttribute("dir") === "rtl";
+
+            if (isRTL) {
+
+                html.setAttribute("dir", "ltr");
+
+                localStorage.setItem(
+                    "direction",
+                    "ltr"
+                );
+
+            } else {
+
+                html.setAttribute("dir", "rtl");
+
+                localStorage.setItem(
+                    "direction",
+                    "rtl"
+                );
+            }
+
+            updateRtlButton();
+        });
+    }
+
+});
+</script>
+<script>
+(function () {
+
+    const theme = localStorage.getItem("theme");
+    const direction = localStorage.getItem("direction");
+
+    if (theme === "dark") {
+        document.documentElement.classList.add("dark-mode");
+    }
+
+    document.documentElement.setAttribute(
+        "dir",
+        direction === "rtl" ? "rtl" : "ltr"
+    );
+
+})();
+</script>
+ <script src="js/script.js"></script>
+
+</body>
+</html>

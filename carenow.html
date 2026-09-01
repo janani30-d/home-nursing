@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareNest | Compassionate Home Nursing & Healthcare</title>
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- =========================================================
+     GET CARE NOW PAGE
+     LOGO + DARK MODE + RTL + FORM ONLY
+========================================================= -->
+
+<main class="care-request-page">
+
+    <!-- =====================================================
+         TOP LOGO
+    ====================================================== -->
+
+    <div class="care-request-top">
+
+        <a href="home1.html" class="care-request-logo">
+
+            <img
+                src="images/logo.png"
+                alt="HomeNursing & Patient Care Agency"
+            >
+
+        </a>
+
+    </div>
+
+
+    <!-- =====================================================
+         AUTH / PAGE CONTROLS
+         OUTSIDE THE FORM CARD
+    ====================================================== -->
+
+    <div class="care-request-controls">
+
+        <!-- DARK MODE -->
+        <button
+            type="button"
+            class="care-request-control-btn"
+            id="careDarkModeBtn"
+            aria-label="Toggle dark mode"
+            title="Dark mode"
+        >
+            <i class="fas fa-moon"></i>
+        </button>
+
+
+        <!-- RTL -->
+        <button
+            type="button"
+            class="care-request-control-btn"
+            id="careRtlBtn"
+            aria-label="Toggle RTL mode"
+            title="RTL mode"
+        >
+            <i class="fas fa-align-right"></i>
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         FORM SECTION
+    ====================================================== -->
+
+    <section class="care-request-section">
+
+        <div class="care-request-container">
+
+            <!-- =================================================
+                 FORM CARD
+            ================================================== -->
+
+            <div class="care-request-card">
+
+                <!-- FORM HEADER -->
+
+                <div class="care-request-header">
+
+                    <span class="care-request-eyebrow">
+                        GET STARTED WITH CARE
+                    </span>
+
+                    <h1 class="care-request-title">
+                        Request Care at Home
+                    </h1>
+
+                    <p class="care-request-description">
+                        Tell us what kind of care you need and our
+                        caring team will help you find the right
+                        support for you or your loved one.
+                    </p>
+
+                </div>
+
+
+                <!-- =================================================
+                     FORM
+                ================================================== -->
+
+                <form
+                    class="care-request-form"
+                    id="careRequestForm"
+                    action="#"
+                    method="post"
+                >
+
+                    <!-- NAME + PHONE -->
+
+                    <div class="care-request-row">
+
+                        <div class="care-form-group">
+
+                            <label for="careFullName">
+                                Full Name
+                            </label>
+
+                            <div class="care-input-wrapper">
+
+                                <i class="fas fa-user"></i>
+
+                                <input
+                                    type="text"
+                                    id="careFullName"
+                                    name="fullName"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="care-form-group">
+
+                            <label for="carePhone">
+                                Phone Number
+                            </label>
+
+                            <div class="care-input-wrapper">
+
+                                <i class="fas fa-phone"></i>
+
+                                <input
+                                    type="tel"
+                                    id="carePhone"
+                                    name="phone"
+                                    placeholder="Enter your phone number"
+                                    autocomplete="tel"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL + CARE TYPE -->
+
+                    <div class="care-request-row">
+
+                        <div class="care-form-group">
+
+                            <label for="careEmail">
+                                Email Address
+                            </label>
+
+                            <div class="care-input-wrapper">
+
+                                <i class="fas fa-envelope"></i>
+
+                                <input
+                                    type="email"
+                                    id="careEmail"
+                                    name="email"
+                                    placeholder="Enter your email address"
+                                    autocomplete="email"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="care-form-group">
+
+                            <label for="careType">
+                                Care Type
+                            </label>
+
+                            <div class="care-input-wrapper">
+
+                                <i class="fas fa-heart"></i>
+
+                                <select
+                                    id="careType"
+                                    name="careType"
+                                    required
+                                >
+
+                                    <option value="" selected disabled>
+                                        Select care type
+                                    </option>
+
+                                    <option value="elderly-care">
+                                        Elderly Care
+                                    </option>
+
+                                    <option value="post-hospital-care">
+                                        Post-Hospital Care
+                                    </option>
+
+                                    <option value="daily-living-support">
+                                        Daily Living Support
+                                    </option>
+
+                                    <option value="personal-care">
+                                        Personal Care
+                                    </option>
+
+                                    <option value="nursing-care">
+                                        Nursing Care
+                                    </option>
+
+                                    <option value="companion-care">
+                                        Companion Care
+                                    </option>
+
+                                </select>
+
+                                <i class="fas fa-chevron-down care-select-icon"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DATE + TIME -->
+
+                    <div class="care-request-row">
+
+                        <div class="care-form-group">
+
+                            <label for="careDate">
+                                Preferred Date
+                            </label>
+
+                            <div class="care-input-wrapper">
+
+                                <i class="fas fa-calendar"></i>
+
+                                <input
+                                    type="date"
+                                    id="careDate"
+                                    name="preferredDate"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="care-form-group">
+
+                            <label for="careTime">
+                                Preferred Time
+                            </label>
+
+                            <div class="care-input-wrapper">
+
+                                <i class="fas fa-clock"></i>
+
+                                <input
+                                    type="time"
+                                    id="careTime"
+                                    name="preferredTime"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="care-form-group care-message-group">
+
+                        <label for="careMessage">
+                            Tell Us About Your Care Needs
+                        </label>
+
+                        <div class="care-textarea-wrapper">
+
+                            <i class="fas fa-comment-medical"></i>
+
+                            <textarea
+                                id="careMessage"
+                                name="message"
+                                rows="5"
+                                placeholder="Please tell us about the care or support you need..."
+                            ></textarea>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PREFERRED CONTACT -->
+
+                    <div class="care-preferred-contact">
+
+                        <span class="care-contact-label">
+                            Preferred Contact Method
+                        </span>
+
+                        <div class="care-contact-options">
+
+                            <label class="care-radio-option">
+
+                                <input
+                                    type="radio"
+                                    name="contactMethod"
+                                    value="phone"
+                                    checked
+                                >
+
+                                <span class="care-radio"></span>
+
+                                <span>Phone</span>
+
+                            </label>
+
+
+                            <label class="care-radio-option">
+
+                                <input
+                                    type="radio"
+                                    name="contactMethod"
+                                    value="email"
+                                >
+
+                                <span class="care-radio"></span>
+
+                                <span>Email</span>
+
+                            </label>
+
+
+                            <label class="care-radio-option">
+
+                                <input
+                                    type="radio"
+                                    name="contactMethod"
+                                    value="whatsapp"
+                                >
+
+                                <span class="care-radio"></span>
+
+                                <span>WhatsApp</span>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+
+                    <div class="care-request-action">
+
+                        <button
+                            type="submit"
+                            class="care-request-submit"
+                        >
+
+                            <span>
+                                Request Care
+                            </span>
+
+                            <i class="fas fa-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- NOTE -->
+
+                    <p class="care-request-note">
+                        Our care team will contact you to discuss
+                        your requirements and available care options.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+<!-- JS -->
+ <script>
+/* =========================================================
+   GET CARE NOW
+   DARK MODE + RTL
+========================================================= */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const darkModeBtn =
+        document.getElementById("careDarkModeBtn");
+
+    const rtlBtn =
+        document.getElementById("careRtlBtn");
+
+
+    /* =====================================================
+       DARK MODE
+    ===================================================== */
+
+    function applyDarkMode(enabled) {
+
+        document.documentElement.classList.toggle(
+            "dark-mode",
+            enabled
+        );
+
+        if (darkModeBtn) {
+
+            darkModeBtn.classList.toggle(
+                "active",
+                enabled
+            );
+
+            const icon =
+                darkModeBtn.querySelector("i");
+
+            if (icon) {
+
+                icon.className = enabled
+                    ? "fas fa-sun"
+                    : "fas fa-moon";
+            }
+        }
+    }
+
+
+    /* =====================================================
+       RTL
+    ===================================================== */
+
+    function applyRTL(enabled) {
+
+        document.documentElement.setAttribute(
+            "dir",
+            enabled ? "rtl" : "ltr"
+        );
+
+        if (rtlBtn) {
+
+            rtlBtn.classList.toggle(
+                "active",
+                enabled
+            );
+
+            const icon =
+                rtlBtn.querySelector("i");
+
+            if (icon) {
+
+                icon.className = enabled
+                    ? "fas fa-align-left"
+                    : "fas fa-align-right";
+            }
+        }
+    }
+
+
+    /* =====================================================
+       LOAD SAVED DARK MODE
+    ===================================================== */
+
+    const savedDarkMode =
+        localStorage.getItem("darkMode") === "true";
+
+    applyDarkMode(savedDarkMode);
+
+
+    /* =====================================================
+       LOAD SAVED RTL
+    ===================================================== */
+
+    const savedRTL =
+        localStorage.getItem("rtlMode") === "true";
+
+    applyRTL(savedRTL);
+
+
+    /* =====================================================
+       DARK MODE BUTTON
+    ===================================================== */
+
+    if (darkModeBtn) {
+
+        darkModeBtn.addEventListener(
+            "click",
+            function () {
+
+                const enabled =
+                    !document.documentElement.classList.contains(
+                        "dark-mode"
+                    );
+
+                applyDarkMode(enabled);
+
+                localStorage.setItem(
+                    "darkMode",
+                    enabled
+                );
+            }
+        );
+    }
+
+
+    /* =====================================================
+       RTL BUTTON
+    ===================================================== */
+
+    if (rtlBtn) {
+
+        rtlBtn.addEventListener(
+            "click",
+            function () {
+
+                const enabled =
+                    document.documentElement.getAttribute(
+                        "dir"
+                    ) !== "rtl";
+
+                applyRTL(enabled);
+
+                localStorage.setItem(
+                    "rtlMode",
+                    enabled
+                );
+            }
+        );
+    }
+
+});
+</script>
+<!-- Scroll To Top Button -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
