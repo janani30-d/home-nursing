@@ -68,7 +68,86 @@ iframe {
     --nav-font-size: 15px;
     --dropdown-font-size: 14px;
     --button-font-size: 14px;
+/* =========================================================
+   PRICING + CONTACT HERO
+   MATCH CAREGIVERS FONT
+========================================================= */
 
+.pricing-hero,
+.pricing-hero *,
+.contact-hero,
+.contact-hero * {
+    font-family: var(--font-family) !important;
+}
+/* =========================================================
+   PRICING + CONTACT HERO ICON FIX
+   ========================================================= */
+
+/* Trust point icons */
+.pricing-hero-point i,
+.contact-hero-point i {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 20px !important;
+    height: 20px !important;
+
+    margin-right: 10px !important;
+
+    color: var(--primary-color) !important;
+    font-size: 13px !important;
+    flex-shrink: 0 !important;
+}
+
+
+/* Correct check icon */
+.pricing-hero-point .fa-circle-check::before,
+.contact-hero-point .fa-circle-check::before {
+    content: "\f058" !important;
+}
+
+
+/* Floating heart icon */
+.pricing-hero-floating-icon i,
+.contact-hero-floating-icon i {
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900 !important;
+    font-style: normal !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    color: #ffffff !important;
+    font-size: 22px !important;
+}
+
+
+/* Correct heart-pulse icon */
+.pricing-hero-floating-icon .fa-heart-pulse::before,
+.contact-hero-floating-icon .fa-heart-pulse::before {
+    content: "\f21e" !important;
+}
+/* =========================================================
+   PRICING + CONTACT HERO ICONS
+========================================================= */
+
+.pricing-hero-point i,
+.contact-hero-point i,
+.pricing-hero-primary-btn i,
+.contact-hero-primary-btn i,
+.contact-hero-secondary-btn i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Font Awesome 6 Free" !important;
+    font-weight: 900;
+}
 
     /* =========================
        HEADER
@@ -37378,3 +37457,24 @@ html.dark-mode .care-input-wrapper input[type="time"] {
 
 
 
+
+
+
+
+
+.pricing-hero-title,
+.contact-hero-title {
+    font-weight: 500 !important;
+}
+
+
+/* =========================================================
+   PRICING + CONTACT HERO TITLE
+========================================================= */
+
+.pricing-hero-title,
+.contact-hero-title {
+    font-size: 64px !important;
+    font-weight: 600 !important;
+    line-height: 1.1 !important;
+}
