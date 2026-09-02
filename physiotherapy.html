@@ -202,7 +202,7 @@
                 aria-label="Toggle RTL direction"
                 title="Toggle RTL"
             >
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <i class="fa-solid fa-right-left"></i>
                 <span>RTL</span>
             </button>
 
@@ -426,7 +426,7 @@
                     class="mobile-action-button rtl-toggle"
                     id="mobileRtlToggle"
                 >
-                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    <i class="fa-solid fa-right-left"></i>
                     <span>RTL</span>
                 </button>
 
@@ -676,51 +676,71 @@
      PART 1 - HTML
 ========================================================= -->
 
-<section class="physio-assistance-benefits">
+<section class="physio-assistance-benefits" id="physioBenefits">
 
     <div class="physio-assistance-benefits-container">
 
+
         <!-- =================================================
-             SECTION HEADER
+             SECTION INTRO
         ================================================== -->
 
-        <div class="physio-assistance-benefits-header">
+        <div class="physio-assistance-benefits-intro">
 
-            <span class="physio-assistance-benefits-subtitle">
-                Benefits of Home Physiotherapy Assistance
-            </span>
+            <div class="physio-assistance-benefits-heading">
 
-            <h2 class="physio-assistance-benefits-title">
-                Support That Makes Recovery Easier
-            </h2>
+                <span class="physio-assistance-benefits-subtitle">
+                    Benefits of Home Physiotherapy Assistance
+                </span>
 
-            <p class="physio-assistance-benefits-description">
-                Practical, compassionate assistance can help make
-                daily recovery routines more comfortable, organized,
-                and manageable at home.
-            </p>
+                <h2 class="physio-assistance-benefits-title">
+                    Support That Makes
+                    Recovery Easier
+                </h2>
+
+                <p class="physio-assistance-benefits-description">
+                    Practical, compassionate assistance can help make
+                    daily recovery routines more comfortable, organized,
+                    and manageable at home.
+                </p>
+
+            </div>
+
+
+            <!-- =================================================
+                 FEATURE IMAGE
+            ================================================== -->
+
+            <div class="physio-assistance-benefits-image">
+
+                <img
+                    src="images/physiotherapy-benefits.jpg"
+                    alt="Physiotherapy assistance at home"
+                >
+
+            </div>
 
         </div>
 
 
         <!-- =================================================
-             BENEFITS GRID
+             BENEFITS LIST
         ================================================== -->
 
-        <div class="physio-assistance-benefits-grid">
+        <div class="physio-assistance-benefits-list">
 
 
             <!-- =================================================
-                 BENEFIT 1
+                 BENEFIT 01
             ================================================== -->
 
-            <div class="physio-assistance-benefits-card">
+            <article class="physio-assistance-benefit-item">
 
-                <div class="physio-assistance-benefits-icon">
-                    <i class="fa-solid fa-person-walking"></i>
+                <div class="physio-assistance-benefit-number">
+                    01
                 </div>
 
-                <div class="physio-assistance-benefits-card-content">
+                <div class="physio-assistance-benefit-content">
 
                     <h3>
                         Better Mobility
@@ -733,20 +753,20 @@
 
                 </div>
 
-            </div>
+            </article>
 
 
             <!-- =================================================
-                 BENEFIT 2
+                 BENEFIT 02
             ================================================== -->
 
-            <div class="physio-assistance-benefits-card">
+            <article class="physio-assistance-benefit-item">
 
-                <div class="physio-assistance-benefits-icon">
-                    <i class="fa-solid fa-dumbbell"></i>
+                <div class="physio-assistance-benefit-number">
+                    02
                 </div>
 
-                <div class="physio-assistance-benefits-card-content">
+                <div class="physio-assistance-benefit-content">
 
                     <h3>
                         Consistent Exercise
@@ -759,20 +779,20 @@
 
                 </div>
 
-            </div>
+            </article>
 
 
             <!-- =================================================
-                 BENEFIT 3
+                 BENEFIT 03
             ================================================== -->
 
-            <div class="physio-assistance-benefits-card">
+            <article class="physio-assistance-benefit-item">
 
-                <div class="physio-assistance-benefits-icon">
-                    <i class="fa-solid fa-heart"></i>
+                <div class="physio-assistance-benefit-number">
+                    03
                 </div>
 
-                <div class="physio-assistance-benefits-card-content">
+                <div class="physio-assistance-benefit-content">
 
                     <h3>
                         Greater Confidence
@@ -785,8 +805,7 @@
 
                 </div>
 
-            </div>
-
+            </article>
 
         </div>
 
@@ -1512,7 +1531,7 @@
 
         <div class="footer-brand">
 
-            <a href="home1.html" class="footer-logo">
+            <a href="index.html" class="footer-logo">
                 <img
                     src="images/logo.png"
                     alt="Home Nursing & Patient Care Agency"
@@ -1561,7 +1580,7 @@
             <ul class="footer-links">
 
                 <li>
-                    <a href="home1.html">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
 
                 <li>
