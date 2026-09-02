@@ -840,8 +840,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 if (icon) {
                     icon.className = isRtl
-                        ? "fas fa-align-left"
-                        : "fas fa-align-right";
+                        ? "fas fa-right-left"
+                        : "fas fa-right-left";
                 }
             });
     }

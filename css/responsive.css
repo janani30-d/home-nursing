@@ -2917,6 +2917,10 @@ html[dir="rtl"] .hero-primary-button i {
     }
 
 }
+
+
+
+
 /* =========================================================
    HOME 1 - WHY CHOOSE US
    PART 3: RESPONSIVE + RTL RESPONSIVE
@@ -44109,3 +44113,4850 @@ html[dir="rtl"] .contact-hero-primary-btn i {
     }
 
 }
+
+
+
+
+
+
+
+/* =========================================================
+   PART 3 - REMOVE ALL TIMELINE LINES
+========================================================= */
+
+/* Remove the connecting line */
+.post-surgery-process-line {
+    display: none !important;
+}
+
+/* Remove any pseudo-element timeline line */
+.post-surgery-process-list::before {
+    display: none !important;
+}
+
+/* Make sure steps do not create lines */
+.post-surgery-process-step::after {
+    display: none !important;
+}
+
+/* Keep the step cards clean */
+.post-surgery-process-step {
+    border-top: none !important;
+}
+
+/* =========================================================
+   POST-SURGERY CARE PROCESS
+   PART 3 - RESPONSIVE
+   CURRENT MODERN STYLE
+   NO TIMELINE LINE
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .post-surgery-process-section {
+        padding: 80px 25px !important;
+    }
+
+    .post-surgery-process-header {
+        margin-bottom: 55px !important;
+    }
+
+    .post-surgery-process-list {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 22px !important;
+    }
+
+    /* Remove alternating movement */
+    .post-surgery-process-step:nth-child(even) {
+        transform: none !important;
+    }
+
+    .post-surgery-process-step:nth-child(even):hover {
+        transform: translateY(-6px) !important;
+    }
+
+    .post-surgery-process-step {
+        min-height: 280px !important;
+        padding: 0 24px 28px !important;
+    }
+
+    .post-surgery-process-number {
+        margin-top: 28px !important;
+        margin-bottom: 35px !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .post-surgery-process-section {
+        padding: 65px 18px !important;
+    }
+
+    .post-surgery-process-container {
+        width: 100% !important;
+    }
+
+
+    /* -----------------------------------------
+       HEADER
+    ----------------------------------------- */
+
+    .post-surgery-process-header {
+        margin-bottom: 40px !important;
+        text-align: center !important;
+    }
+
+    .post-surgery-process-description {
+        max-width: 100% !important;
+    }
+
+
+    /* -----------------------------------------
+       CARDS
+    ----------------------------------------- */
+
+    .post-surgery-process-list {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+
+        padding: 0 !important;
+    }
+
+
+    /* -----------------------------------------
+       REMOVE ALL TIMELINE LINES
+    ----------------------------------------- */
+
+    .post-surgery-process-list::before,
+    .post-surgery-process-list::after,
+    .post-surgery-process-line {
+        display: none !important;
+        content: none !important;
+    }
+
+
+    /* -----------------------------------------
+       STEP CARD
+    ----------------------------------------- */
+
+    .post-surgery-process-step,
+    .post-surgery-process-step:nth-child(even) {
+        min-height: auto !important;
+
+        padding: 24px 22px 28px !important;
+
+        transform: none !important;
+
+        border-radius: 20px !important;
+    }
+
+    .post-surgery-process-step:hover,
+    .post-surgery-process-step:nth-child(even):hover {
+        transform: translateY(-5px) !important;
+    }
+
+
+    /* -----------------------------------------
+       TOP ACCENT
+    ----------------------------------------- */
+
+    .post-surgery-process-step::before {
+        left: 22px !important;
+        top: 0 !important;
+
+        width: 45px !important;
+        height: 4px !important;
+    }
+
+
+    /* -----------------------------------------
+       NUMBER
+    ----------------------------------------- */
+
+    .post-surgery-process-number {
+        position: relative !important;
+
+        width: 50px !important;
+        height: 50px !important;
+
+        margin: 5px 0 25px !important;
+
+        border-width: 4px !important;
+    }
+
+
+    /* -----------------------------------------
+       CONTENT
+    ----------------------------------------- */
+
+    .post-surgery-process-content {
+        padding: 0 !important;
+    }
+
+    .post-surgery-process-content h3 {
+        margin-bottom: 10px !important;
+    }
+
+    .post-surgery-process-content p {
+        line-height: 1.7 !important;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .post-surgery-process-section {
+        padding: 55px 15px !important;
+    }
+
+    .post-surgery-process-list {
+        gap: 15px !important;
+    }
+
+    .post-surgery-process-step,
+    .post-surgery-process-step:nth-child(even) {
+        padding: 22px 19px 25px !important;
+    }
+
+    .post-surgery-process-number {
+        width: 46px !important;
+        height: 46px !important;
+
+        margin-bottom: 22px !important;
+    }
+
+}
+/* =========================================================
+   POST-SURGERY PROCESS
+   FINAL STRUCTURE FIX
+   NUMBER + CONTENT PROPERLY ALIGNED
+========================================================= */
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+.post-surgery-process-list {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 24px !important;
+    align-items: stretch !important;
+}
+
+.post-surgery-process-step {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    min-height: 300px !important;
+    padding: 32px 28px !important;
+
+    box-sizing: border-box !important;
+}
+
+.post-surgery-process-number {
+    flex-shrink: 0 !important;
+
+    width: 58px !important;
+    height: 58px !important;
+
+    margin: 0 0 28px 0 !important;
+}
+
+.post-surgery-process-content {
+    width: 100% !important;
+    padding: 0 !important;
+}
+
+.post-surgery-process-content h3 {
+    margin: 0 0 12px !important;
+}
+
+.post-surgery-process-content p {
+    margin: 0 !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .post-surgery-process-list {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+    }
+
+    .post-surgery-process-step,
+    .post-surgery-process-step:nth-child(even) {
+        min-height: 270px !important;
+
+        padding: 28px 24px !important;
+
+        transform: none !important;
+    }
+
+    .post-surgery-process-number {
+        width: 52px !important;
+        height: 52px !important;
+
+        margin: 0 0 25px 0 !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .post-surgery-process-section {
+        padding: 65px 22px !important;
+    }
+
+    .post-surgery-process-list {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+
+        padding: 0 !important;
+    }
+
+
+    /* -----------------------------------------
+       CARD
+    ----------------------------------------- */
+
+    .post-surgery-process-step,
+    .post-surgery-process-step:nth-child(even) {
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+        width: 100% !important;
+        min-height: auto !important;
+
+        padding: 26px 22px 28px !important;
+
+        box-sizing: border-box !important;
+
+        transform: none !important;
+    }
+
+    .post-surgery-process-step:hover,
+    .post-surgery-process-step:nth-child(even):hover {
+        transform: translateY(-4px) !important;
+    }
+
+
+    /* -----------------------------------------
+       NUMBER
+    ----------------------------------------- */
+
+    .post-surgery-process-number {
+
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+
+        flex-shrink: 0 !important;
+
+        width: 50px !important;
+        height: 50px !important;
+
+        margin: 0 0 20px 0 !important;
+
+        border-width: 4px !important;
+
+        z-index: 2 !important;
+    }
+
+
+    /* -----------------------------------------
+       CONTENT
+    ----------------------------------------- */
+
+    .post-surgery-process-content {
+
+        width: 100% !important;
+
+        padding: 0 !important;
+
+        margin: 0 !important;
+    }
+
+    .post-surgery-process-content h3 {
+
+        margin: 0 0 9px 0 !important;
+
+        line-height: 1.3 !important;
+    }
+
+    .post-surgery-process-content p {
+
+        margin: 0 !important;
+
+        line-height: 1.65 !important;
+    }
+
+
+    /* -----------------------------------------
+       TOP ACCENT
+    ----------------------------------------- */
+
+    .post-surgery-process-step::before {
+        left: 22px !important;
+        top: 0 !important;
+
+        width: 45px !important;
+        height: 4px !important;
+    }
+
+
+    /* -----------------------------------------
+       REMOVE ALL LINES
+    ----------------------------------------- */
+
+    .post-surgery-process-list::before,
+    .post-surgery-process-list::after,
+    .post-surgery-process-line,
+    .post-surgery-process-step::after {
+        display: none !important;
+        content: none !important;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .post-surgery-process-section {
+        padding: 55px 16px !important;
+    }
+
+    .post-surgery-process-step,
+    .post-surgery-process-step:nth-child(even) {
+        padding: 24px 20px 26px !important;
+    }
+
+    .post-surgery-process-number {
+        width: 46px !important;
+        height: 46px !important;
+
+        margin-bottom: 18px !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   CAREGIVER EDUCATION & TRAINING
+   PART 3: RESPONSIVE + RTL + RTL RESPONSIVE
+========================================================= */
+
+
+/* =========================================================
+   TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .caregiver-education-training {
+        padding: 80px 0;
+    }
+
+    .caregiver-education-training-container {
+        width: min(92%, 900px);
+    }
+
+    .caregiver-education-training-header {
+        margin-bottom: 55px;
+    }
+
+    .caregiver-education-training-title {
+        font-size: 38px;
+    }
+
+    .caregiver-education-training-description {
+        max-width: 680px;
+    }
+
+    /* Timeline becomes single-sided */
+    .caregiver-education-training-timeline {
+        padding-left: 70px;
+    }
+
+    .caregiver-education-training-timeline::before {
+        left: 28px;
+        right: auto;
+        transform: none;
+    }
+
+    .caregiver-education-training-item {
+        display: grid;
+        grid-template-columns: 56px 1fr;
+        width: 100%;
+        margin-bottom: 42px;
+    }
+
+    .caregiver-education-training-marker {
+        grid-column: 1;
+        grid-row: 1;
+        width: 56px;
+        height: 56px;
+        position: relative;
+        left: auto;
+        right: auto;
+        top: 0;
+    }
+
+    .caregiver-education-training-item:nth-child(odd)
+    .caregiver-education-training-content,
+    .caregiver-education-training-item:nth-child(even)
+    .caregiver-education-training-content {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        text-align: left;
+        padding-left: 24px;
+        padding-right: 0;
+    }
+
+    .caregiver-education-training-content h3 {
+        font-size: 24px;
+    }
+
+    .caregiver-education-training-meta {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .caregiver-education-training {
+        padding: 65px 0;
+    }
+
+    .caregiver-education-training-container {
+        width: min(92%, 560px);
+    }
+
+    .caregiver-education-training-header {
+        margin-bottom: 42px;
+    }
+
+    .caregiver-education-training-subtitle {
+        font-size: 13px;
+    }
+
+    .caregiver-education-training-title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .caregiver-education-training-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /* Mobile timeline */
+    .caregiver-education-training-timeline {
+        padding-left: 52px;
+    }
+
+    .caregiver-education-training-timeline::before {
+        left: 22px;
+        width: 1px;
+    }
+
+    .caregiver-education-training-item {
+        grid-template-columns: 44px 1fr;
+        margin-bottom: 34px;
+    }
+
+    .caregiver-education-training-marker {
+        width: 44px;
+        height: 44px;
+    }
+
+    .caregiver-education-training-marker span {
+        font-size: 12px;
+    }
+
+    .caregiver-education-training-item:nth-child(odd)
+    .caregiver-education-training-content,
+    .caregiver-education-training-item:nth-child(even)
+    .caregiver-education-training-content {
+        padding-left: 18px;
+        padding-right: 0;
+    }
+
+    .caregiver-education-training-label {
+        font-size: 12px;
+    }
+
+    .caregiver-education-training-content h3 {
+        font-size: 21px;
+        line-height: 1.35;
+        margin-bottom: 10px;
+    }
+
+    .caregiver-education-training-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .caregiver-education-training-meta {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-top: 16px;
+    }
+
+    .caregiver-education-training-meta span {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .caregiver-education-training {
+        padding: 55px 0;
+    }
+
+    .caregiver-education-training-container {
+        width: 90%;
+    }
+
+    .caregiver-education-training-title {
+        font-size: 28px;
+    }
+
+    .caregiver-education-training-timeline {
+        padding-left: 45px;
+    }
+
+    .caregiver-education-training-timeline::before {
+        left: 19px;
+    }
+
+    .caregiver-education-training-item {
+        grid-template-columns: 38px 1fr;
+    }
+
+    .caregiver-education-training-marker {
+        width: 38px;
+        height: 38px;
+    }
+
+    .caregiver-education-training-item:nth-child(odd)
+    .caregiver-education-training-content,
+    .caregiver-education-training-item:nth-child(even)
+    .caregiver-education-training-content {
+        padding-left: 14px;
+    }
+
+    .caregiver-education-training-content h3 {
+        font-size: 19px;
+    }
+
+    .caregiver-education-training-content p {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   RTL - DESKTOP
+========================================================= */
+
+[dir="rtl"] .caregiver-education-training {
+    direction: rtl;
+}
+
+[dir="rtl"] .caregiver-education-training-header {
+    text-align: right;
+}
+
+[dir="rtl"] .caregiver-education-training-description {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+
+/* Timeline remains balanced in RTL */
+[dir="rtl"] .caregiver-education-training-timeline {
+    direction: ltr;
+}
+
+[dir="rtl"] .caregiver-education-training-item {
+    direction: rtl;
+}
+
+
+/* Odd items */
+[dir="rtl"] .caregiver-education-training-item:nth-child(odd)
+.caregiver-education-training-content {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 65px;
+}
+
+
+/* Even items */
+[dir="rtl"] .caregiver-education-training-item:nth-child(even)
+.caregiver-education-training-content {
+    text-align: left;
+    padding-right: 0;
+    padding-left: 65px;
+}
+
+
+/* Meta alignment */
+[dir="rtl"] .caregiver-education-training-item:nth-child(odd)
+.caregiver-education-training-meta {
+    justify-content: flex-start;
+}
+
+[dir="rtl"] .caregiver-education-training-item:nth-child(even)
+.caregiver-education-training-meta {
+    justify-content: flex-end;
+}
+
+
+/* =========================================================
+   RTL - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    [dir="rtl"] .caregiver-education-training-timeline {
+        padding-left: 0;
+        padding-right: 70px;
+    }
+
+    [dir="rtl"] .caregiver-education-training-timeline::before {
+        left: auto;
+        right: 28px;
+    }
+
+    [dir="rtl"] .caregiver-education-training-item {
+        direction: rtl;
+    }
+
+    [dir="rtl"] .caregiver-education-training-item:nth-child(odd)
+    .caregiver-education-training-content,
+    [dir="rtl"] .caregiver-education-training-item:nth-child(even)
+    .caregiver-education-training-content {
+        grid-column: 2;
+        text-align: right;
+        padding-left: 0;
+        padding-right: 24px;
+    }
+
+    [dir="rtl"] .caregiver-education-training-marker {
+        grid-column: 1;
+    }
+
+    [dir="rtl"] .caregiver-education-training-meta {
+        justify-content: flex-start;
+    }
+}
+
+
+/* =========================================================
+   RTL - MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    [dir="rtl"] .caregiver-education-training-container {
+        width: min(92%, 560px);
+    }
+
+    [dir="rtl"] .caregiver-education-training-header {
+        text-align: right;
+    }
+
+    [dir="rtl"] .caregiver-education-training-timeline {
+        padding-left: 0;
+        padding-right: 52px;
+    }
+
+    [dir="rtl"] .caregiver-education-training-timeline::before {
+        left: auto;
+        right: 22px;
+    }
+
+    [dir="rtl"] .caregiver-education-training-item {
+        grid-template-columns: 44px 1fr;
+    }
+
+    [dir="rtl"] .caregiver-education-training-item:nth-child(odd)
+    .caregiver-education-training-content,
+    [dir="rtl"] .caregiver-education-training-item:nth-child(even)
+    .caregiver-education-training-content {
+        grid-column: 2;
+        text-align: right;
+        padding-left: 0;
+        padding-right: 18px;
+    }
+
+    [dir="rtl"] .caregiver-education-training-meta {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+
+/* =========================================================
+   RTL - SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    [dir="rtl"] .caregiver-education-training-timeline {
+        padding-left: 0;
+        padding-right: 45px;
+    }
+
+    [dir="rtl"] .caregiver-education-training-timeline::before {
+        left: auto;
+        right: 19px;
+    }
+
+    [dir="rtl"] .caregiver-education-training-item {
+        grid-template-columns: 38px 1fr;
+    }
+
+    [dir="rtl"] .caregiver-education-training-item:nth-child(odd)
+    .caregiver-education-training-content,
+    [dir="rtl"] .caregiver-education-training-item:nth-child(even)
+    .caregiver-education-training-content {
+        padding-left: 0;
+        padding-right: 14px;
+    }
+}
+
+
+/* =========================================================
+   PREVENT MOBILE OVERFLOW
+========================================================= */
+
+.caregiver-education-training,
+.caregiver-education-training-container,
+.caregiver-education-training-timeline,
+.caregiver-education-training-item,
+.caregiver-education-training-content {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.caregiver-education-training-content h3,
+.caregiver-education-training-content p,
+.caregiver-education-training-meta span {
+    overflow-wrap: break-word;
+}
+
+
+
+
+
+/* =========================================================
+   SECTION 4: CERTIFICATIONS & WORK EXPERIENCE
+   PART 3: RESPONSIVE + RTL + RTL RESPONSIVE
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .caregiver-editorial-credentials {
+        padding: 80px 0;
+    }
+
+    .caregiver-editorial-credentials-container {
+        width: min(92%, 900px);
+    }
+
+    .caregiver-editorial-credentials-header {
+        margin-bottom: 60px;
+    }
+
+    .caregiver-editorial-credentials-title {
+        font-size: 38px;
+    }
+
+    .caregiver-editorial-group-number {
+        font-size: 48px;
+    }
+
+    .caregiver-editorial-group-heading {
+        gap: 20px;
+    }
+
+    .caregiver-editorial-item {
+        grid-template-columns: 50px minmax(0, 1fr) 36px;
+        gap: 20px;
+        padding: 22px 0;
+    }
+
+    .caregiver-editorial-item-content h4 {
+        font-size: 19px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .caregiver-editorial-credentials {
+        padding: 65px 0;
+    }
+
+    .caregiver-editorial-credentials-container {
+        width: 92%;
+    }
+
+    .caregiver-editorial-credentials-header {
+        margin-bottom: 45px;
+    }
+
+    .caregiver-editorial-credentials-subtitle {
+        font-size: 13px;
+        letter-spacing: 1.2px;
+    }
+
+    .caregiver-editorial-credentials-title {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .caregiver-editorial-credentials-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* Group heading */
+
+    .caregiver-editorial-group {
+        padding-bottom: 45px;
+    }
+
+    .caregiver-editorial-group + .caregiver-editorial-group {
+        padding-top: 45px;
+    }
+
+    .caregiver-editorial-group-heading {
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .caregiver-editorial-group-number {
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+
+    .caregiver-editorial-group-label {
+        font-size: 11px;
+    }
+
+    .caregiver-editorial-group-heading h3 {
+        font-size: 23px;
+    }
+
+
+    /* Editorial rows */
+
+    .caregiver-editorial-item {
+        grid-template-columns: 38px minmax(0, 1fr) 32px;
+        gap: 14px;
+
+        padding: 20px 0;
+    }
+
+    .caregiver-editorial-item-number {
+        font-size: 12px;
+    }
+
+    .caregiver-editorial-item-content h4 {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .caregiver-editorial-item-content p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .caregiver-editorial-item > i {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+
+    /* Disable horizontal hover movement on touch */
+
+    .caregiver-editorial-item:hover {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .caregiver-editorial-item:hover > i {
+        transform: none;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .caregiver-editorial-credentials {
+        padding: 55px 0;
+    }
+
+    .caregiver-editorial-credentials-container {
+        width: 90%;
+    }
+
+    .caregiver-editorial-credentials-title {
+        font-size: 28px;
+    }
+
+    .caregiver-editorial-credentials-description {
+        font-size: 14px;
+    }
+
+
+    .caregiver-editorial-group-heading {
+        gap: 12px;
+    }
+
+    .caregiver-editorial-group-number {
+        font-size: 34px;
+    }
+
+    .caregiver-editorial-group-heading h3 {
+        font-size: 21px;
+    }
+
+
+    .caregiver-editorial-item {
+        grid-template-columns: 32px minmax(0, 1fr) 28px;
+        gap: 10px;
+        padding: 18px 0;
+    }
+
+    .caregiver-editorial-item-number {
+        font-size: 11px;
+    }
+
+    .caregiver-editorial-item-content h4 {
+        font-size: 17px;
+    }
+
+    .caregiver-editorial-item-content p {
+        font-size: 13px;
+    }
+
+    .caregiver-editorial-item > i {
+        width: 27px;
+        height: 27px;
+        font-size: 9px;
+    }
+}
+
+
+/* =========================================================
+   RTL - BASE
+========================================================= */
+
+[dir="rtl"] .caregiver-editorial-credentials {
+    direction: rtl;
+}
+
+[dir="rtl"] .caregiver-editorial-credentials-header {
+    text-align: center;
+}
+
+[dir="rtl"] .caregiver-editorial-group-heading {
+    direction: rtl;
+}
+
+[dir="rtl"] .caregiver-editorial-item {
+    direction: rtl;
+    text-align: right;
+}
+
+[dir="rtl"] .caregiver-editorial-item-content {
+    text-align: right;
+}
+
+[dir="rtl"] .caregiver-editorial-item > i {
+    transform: rotate(90deg);
+}
+
+
+/* =========================================================
+   RTL HOVER
+========================================================= */
+
+[dir="rtl"] .caregiver-editorial-item:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+[dir="rtl"] .caregiver-editorial-item:hover > i {
+    transform: rotate(90deg) translate(3px, -3px);
+}
+
+
+/* =========================================================
+   RTL - TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    [dir="rtl"] .caregiver-editorial-credentials-container {
+        width: min(92%, 900px);
+    }
+
+    [dir="rtl"] .caregiver-editorial-item {
+        text-align: right;
+    }
+
+    [dir="rtl"] .caregiver-editorial-item-content {
+        text-align: right;
+    }
+}
+
+
+/* =========================================================
+   RTL - MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    [dir="rtl"] .caregiver-editorial-credentials-container {
+        width: 92%;
+    }
+
+    [dir="rtl"] .caregiver-editorial-group-heading {
+        text-align: right;
+    }
+
+    [dir="rtl"] .caregiver-editorial-item {
+        text-align: right;
+    }
+
+    [dir="rtl"] .caregiver-editorial-item-content {
+        text-align: right;
+    }
+
+    /* Remove movement on touch devices */
+
+    [dir="rtl"] .caregiver-editorial-item:hover {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    [dir="rtl"] .caregiver-editorial-item:hover > i {
+        transform: rotate(90deg);
+    }
+}
+
+
+/* =========================================================
+   RTL - SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    [dir="rtl"] .caregiver-editorial-credentials-container {
+        width: 90%;
+    }
+
+    [dir="rtl"] .caregiver-editorial-item {
+        grid-template-columns: 32px minmax(0, 1fr) 28px;
+        gap: 10px;
+    }
+}
+
+
+/* =========================================================
+   PREVENT OVERFLOW
+========================================================= */
+
+.caregiver-editorial-credentials,
+.caregiver-editorial-credentials-container,
+.caregiver-editorial-credentials-content,
+.caregiver-editorial-group,
+.caregiver-editorial-items,
+.caregiver-editorial-item {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.caregiver-editorial-item-content {
+    min-width: 0;
+}
+
+.caregiver-editorial-item-content h4,
+.caregiver-editorial-item-content p {
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .caregiver-editorial-item,
+    .caregiver-editorial-item > i {
+        transition: none;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   SECTION 5: AREAS OF EXPERTISE
+   RESPONSIVE + RTL
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .caregiver-expertise {
+        padding: 80px 0;
+    }
+
+    .caregiver-expertise-header {
+        margin-bottom: 60px;
+    }
+
+    .caregiver-expertise-title {
+        font-size: 38px;
+    }
+
+    .caregiver-expertise-showcase {
+        grid-template-columns: 1fr 190px 1fr;
+        gap: 25px;
+    }
+
+    .caregiver-expertise-left {
+        padding-right: 10px;
+    }
+
+    .caregiver-expertise-right {
+        padding-left: 10px;
+    }
+
+    .caregiver-expertise-item {
+        grid-template-columns: 30px 42px minmax(0, 1fr);
+        gap: 12px;
+        padding: 22px 0;
+    }
+
+    .caregiver-expertise-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .caregiver-expertise-content h3 {
+        font-size: 16px;
+    }
+
+    .caregiver-expertise-content p {
+        font-size: 13px;
+    }
+
+    .caregiver-expertise-center-circle {
+        width: 155px;
+        height: 155px;
+    }
+
+    .caregiver-expertise-center-circle strong {
+        font-size: 26px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .caregiver-expertise {
+        padding: 70px 0;
+    }
+
+    .caregiver-expertise-container {
+        width: min(92%, 600px);
+    }
+
+    .caregiver-expertise-header {
+        margin-bottom: 45px;
+    }
+
+    .caregiver-expertise-title {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .caregiver-expertise-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /*
+       Center becomes the introduction
+       instead of staying between columns.
+    */
+
+    .caregiver-expertise-showcase {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .caregiver-expertise-center {
+        order: 1;
+    }
+
+    .caregiver-expertise-left {
+        order: 2;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .caregiver-expertise-right {
+        order: 3;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .caregiver-expertise-center-circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .caregiver-expertise-center-circle strong {
+        font-size: 24px;
+    }
+
+    .caregiver-expertise-center > p {
+        margin-top: 16px;
+    }
+
+    .caregiver-expertise-item {
+        grid-template-columns: 34px 44px minmax(0, 1fr);
+        gap: 14px;
+        padding: 20px 0;
+    }
+
+    .caregiver-expertise-number {
+        font-size: 12px;
+    }
+
+    .caregiver-expertise-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 16px;
+    }
+
+    .caregiver-expertise-content h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .caregiver-expertise-content p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .caregiver-expertise {
+        padding: 60px 0;
+    }
+
+    .caregiver-expertise-container {
+        width: 92%;
+    }
+
+    .caregiver-expertise-header {
+        margin-bottom: 38px;
+    }
+
+    .caregiver-expertise-subtitle {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+
+    .caregiver-expertise-title {
+        font-size: 28px;
+    }
+
+    .caregiver-expertise-description {
+        font-size: 14px;
+    }
+
+    .caregiver-expertise-showcase {
+        gap: 28px;
+    }
+
+    .caregiver-expertise-item {
+        grid-template-columns: 28px 40px minmax(0, 1fr);
+        gap: 11px;
+        padding: 18px 0;
+    }
+
+    .caregiver-expertise-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .caregiver-expertise-content h3 {
+        font-size: 15px;
+    }
+
+    .caregiver-expertise-content p {
+        font-size: 12.5px;
+        line-height: 1.55;
+    }
+
+    .caregiver-expertise-center-circle {
+        width: 125px;
+        height: 125px;
+    }
+
+    .caregiver-expertise-center-circle strong {
+        font-size: 22px;
+    }
+
+    .caregiver-expertise-center-small {
+        font-size: 9px;
+    }
+
+    .caregiver-expertise-center > p {
+        font-size: 12px;
+        max-width: 190px;
+    }
+
+}
+
+
+/* =========================================================
+   RTL RESPONSIVE
+========================================================= */
+
+html[dir="rtl"] .caregiver-expertise,
+body.rtl .caregiver-expertise {
+    direction: rtl;
+}
+
+html[dir="rtl"] .caregiver-expertise-header,
+body.rtl .caregiver-expertise-header {
+    text-align: right;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+html[dir="rtl"] .caregiver-expertise-description,
+body.rtl .caregiver-expertise-description {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .caregiver-expertise-left,
+body.rtl .caregiver-expertise-left {
+    padding-right: 0;
+    padding-left: 25px;
+}
+
+html[dir="rtl"] .caregiver-expertise-right,
+body.rtl .caregiver-expertise-right {
+    padding-left: 0;
+    padding-right: 25px;
+}
+
+html[dir="rtl"] .caregiver-expertise-item,
+body.rtl .caregiver-expertise-item {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .caregiver-expertise-center,
+body.rtl .caregiver-expertise-center {
+    direction: rtl;
+    text-align: center;
+}
+
+
+/* =========================================================
+   RTL TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    html[dir="rtl"] .caregiver-expertise-left,
+    body.rtl .caregiver-expertise-left {
+        padding-left: 10px;
+    }
+
+    html[dir="rtl"] .caregiver-expertise-right,
+    body.rtl .caregiver-expertise-right {
+        padding-right: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   RTL MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    html[dir="rtl"] .caregiver-expertise-header,
+    body.rtl .caregiver-expertise-header {
+        text-align: center;
+    }
+
+    html[dir="rtl"] .caregiver-expertise-left,
+    body.rtl .caregiver-expertise-left {
+        padding-left: 0;
+    }
+
+    html[dir="rtl"] .caregiver-expertise-right,
+    body.rtl .caregiver-expertise-right {
+        padding-right: 0;
+    }
+
+    html[dir="rtl"] .caregiver-expertise-item,
+    body.rtl .caregiver-expertise-item {
+        text-align: right;
+    }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) {
+
+    .caregiver-expertise-item:hover {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .caregiver-expertise-item:hover .caregiver-expertise-icon {
+        transform: none;
+        background: transparent;
+        color: var(--primary-color);
+        border-color: var(--border-color);
+    }
+
+}
+
+
+/* =========================================================
+   OVERFLOW PROTECTION
+========================================================= */
+
+.caregiver-expertise,
+.caregiver-expertise-container,
+.caregiver-expertise-showcase,
+.caregiver-expertise-column,
+.caregiver-expertise-item,
+.caregiver-expertise-content {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.caregiver-expertise-content h3,
+.caregiver-expertise-content p {
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .caregiver-expertise-item,
+    .caregiver-expertise-icon,
+    .caregiver-expertise-center-circle {
+        transition: none;
+    }
+
+}
+
+
+/* =========================================================
+   SECTION 6: SKILLS & LANGUAGES
+   RESPONSIVE + RTL RESPONSIVE
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .caregiver-skills-languages {
+        padding: 80px 0;
+    }
+
+    .caregiver-skills-languages-header {
+        margin-bottom: 60px;
+    }
+
+    .caregiver-skills-languages-title {
+        font-size: 38px;
+    }
+
+    .caregiver-skills-languages-content {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+        gap: 50px;
+    }
+
+    .caregiver-skills-panel-heading,
+    .caregiver-languages-panel-heading {
+        margin-bottom: 32px;
+    }
+
+    .caregiver-skills-panel-heading h3,
+    .caregiver-languages-panel-heading h3 {
+        font-size: 22px;
+    }
+
+    .caregiver-skill-row {
+        padding: 18px 0;
+    }
+
+    .caregiver-language-item {
+        grid-template-columns: 50px minmax(0, 1fr);
+        gap: 16px;
+        padding: 20px 0;
+    }
+
+    .caregiver-language-code {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .caregiver-skills-languages {
+        padding: 70px 0;
+    }
+
+    .caregiver-skills-languages-container {
+        width: min(92%, 620px);
+    }
+
+    .caregiver-skills-languages-header {
+        margin-bottom: 45px;
+    }
+
+    .caregiver-skills-languages-title {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .caregiver-skills-languages-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    /*
+       Stack Skills and Languages
+       vertically on mobile.
+    */
+
+    .caregiver-skills-languages-content {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+    }
+
+    .caregiver-skills-panel,
+    .caregiver-languages-panel {
+        width: 100%;
+    }
+
+    .caregiver-skills-panel-heading,
+    .caregiver-languages-panel-heading {
+        margin-bottom: 30px;
+    }
+
+    .caregiver-skills-panel-heading h3,
+    .caregiver-languages-panel-heading h3 {
+        font-size: 21px;
+    }
+
+    .caregiver-skill-row {
+        padding: 18px 0;
+    }
+
+    .caregiver-skill-info {
+        gap: 12px;
+        margin-bottom: 9px;
+    }
+
+    .caregiver-skill-info span:first-child {
+        font-size: 14px;
+    }
+
+    .caregiver-skill-info span:last-child {
+        font-size: 11px;
+    }
+
+    .caregiver-language-item {
+        grid-template-columns: 48px minmax(0, 1fr);
+        gap: 15px;
+        padding: 20px 0;
+    }
+
+    .caregiver-language-code {
+        width: 48px;
+        height: 48px;
+        font-size: 13px;
+    }
+
+    .caregiver-language-content h4 {
+        font-size: 16px;
+    }
+
+    .caregiver-language-content p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .caregiver-language-note {
+        margin-top: 28px;
+        padding-top: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .caregiver-skills-languages {
+        padding: 60px 0;
+    }
+
+    .caregiver-skills-languages-container {
+        width: 92%;
+    }
+
+    .caregiver-skills-languages-header {
+        margin-bottom: 38px;
+    }
+
+    .caregiver-skills-languages-subtitle {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+
+    .caregiver-skills-languages-title {
+        font-size: 28px;
+    }
+
+    .caregiver-skills-languages-description {
+        font-size: 14px;
+    }
+
+    .caregiver-skills-languages-content {
+        gap: 45px;
+    }
+
+    .caregiver-skills-panel-heading,
+    .caregiver-languages-panel-heading {
+        gap: 14px;
+        margin-bottom: 25px;
+    }
+
+    .caregiver-skills-panel-number,
+    .caregiver-languages-panel-number {
+        font-size: 12px;
+    }
+
+    .caregiver-skills-panel-label,
+    .caregiver-languages-panel-label {
+        font-size: 11px;
+    }
+
+    .caregiver-skills-panel-heading h3,
+    .caregiver-languages-panel-heading h3 {
+        font-size: 19px;
+    }
+
+    .caregiver-skill-row {
+        padding: 16px 0;
+    }
+
+    .caregiver-skill-info span:first-child {
+        font-size: 13px;
+    }
+
+    .caregiver-skill-info span:last-child {
+        font-size: 10px;
+    }
+
+    .caregiver-skill-bar {
+        height: 3px;
+    }
+
+    .caregiver-language-item {
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 13px;
+        padding: 18px 0;
+    }
+
+    .caregiver-language-code {
+        width: 42px;
+        height: 42px;
+        font-size: 12px;
+    }
+
+    .caregiver-language-content h4 {
+        font-size: 15px;
+    }
+
+    .caregiver-language-content p {
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+    .caregiver-language-note {
+        gap: 11px;
+        margin-top: 24px;
+        padding-top: 20px;
+    }
+
+    .caregiver-language-note i {
+        font-size: 15px;
+    }
+
+    .caregiver-language-note p {
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .caregiver-skills-languages,
+body.rtl .caregiver-skills-languages {
+    direction: rtl;
+}
+
+html[dir="rtl"] .caregiver-skills-languages-header,
+body.rtl .caregiver-skills-languages-header {
+    text-align: right;
+}
+
+html[dir="rtl"] .caregiver-skills-languages-description,
+body.rtl .caregiver-skills-languages-description {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .caregiver-skills-panel-heading,
+html[dir="rtl"] .caregiver-languages-panel-heading,
+body.rtl .caregiver-skills-panel-heading,
+body.rtl .caregiver-languages-panel-heading {
+    direction: rtl;
+}
+
+html[dir="rtl"] .caregiver-skill-info,
+body.rtl .caregiver-skill-info {
+    direction: rtl;
+}
+
+html[dir="rtl"] .caregiver-language-item,
+body.rtl .caregiver-language-item {
+    direction: rtl;
+    text-align: right;
+}
+
+html[dir="rtl"] .caregiver-language-note,
+body.rtl .caregiver-language-note {
+    direction: rtl;
+    text-align: right;
+}
+
+
+/* =========================================================
+   RTL MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    html[dir="rtl"] .caregiver-skills-languages-header,
+    body.rtl .caregiver-skills-languages-header {
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   HOVER — DESKTOP ONLY
+========================================================= */
+
+@media (hover: hover) and (pointer: fine) {
+
+    .caregiver-skill-row:hover {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .caregiver-language-item:hover {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) {
+
+    .caregiver-skill-row:hover,
+    .caregiver-language-item:hover {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+}
+
+
+/* =========================================================
+   OVERFLOW PROTECTION
+========================================================= */
+
+.caregiver-skills-languages,
+.caregiver-skills-languages-container,
+.caregiver-skills-languages-content,
+.caregiver-skills-panel,
+.caregiver-languages-panel,
+.caregiver-skill-row,
+.caregiver-language-item {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.caregiver-skill-info span,
+.caregiver-language-content,
+.caregiver-language-content h4,
+.caregiver-language-content p {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .caregiver-skill-row,
+    .caregiver-language-item,
+    .caregiver-skill-bar span {
+        transition: none;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================================
+   SECTION 7: SERVICES PROVIDED
+   RESPONSIVE + RTL RESPONSIVE
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .caregiver-services {
+        padding: 80px 0;
+    }
+
+    .caregiver-services-header {
+        margin-bottom: 60px;
+    }
+
+    .caregiver-services-title {
+        font-size: 38px;
+    }
+
+    .caregiver-service-item {
+        grid-template-columns: 42px 48px minmax(0, 1fr) 36px;
+        gap: 18px;
+
+        padding: 24px 0;
+    }
+
+    .caregiver-service-icon {
+        width: 48px;
+        height: 48px;
+
+        font-size: 17px;
+    }
+
+    .caregiver-service-content h3 {
+        font-size: 18px;
+    }
+
+    .caregiver-service-content p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .caregiver-services {
+        padding: 70px 0;
+    }
+
+    .caregiver-services-container {
+        width: min(92%, 620px);
+    }
+
+    .caregiver-services-header {
+        margin-bottom: 45px;
+    }
+
+    .caregiver-services-title {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .caregiver-services-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .caregiver-service-item {
+        grid-template-columns: 32px 44px minmax(0, 1fr);
+        gap: 14px;
+
+        padding: 21px 0;
+    }
+
+    .caregiver-service-number {
+        font-size: 12px;
+        padding-top: 4px;
+    }
+
+    .caregiver-service-icon {
+        width: 44px;
+        height: 44px;
+
+        font-size: 16px;
+    }
+
+    .caregiver-service-label {
+        margin-bottom: 5px;
+
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .caregiver-service-content h3 {
+        margin-bottom: 6px;
+
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .caregiver-service-content p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .caregiver-service-arrow {
+        display: none;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .caregiver-services {
+        padding: 60px 0;
+    }
+
+    .caregiver-services-container {
+        width: 92%;
+    }
+
+    .caregiver-services-header {
+        margin-bottom: 38px;
+    }
+
+    .caregiver-services-subtitle {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+
+    .caregiver-services-title {
+        font-size: 28px;
+    }
+
+    .caregiver-services-description {
+        font-size: 14px;
+    }
+
+    .caregiver-service-item {
+        grid-template-columns: 28px 40px minmax(0, 1fr);
+        gap: 11px;
+
+        padding: 18px 0;
+    }
+
+    .caregiver-service-number {
+        font-size: 11px;
+    }
+
+    .caregiver-service-icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 15px;
+    }
+
+    .caregiver-service-label {
+        font-size: 9px;
+    }
+
+    .caregiver-service-content h3 {
+        font-size: 15px;
+    }
+
+    .caregiver-service-content p {
+        font-size: 12px;
+        line-height: 1.55;
+    }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .caregiver-services,
+body.rtl .caregiver-services {
+    direction: rtl;
+}
+
+html[dir="rtl"] .caregiver-services-header,
+body.rtl .caregiver-services-header {
+    text-align: right;
+}
+
+html[dir="rtl"] .caregiver-services-description,
+body.rtl .caregiver-services-description {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+html[dir="rtl"] .caregiver-service-item,
+body.rtl .caregiver-service-item {
+    direction: rtl;
+    text-align: right;
+}
+
+
+/* =========================================================
+   RTL DESKTOP ARROW
+========================================================= */
+
+html[dir="rtl"] .caregiver-service-arrow,
+body.rtl .caregiver-service-arrow {
+    transform: scaleX(-1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    html[dir="rtl"] .caregiver-service-item:hover,
+    body.rtl .caregiver-service-item:hover {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    html[dir="rtl"] .caregiver-service-item:hover .caregiver-service-arrow,
+    body.rtl .caregiver-service-item:hover .caregiver-service-arrow {
+        transform: scaleX(-1) translateX(3px);
+    }
+
+}
+
+
+/* =========================================================
+   RTL MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    html[dir="rtl"] .caregiver-services-header,
+    body.rtl .caregiver-services-header {
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) {
+
+    .caregiver-service-item:hover {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .caregiver-service-item:hover .caregiver-service-icon {
+        background: transparent;
+        border-color: var(--border-color);
+        color: var(--primary-color);
+
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   OVERFLOW PROTECTION
+========================================================= */
+
+.caregiver-services,
+.caregiver-services-container,
+.caregiver-services-list,
+.caregiver-service-item,
+.caregiver-service-content {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.caregiver-service-content h3,
+.caregiver-service-content p,
+.caregiver-service-label {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .caregiver-service-item,
+    .caregiver-service-icon,
+    .caregiver-service-arrow {
+        transition: none;
+    }
+
+}
+
+
+
+
+
+
+/* =========================================================
+   FINAL CTA SECTION
+   RESPONSIVE + RTL
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .care-final-action {
+        padding: 80px 0;
+    }
+
+    .care-final-action-heading {
+        font-size: 38px;
+    }
+
+    .care-final-action-text {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    .care-final-action {
+        padding: 70px 0;
+    }
+
+    .care-final-action-wrapper {
+        width: min(92%, 620px);
+    }
+
+    .care-final-action-content {
+        max-width: 100%;
+    }
+
+    .care-final-action-eyebrow {
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+
+    .care-final-action-heading {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .care-final-action-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .care-final-action-buttons {
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+    .care-final-action-primary,
+    .care-final-action-secondary {
+        min-height: 46px;
+        padding: 12px 20px;
+
+        font-size: 13px;
+    }
+
+    .care-final-action-contact {
+        margin-top: 35px;
+        padding-top: 22px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .care-final-action {
+        padding: 60px 0;
+    }
+
+    .care-final-action-wrapper {
+        width: 92%;
+    }
+
+    .care-final-action-eyebrow {
+        font-size: 11px;
+    }
+
+    .care-final-action-heading {
+        font-size: 28px;
+    }
+
+    .care-final-action-text {
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    .care-final-action-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .care-final-action-primary,
+    .care-final-action-secondary {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .care-final-action-contact {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .care-final-action-contact-icon {
+        width: 38px;
+        height: 38px;
+
+        font-size: 14px;
+    }
+
+    .care-final-action-contact-info span {
+        font-size: 11px;
+    }
+
+    .care-final-action-contact-info strong {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   RTL
+========================================================= */
+
+html[dir="rtl"] .care-final-action,
+body.rtl .care-final-action {
+    direction: rtl;
+}
+
+html[dir="rtl"] .care-final-action-content,
+body.rtl .care-final-action-content {
+    text-align: center;
+}
+
+html[dir="rtl"] .care-final-action-buttons,
+body.rtl .care-final-action-buttons {
+    direction: rtl;
+}
+
+html[dir="rtl"] .care-final-action-primary i,
+body.rtl .care-final-action-primary i {
+    transform: scaleX(-1);
+}
+
+html[dir="rtl"] .care-final-action-contact,
+body.rtl .care-final-action-contact {
+    direction: rtl;
+}
+
+html[dir="rtl"] .care-final-action-contact-info,
+body.rtl .care-final-action-contact-info {
+    text-align: right;
+    align-items: flex-start;
+}
+
+
+/* =========================================================
+   RTL MOBILE
+========================================================= */
+
+@media (max-width: 750px) {
+
+    html[dir="rtl"] .care-final-action-buttons,
+    body.rtl .care-final-action-buttons {
+        flex-direction: column;
+    }
+
+}
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) {
+
+    .care-final-action-primary:hover,
+    .care-final-action-secondary:hover {
+        transform: none;
+    }
+
+}
+
+
+/* =========================================================
+   OVERFLOW PROTECTION
+========================================================= */
+
+.care-final-action,
+.care-final-action-wrapper,
+.care-final-action-content,
+.care-final-action-buttons,
+.care-final-action-contact {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.care-final-action-heading,
+.care-final-action-text,
+.care-final-action-contact-info {
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .care-final-action-primary,
+    .care-final-action-secondary {
+        transition: none;
+    }
+
+}
+
+
+/* =========================================================
+   AUTH TYPOGRAPHY + SOCIAL CONSISTENCY
+========================================================= */
+
+.login-title,
+.register-title {
+    font-size: 32px;
+    line-height: 1.22;
+    letter-spacing: 0;
+}
+
+.login-description,
+.register-description {
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+.login-form-group > label,
+.register-form-group > label,
+.login-forgot-link,
+.login-remember,
+.register-terms,
+.login-divider,
+.register-divider,
+.login-register,
+.register-login,
+.login-input-wrapper input,
+.register-input-wrapper input {
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.login-submit-btn,
+.register-submit-btn,
+.login-social-btn,
+.register-social-btn {
+    min-height: 46px;
+    font-size: 15px;
+}
+
+.login-social-btn,
+.register-social-btn {
+    gap: 8px;
+    color: var(--text-color);
+}
+
+.login-social-btn i,
+.register-social-btn i {
+    width: 18px;
+    min-width: 18px;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+}
+
+.login-social-btn .google-logo,
+.register-social-btn .google-logo {
+    width: 18px;
+    height: 18px;
+}
+
+.login-google,
+.register-google,
+html.dark-mode .login-google,
+html.dark-mode .register-google {
+    color: #4285f4;
+}
+
+.login-facebook,
+.register-facebook,
+html.dark-mode .login-facebook,
+html.dark-mode .register-facebook {
+    color: #1877f2;
+}
+
+.login-apple,
+.register-apple {
+    color: #111111;
+}
+
+html.dark-mode .login-apple,
+html.dark-mode .register-apple {
+    color: #ffffff;
+}
+
+@media (max-width: 743px) {
+
+    .login-title,
+    .register-title {
+        font-size: 30px;
+    }
+
+    .login-description,
+    .register-description {
+        font-size: 15px;
+    }
+
+    .login-card,
+    .register-card {
+        padding: 34px 26px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .login-title,
+    .register-title {
+        font-size: 27px;
+    }
+
+    .login-description,
+    .register-description {
+        font-size: 14px;
+    }
+
+    .login-form-group > label,
+    .register-form-group > label,
+    .login-forgot-link,
+    .login-remember,
+    .register-terms,
+    .login-divider,
+    .register-divider,
+    .login-register,
+    .register-login,
+    .login-input-wrapper input,
+    .register-input-wrapper input {
+        font-size: 13px;
+    }
+
+    .login-social,
+    .register-social {
+        grid-template-columns: 1fr;
+    }
+
+    .login-social-btn,
+    .register-social-btn {
+        min-height: 44px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 380px) {
+
+    .login-title,
+    .register-title {
+        font-size: 25px;
+    }
+
+    .login-card,
+    .register-card {
+        padding: 28px 18px;
+    }
+}
+
+
+/* =========================================================
+   SITE-WIDE RESPONSIVE UI/UX FIXES
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    [class$="-container"],
+    [class*="-container "] {
+        width: calc(100% - 40px);
+        max-width: 100%;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    [class$="-title"],
+    .section-title {
+        font-size: clamp(30px, 4vw, 40px);
+        line-height: 1.18;
+    }
+
+    .hero-title,
+    [class$="-hero-title"] {
+        font-size: clamp(38px, 5vw, 48px);
+        line-height: 1.12;
+    }
+
+    [class$="-description"],
+    [class$="-intro"],
+    [class$="-text"] {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    [class$="-grid"] {
+        gap: 22px;
+    }
+
+    [class$="-card"],
+    [class*="-card "] {
+        min-width: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    [class$="-container"],
+    [class*="-container "] {
+        width: calc(100% - 32px);
+    }
+
+    [class$="-grid"] {
+        grid-template-columns: 1fr;
+    }
+
+    [class$="-title"],
+    .section-title {
+        font-size: clamp(28px, 8vw, 36px);
+    }
+
+    .hero-title,
+    [class$="-hero-title"] {
+        font-size: clamp(34px, 9vw, 42px);
+    }
+
+    .hero-actions,
+    [class$="-actions"],
+    [class$="-buttons"] {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    a[class$="-button"],
+    a[class$="-btn"],
+    button[class$="-button"],
+    button[class$="-btn"] {
+        min-height: 46px;
+        padding-left: 18px;
+        padding-right: 18px;
+        font-size: 14px;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+
+    [class$="-container"],
+    [class*="-container "] {
+        width: calc(100% - 24px);
+    }
+
+    [class$="-header"],
+    [class*="-header "] {
+        margin-bottom: 28px;
+    }
+
+    [class$="-title"],
+    .section-title {
+        font-size: clamp(25px, 8vw, 32px);
+    }
+
+    .hero-title,
+    [class$="-hero-title"] {
+        font-size: clamp(30px, 10vw, 38px);
+    }
+
+    .section-subtitle,
+    [class$="-subtitle"],
+    [class$="-eyebrow"] {
+        font-size: 12px;
+    }
+
+    [class$="-description"],
+    [class$="-intro"],
+    [class$="-text"],
+    [class$="-card"] p,
+    [class*="-card "] p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    [class$="-card"] h3,
+    [class*="-card "] h3 {
+        font-size: 18px;
+    }
+
+    .hero-actions > *,
+    [class$="-actions"] > *,
+    [class$="-buttons"] > * {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 380px) {
+
+    [class$="-container"],
+    [class*="-container "] {
+        width: calc(100% - 20px);
+    }
+
+    [class$="-title"],
+    .section-title {
+        font-size: 24px;
+    }
+
+    .hero-title,
+    [class$="-hero-title"] {
+        font-size: 29px;
+    }
+}
+
+
+/* =========================================================
+   FINAL RESPONSIVE TYPOGRAPHY CORRECTIONS
+========================================================= */
+
+.footer-title {
+    max-width: none;
+    font-size: 15px;
+    line-height: 1.35;
+    letter-spacing: 0;
+}
+
+.hero-section {
+    color: #ffffff;
+}
+
+.hero-section .hero-subtitle,
+.hero-section .hero-title,
+.hero-section .hero-description {
+    color: #ffffff;
+}
+
+.hero-section a,
+.hero-section button,
+.hero-section a span,
+.hero-section button span,
+.hero-section a i,
+.hero-section button i {
+    color: #ffffff;
+}
+
+.hero-secondary-button:hover {
+    color: #ffffff;
+}
+
+.contact-hero,
+.contact-hero-title,
+.contact-hero-title span,
+.contact-hero-description,
+.contact-hero-point,
+.contact-hero-point span,
+.about-hero-title,
+.post-surgery-hero-title {
+    color: #ffffff;
+}
+
+.contact-hero-primary-btn,
+.contact-hero-secondary-btn,
+.contact-hero-primary-btn span,
+.contact-hero-secondary-btn span,
+.contact-hero-primary-btn i,
+.contact-hero-secondary-btn i,
+.post-surgery-hero-primary,
+.post-surgery-hero-secondary,
+.post-surgery-hero-primary span,
+.post-surgery-hero-secondary span,
+.post-surgery-hero-primary i,
+.post-surgery-hero-secondary i {
+    color: #ffffff;
+}
+
+.pricing-hero-description,
+.pricing-plans-description,
+.pricing-card-description,
+.pricing-benefits-description,
+.pricing-cta-description,
+.contact-hero-description,
+.contact-connect-description,
+.contact-form-description,
+.contact-location-description,
+.contact-info-content p,
+.contact-info-content a {
+    font-size: 16px;
+    line-height: 1.72;
+}
+
+.pricing-card-description,
+.contact-info-content p,
+.contact-info-content a {
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+
+    .footer-title {
+        font-size: 14px;
+    }
+
+    .pricing-hero-description,
+    .pricing-plans-description,
+    .pricing-card-description,
+    .pricing-benefits-description,
+    .pricing-cta-description,
+    .contact-hero-description,
+    .contact-connect-description,
+    .contact-form-description,
+    .contact-location-description,
+    .contact-info-content p,
+    .contact-info-content a {
+        font-size: 14px;
+        line-height: 1.68;
+    }
+}
+
+.contact-info-content h3,
+.contact-location-detail-content span {
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: 0;
+}
+
+.contact-info-content p,
+.contact-info-content a,
+.contact-location-detail-content p,
+.contact-location-detail-content a {
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.contact-info-icon,
+.contact-location-detail-icon {
+    font-size: 15px;
+}
+
+@media (max-width: 768px) {
+
+    .contact-info-content h3,
+    .contact-location-detail-content span {
+        font-size: 12px;
+    }
+
+    .contact-info-content p,
+    .contact-info-content a,
+    .contact-location-detail-content p,
+    .contact-location-detail-content a {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+}
+
+
+/* =========================================================
+   POST-SURGERY HERO BUTTON VISIBILITY
+========================================================= */
+
+.post-surgery-hero-primary,
+.post-surgery-hero-primary span,
+.post-surgery-hero-primary i,
+.post-surgery-hero-secondary:hover,
+.post-surgery-hero-secondary:hover span,
+.post-surgery-hero-secondary:hover i {
+    color: var(--primary-color);
+}
+
+.post-surgery-hero-primary:hover,
+.post-surgery-hero-primary:hover span,
+.post-surgery-hero-primary:hover i,
+.post-surgery-hero-secondary,
+.post-surgery-hero-secondary span,
+.post-surgery-hero-secondary i {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   FOOTER SOCIAL ICON VISIBILITY
+========================================================= */
+
+.footer-social a i,
+.footer-social a .fa-brands {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1em;
+    height: 1em;
+    color: inherit;
+    font-family: "Font Awesome 6 Brands" !important;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   DARK MODE LOGO BRIGHTNESS
+========================================================= */
+
+html.dark-mode .logo-image,
+html.dark-mode .footer-logo img,
+html.dark-mode .login-logo img,
+html.dark-mode .register-logo img,
+html.dark-mode .care-request-logo img {
+    filter: brightness(1.25) contrast(1.08) saturate(1.08);
+}
+
+
+/* =========================================================
+   ELDERLY INTRO ALIGNMENT FIX
+========================================================= */
+
+.elderly-companion-intro-points {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.elderly-companion-intro-container {
+    align-items: start;
+}
+
+.elderly-companion-intro-content {
+    order: 1;
+}
+
+.elderly-companion-intro-image {
+    order: 2;
+}
+
+.elderly-companion-intro-point {
+    display: grid;
+    grid-template-columns: 40px minmax(0, 1fr);
+    align-items: flex-start;
+    gap: 13px;
+    min-width: 0;
+}
+
+.elderly-companion-intro-point > div {
+    min-width: 0;
+}
+
+.elderly-companion-intro-point h3,
+.elderly-companion-intro-point p {
+    overflow-wrap: break-word;
+}
+
+@media (max-width: 1200px) {
+
+    .elderly-companion-intro-points {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .elderly-companion-intro-image {
+        order: 1;
+    }
+
+    .elderly-companion-intro-content {
+        order: 2;
+    }
+
+    .elderly-companion-intro-point {
+        grid-template-columns: 35px minmax(0, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .elderly-companion-intro-point {
+        grid-template-columns: 32px minmax(0, 1fr);
+    }
+}
+
+
+/* =========================================================
+   PHYSIOTHERAPY HERO IMAGE FULL SIZE
+========================================================= */
+
+@media (min-width: 1025px) {
+
+    .physio-assistance-hero-container {
+        grid-template-columns: minmax(0, 0.92fr) minmax(520px, 1.08fr);
+    }
+
+    .physio-assistance-hero-image {
+        width: 100%;
+        max-width: none;
+        height: 520px;
+        justify-self: stretch;
+    }
+
+    .physio-assistance-hero-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .physio-assistance-hero-container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    .physio-assistance-hero-image {
+        max-width: none;
+    }
+}
+
+
+
+
+
+
+/* =========================================================
+   ELDERLY COMPANION CARE
+   SECTION 2: INTRODUCTION
+   PART 2 - MAIN CSS + DARK MODE
+========================================================= */
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.companion-care-introduction {
+    width: 100%;
+    padding: 100px 0;
+
+    background: var(--bg-color);
+    color: var(--text-color);
+
+    transition:
+        background-color var(--transition),
+        color var(--transition);
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.companion-care-introduction-container {
+    width: min(1180px, 90%);
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.companion-care-introduction-visual {
+    position: relative;
+
+    width: 100%;
+    height: 560px;
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background: var(--card-bg);
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.08);
+}
+
+.companion-care-introduction-visual::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: inherit;
+
+    pointer-events: none;
+}
+
+.companion-care-introduction-visual img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.companion-care-introduction-visual:hover img {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.companion-care-introduction-content {
+    width: 100%;
+    max-width: 650px;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.companion-care-introduction-eyebrow {
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    color: var(--primary-color);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.companion-care-introduction-heading {
+    margin: 0 0 22px;
+
+    color: var(--heading-color);
+
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.companion-care-introduction-text {
+    margin: 0 0 34px;
+
+    color: var(--text-muted);
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.companion-care-introduction-features {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 34px;
+    row-gap: 26px;
+
+    margin-bottom: 36px;
+}
+
+
+/* =========================================================
+   FEATURE
+========================================================= */
+
+.companion-care-introduction-feature {
+    display: grid;
+    grid-template-columns: 46px minmax(0, 1fr);
+
+    gap: 14px;
+
+    align-items: start;
+
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+/* =========================================================
+   FEATURE ICON
+========================================================= */
+
+.companion-care-introduction-feature-icon {
+    width: 46px;
+    height: 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: color-mix(
+        in srgb,
+        var(--primary-color) 12%,
+        transparent
+    );
+
+    color: var(--primary-color);
+
+    font-size: 17px;
+
+    transition:
+        background-color var(--transition),
+        color var(--transition),
+        transform 0.3s ease;
+}
+
+.companion-care-introduction-feature:hover
+.companion-care-introduction-feature-icon {
+    background: var(--primary-color);
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FEATURE CONTENT
+========================================================= */
+
+.companion-care-introduction-feature-content h3 {
+    margin: 2px 0 7px;
+
+    color: var(--heading-color);
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.companion-care-introduction-feature-content p {
+    margin: 0;
+
+    color: var(--text-muted);
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.companion-care-introduction-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 46px;
+
+    padding: 12px 22px;
+
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+
+    background: var(--primary-color);
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.companion-care-introduction-cta i {
+    font-size: 13px;
+
+    transition: transform 0.3s ease;
+}
+
+.companion-care-introduction-cta:hover {
+    background: transparent;
+    color: var(--primary-color);
+
+    transform: translateY(-2px);
+}
+
+.companion-care-introduction-cta:hover i {
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+.dark-mode .companion-care-introduction,
+[data-theme="dark"] .companion-care-introduction {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dark-mode .companion-care-introduction-visual,
+[data-theme="dark"] .companion-care-introduction-visual {
+    background: var(--card-bg);
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+.dark-mode .companion-care-introduction-heading,
+[data-theme="dark"] .companion-care-introduction-heading,
+
+.dark-mode .companion-care-introduction-feature-content h3,
+[data-theme="dark"] .companion-care-introduction-feature-content h3 {
+    color: var(--heading-color);
+}
+
+.dark-mode .companion-care-introduction-text,
+[data-theme="dark"] .companion-care-introduction-text,
+
+.dark-mode .companion-care-introduction-feature-content p,
+[data-theme="dark"] .companion-care-introduction-feature-content p {
+    color: var(--text-muted);
+}
+
+.dark-mode .companion-care-introduction-feature,
+[data-theme="dark"] .companion-care-introduction-feature {
+    border-color: var(--border-color);
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .companion-care-introduction-visual img,
+    .companion-care-introduction-feature-icon,
+    .companion-care-introduction-cta,
+    .companion-care-introduction-cta i {
+        transition: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   ABOUT US - MISSION & VALUES
+   PART 3: RESPONSIVE + RTL
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .about-mission-values-container {
+        width: min(90%, 850px);
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 45px;
+    }
+
+    .about-mission-values-title {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    .about-mission-values-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .about-mission-value-item {
+        padding: 28px 0;
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .about-mission-value-number {
+        font-size: 12px;
+    }
+
+    .about-mission-value-title {
+        font-size: 21px;
+        line-height: 1.3;
+    }
+
+    .about-mission-value-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .about-mission-values-section {
+        padding: 70px 0;
+        overflow: hidden;
+    }
+
+    .about-mission-values-container {
+        width: min(90%, 520px);
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    /* -----------------------------------------
+       INTRO CONTENT
+    ----------------------------------------- */
+
+    .about-mission-values-header {
+        width: 100%;
+    }
+
+    .about-mission-values-subtitle {
+        font-size: 12px;
+        line-height: 1.4;
+        display: block;
+        margin-bottom: 14px;
+    }
+
+    .about-mission-values-title {
+        font-size: 30px;
+        line-height: 1.18;
+        max-width: 420px;
+    }
+
+    .about-mission-values-description {
+        font-size: 15px;
+        line-height: 1.7;
+        max-width: 450px;
+        margin-top: 20px;
+    }
+
+
+    /* -----------------------------------------
+       VALUES LIST
+    ----------------------------------------- */
+
+    .about-mission-values-list {
+        width: 100%;
+    }
+
+    .about-mission-value-item {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 18px;
+        padding: 25px 0;
+        box-sizing: border-box;
+    }
+
+    .about-mission-value-number {
+        font-size: 12px;
+        line-height: 1.4;
+        padding-top: 3px;
+    }
+
+    .about-mission-value-content {
+        min-width: 0;
+    }
+
+    .about-mission-value-title {
+        font-size: 20px;
+        line-height: 1.3;
+        margin: 0;
+    }
+
+    .about-mission-value-text {
+        font-size: 14px;
+        line-height: 1.7;
+        margin-top: 8px;
+        max-width: 100%;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .about-mission-values-section {
+        padding: 55px 0;
+    }
+
+    .about-mission-values-container {
+        width: 88%;
+        gap: 38px;
+    }
+
+    .about-mission-values-title {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .about-mission-values-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .about-mission-value-item {
+        grid-template-columns: 34px minmax(0, 1fr);
+        gap: 14px;
+        padding: 22px 0;
+    }
+
+    .about-mission-value-number {
+        font-size: 11px;
+    }
+
+    .about-mission-value-title {
+        font-size: 19px;
+    }
+
+    .about-mission-value-text {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .about-mission-values-container {
+        width: 86%;
+    }
+
+    .about-mission-values-title {
+        font-size: 26px;
+    }
+
+    .about-mission-value-item {
+        grid-template-columns: 30px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .about-mission-value-title {
+        font-size: 18px;
+    }
+
+    .about-mission-value-text {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   RTL RESPONSIVE
+========================================================= */
+
+[dir="rtl"] .about-mission-values-container {
+    direction: rtl;
+}
+
+[dir="rtl"] .about-mission-values-header,
+[dir="rtl"] .about-mission-value-content {
+    text-align: right;
+}
+
+[dir="rtl"] .about-mission-value-item {
+    direction: rtl;
+    grid-template-columns: minmax(0, 1fr) 42px;
+}
+
+[dir="rtl"] .about-mission-value-number {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+[dir="rtl"] .about-mission-value-content {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+/* =========================================================
+   RTL MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    [dir="rtl"] .about-mission-value-item {
+        grid-template-columns: minmax(0, 1fr) 34px;
+        gap: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    [dir="rtl"] .about-mission-value-item {
+        grid-template-columns: minmax(0, 1fr) 30px;
+        gap: 12px;
+    }
+}
+
+
+
+
+
+/* =========================================================
+   WHY FAMILIES CHOOSE US
+   PART 3: RESPONSIVE + MOBILE OVERFLOW FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .about-why-choose-section {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .about-why-choose-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 70px 20px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       LEFT INTRO
+    ===================================================== */
+
+    .about-why-choose-intro {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-why-choose-subtitle {
+        display: block;
+        font-size: 13px;
+        line-height: 1.4;
+        margin-bottom: 14px;
+    }
+
+    .about-why-choose-title {
+        width: 100%;
+        max-width: 100%;
+        font-size: 30px;
+        line-height: 1.15;
+        margin: 0 0 22px;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+
+    .about-why-choose-description {
+        width: 100%;
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 1.7;
+        margin: 0;
+        overflow-wrap: break-word;
+    }
+
+
+    /* =====================================================
+       RIGHT BENEFITS
+    ===================================================== */
+
+    .about-why-choose-list {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+
+    /* =====================================================
+       BENEFIT ITEM
+    ===================================================== */
+
+    .about-why-choose-item {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        display: grid;
+        grid-template-columns: 52px minmax(0, 1fr);
+        gap: 18px;
+
+        padding: 28px 0;
+        box-sizing: border-box;
+    }
+
+    .about-why-choose-number {
+        width: 48px;
+        height: 48px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-shrink: 0;
+
+        font-size: 12px;
+    }
+
+
+    /* =====================================================
+       ITEM CONTENT
+    ===================================================== */
+
+    .about-why-choose-item-content {
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-why-choose-item-content h3 {
+        margin: 0 0 9px;
+
+        font-size: 19px;
+        line-height: 1.3;
+
+        overflow-wrap: break-word;
+    }
+
+    .about-why-choose-item-content p {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        font-size: 14px;
+        line-height: 1.65;
+
+        overflow-wrap: break-word;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .about-why-choose-container {
+        padding: 60px 16px;
+        gap: 40px;
+    }
+
+    .about-why-choose-title {
+        font-size: 28px;
+        line-height: 1.15;
+    }
+
+    .about-why-choose-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .about-why-choose-item {
+        grid-template-columns: 44px minmax(0, 1fr);
+        gap: 14px;
+        padding: 25px 0;
+    }
+
+    .about-why-choose-number {
+        width: 42px;
+        height: 42px;
+        font-size: 11px;
+    }
+
+    .about-why-choose-item-content h3 {
+        font-size: 18px;
+    }
+
+    .about-why-choose-item-content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .about-why-choose-container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .about-why-choose-title {
+        font-size: 26px;
+    }
+
+    .about-why-choose-item {
+        grid-template-columns: 40px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .about-why-choose-number {
+        width: 38px;
+        height: 38px;
+    }
+
+    .about-why-choose-item-content h3 {
+        font-size: 17px;
+    }
+}
+
+
+/* =========================================================
+   RTL RESPONSIVE
+========================================================= */
+
+[dir="rtl"] .about-why-choose-item {
+    direction: rtl;
+    grid-template-columns: minmax(0, 1fr) 52px;
+}
+
+[dir="rtl"] .about-why-choose-number {
+    grid-column: 2;
+}
+
+[dir="rtl"] .about-why-choose-item-content {
+    grid-column: 1;
+}
+
+
+@media (max-width: 480px) {
+
+    [dir="rtl"] .about-why-choose-item {
+        grid-template-columns: minmax(0, 1fr) 44px;
+    }
+}
+
+
+
+
+
+/* =========================================================
+   ELDERLY COMPANION CARE - INTRODUCTION
+   PART 3: RESPONSIVE + MOBILE FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .companion-care-introduction {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .companion-care-introduction-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 60px 20px;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 45px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       IMAGE
+    ===================================================== */
+
+    .companion-care-introduction-visual {
+        width: 100%;
+        max-width: 100%;
+        order: 1;
+
+        box-sizing: border-box;
+    }
+
+    .companion-care-introduction-visual img {
+        display: block;
+
+        width: 100%;
+        max-width: 100%;
+        height: 320px;
+
+        object-fit: cover;
+        border-radius: 24px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       CONTENT
+    ===================================================== */
+
+    .companion-care-introduction-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        order: 2;
+        box-sizing: border-box;
+    }
+
+
+    .companion-care-introduction-eyebrow {
+        display: block;
+
+        font-size: 13px;
+        line-height: 1.4;
+
+        margin-bottom: 14px;
+    }
+
+
+    .companion-care-introduction-heading {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 30px;
+        line-height: 1.15;
+
+        margin: 0 0 20px;
+
+        overflow-wrap: break-word;
+    }
+
+
+    .companion-care-introduction-text {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 15px;
+        line-height: 1.7;
+
+        margin: 0 0 30px;
+
+        overflow-wrap: break-word;
+    }
+
+
+    /* =====================================================
+       FEATURES
+    ===================================================== */
+
+    .companion-care-introduction-features {
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        box-sizing: border-box;
+    }
+
+
+    .companion-care-introduction-feature {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+
+        box-sizing: border-box;
+    }
+
+
+    .companion-care-introduction-feature-icon {
+        width: 42px;
+        height: 42px;
+
+        min-width: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        box-sizing: border-box;
+    }
+
+
+    .companion-care-introduction-feature-icon i {
+        font-size: 15px;
+    }
+
+
+    .companion-care-introduction-feature-content {
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+
+        box-sizing: border-box;
+    }
+
+
+    .companion-care-introduction-feature-content h3 {
+        margin: 0 0 6px;
+
+        font-size: 18px;
+        line-height: 1.3;
+
+        overflow-wrap: break-word;
+    }
+
+
+    .companion-care-introduction-feature-content p {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        font-size: 14px;
+        line-height: 1.6;
+
+        overflow-wrap: break-word;
+    }
+
+
+    /* =====================================================
+       CTA
+    ===================================================== */
+
+    .companion-care-introduction-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        max-width: 100%;
+
+        min-height: 48px;
+
+        margin-top: 30px;
+
+        box-sizing: border-box;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .companion-care-introduction-container {
+        padding: 50px 16px;
+        gap: 35px;
+    }
+
+
+    .companion-care-introduction-visual img {
+        height: 280px;
+        border-radius: 20px;
+    }
+
+
+    .companion-care-introduction-heading {
+        font-size: 28px;
+        line-height: 1.15;
+    }
+
+
+    .companion-care-introduction-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    .companion-care-introduction-feature {
+        gap: 12px;
+    }
+
+
+    .companion-care-introduction-feature-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+
+
+    .companion-care-introduction-feature-content h3 {
+        font-size: 17px;
+    }
+
+
+    .companion-care-introduction-feature-content p {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .companion-care-introduction-container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+
+    .companion-care-introduction-heading {
+        font-size: 26px;
+    }
+
+
+    .companion-care-introduction-feature-icon {
+        width: 38px;
+        height: 38px;
+        min-width: 38px;
+    }
+
+
+    .companion-care-introduction-feature-content h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* =========================================================
+   RTL RESPONSIVE
+========================================================= */
+
+[dir="rtl"] .companion-care-introduction-feature {
+    direction: rtl;
+}
+
+[dir="rtl"] .companion-care-introduction-content {
+    text-align: right;
+}
+
+[dir="rtl"] .companion-care-introduction-cta {
+    flex-direction: row-reverse;
+}
+
+
+
+
+/* =========================================================
+   MOBILE IMAGE HEIGHT FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .companion-care-introduction-visual {
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .companion-care-introduction-visual img {
+        display: block;
+        width: 100%;
+        height: 280px !important;
+        min-height: 0 !important;
+        object-fit: cover;
+        margin: 0 !important;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   PHYSIOTHERAPY BENEFITS - IMAGE
+   MOBILE FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .physio-assistance-benefits-image {
+        width: 100%;
+        max-width: 100%;
+        height: 380px;
+        overflow: hidden;
+        border-radius: 22px;
+        margin: 25px 0 30px;
+    }
+
+    .physio-assistance-benefits-image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .physio-assistance-benefits-image {
+        width: 100%;
+        height: 330px;
+        margin: 22px 0 28px;
+        border-radius: 20px;
+    }
+
+    .physio-assistance-benefits-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+}
+
+
+
+
+
+/* =========================================================
+   MEDICATION MANAGEMENT
+   SECTION 6 - RESPONSIVE
+   PART 3
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .medication-management-who {
+        padding: 80px 0;
+    }
+
+    .medication-management-who-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .medication-management-who-header {
+        margin-bottom: 50px;
+    }
+
+    .medication-management-who-title {
+        font-size: 36px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .medication-management-who {
+        padding: 70px 0;
+    }
+
+    .medication-management-who-container {
+        width: min(92%, 500px);
+    }
+
+    .medication-management-who-header {
+        margin-bottom: 38px;
+        text-align: center;
+    }
+
+    .medication-management-who-subtitle {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .medication-management-who-title {
+        font-size: 30px;
+        line-height: 1.25;
+        margin-bottom: 15px;
+    }
+
+    .medication-management-who-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       ONE CARD PER ROW
+    ===================================================== */
+
+    .medication-management-who-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+
+    /* =====================================================
+       CARD
+    ===================================================== */
+
+    .medication-management-who-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        overflow: hidden;
+    }
+
+
+    /* =====================================================
+       IMAGE - FULL WIDTH
+    ===================================================== */
+
+    .medication-management-who-image {
+        width: 100%;
+        height: 220px;
+        flex-shrink: 0;
+    }
+
+    .medication-management-who-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    /* =====================================================
+       ICON
+    ===================================================== */
+
+    .medication-management-who-icon {
+        width: 54px;
+        height: 54px;
+
+        margin: -27px auto 0;
+
+        flex-shrink: 0;
+
+        font-size: 19px;
+
+        border-width: 4px;
+    }
+
+
+    /* =====================================================
+       CONTENT
+    ===================================================== */
+
+    .medication-management-who-content {
+        padding: 20px 24px 28px;
+        text-align: center;
+    }
+
+    .medication-management-who-content h3 {
+        font-size: 21px;
+        line-height: 1.35;
+    }
+
+    .medication-management-who-divider {
+        margin: 14px auto;
+    }
+
+    .medication-management-who-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .medication-management-who {
+        padding: 60px 0;
+    }
+
+    .medication-management-who-container {
+        width: 92%;
+    }
+
+    .medication-management-who-title {
+        font-size: 28px;
+    }
+
+    .medication-management-who-description {
+        font-size: 14px;
+    }
+
+    .medication-management-who-image {
+        height: 200px;
+    }
+
+    .medication-management-who-icon {
+        width: 52px;
+        height: 52px;
+        margin-top: -26px;
+    }
+
+    .medication-management-who-content {
+        padding: 19px 20px 25px;
+    }
+
+    .medication-management-who-content h3 {
+        font-size: 20px;
+    }
+
+    .medication-management-who-content p {
+        font-size: 14px;
+    }
+
+}
+
+
+/* =========================================================
+   RTL RESPONSIVE
+========================================================= */
+
+[dir="rtl"] .medication-management-who-header {
+    text-align: center;
+}
+
+[dir="rtl"] .medication-management-who-content {
+    text-align: center;
+}
+
+[dir="rtl"] .medication-management-who-divider {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   MOBILE + IPAD FONT SIZE NORMALIZATION
+   SAME TYPE SCALE FROM MOBILE THROUGH IPAD PRO
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    :is(
+        [class^="physio-assistance-"],
+        [class*=" physio-assistance-"],
+        [class^="wound-dressing-"],
+        [class*=" wound-dressing-"],
+        [class^="medication-management-"],
+        [class*=" medication-management-"]
+    )[class*="-subtitle"] {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+    }
+
+    :is(
+        [class^="physio-assistance-"],
+        [class*=" physio-assistance-"],
+        [class^="wound-dressing-"],
+        [class*=" wound-dressing-"],
+        [class^="medication-management-"],
+        [class*=" medication-management-"]
+    )[class*="-title"]:not([class*="-subtitle"]) {
+        font-size: 30px !important;
+        line-height: 1.22 !important;
+    }
+
+    :is(
+        [class^="physio-assistance-"],
+        [class*=" physio-assistance-"],
+        [class^="wound-dressing-"],
+        [class*=" wound-dressing-"],
+        [class^="medication-management-"],
+        [class*=" medication-management-"]
+    )[class*="-description"] {
+        font-size: 14px !important;
+        line-height: 1.7 !important;
+    }
+
+    :is(
+        [class^="physio-assistance-"],
+        [class*=" physio-assistance-"],
+        [class^="wound-dressing-"],
+        [class*=" wound-dressing-"],
+        [class^="medication-management-"],
+        [class*=" medication-management-"]
+    ) h3 {
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+    }
+
+    :is(
+        [class^="physio-assistance-"],
+        [class*=" physio-assistance-"],
+        [class^="wound-dressing-"],
+        [class*=" wound-dressing-"],
+        [class^="medication-management-"],
+        [class*=" medication-management-"]
+    ) p {
+        font-size: 13px !important;
+        line-height: 1.65 !important;
+    }
+
+    :is(
+        [class^="physio-assistance-hero-"],
+        [class*=" physio-assistance-hero-"],
+        [class^="wound-dressing-hero-"],
+        [class*=" wound-dressing-hero-"],
+        [class^="medication-management-hero-"],
+        [class*=" medication-management-hero-"]
+    )[class*="-title"] {
+        font-size: 38px !important;
+        line-height: 1.16 !important;
+    }
+
+    :is(
+        [class^="physio-assistance-hero-"],
+        [class*=" physio-assistance-hero-"],
+        [class^="wound-dressing-hero-"],
+        [class*=" wound-dressing-hero-"],
+        [class^="medication-management-hero-"],
+        [class*=" medication-management-hero-"]
+    )[class*="-description"] {
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+    }
+
+    :is(
+        [class^="physio-assistance-"],
+        [class*=" physio-assistance-"],
+        [class^="wound-dressing-"],
+        [class*=" wound-dressing-"],
+        [class^="medication-management-"],
+        [class*=" medication-management-"]
+    ) a,
+    :is(
+        [class^="physio-assistance-"],
+        [class*=" physio-assistance-"],
+        [class^="wound-dressing-"],
+        [class*=" wound-dressing-"],
+        [class^="medication-management-"],
+        [class*=" medication-management-"]
+    ) button {
+        font-size: 14px !important;
+        line-height: 1.35 !important;
+    }
+}
+
+
