@@ -48860,7 +48860,17 @@ html.dark-mode .care-request-logo img {
         [class^="wound-dressing-"],
         [class*=" wound-dressing-"],
         [class^="medication-management-"],
-        [class*=" medication-management-"]
+        [class*=" medication-management-"],
+        [class^="elderly-care-"],
+        [class*=" elderly-care-"],
+        [class^="post-surgery-"],
+        [class*=" post-surgery-"],
+        [class^="about-"],
+        [class*=" about-"],
+        [class^="caregiver-"],
+        [class*=" caregiver-"],
+        [class^="services-"],
+        [class*=" services-"]
     )[class*="-subtitle"] {
         font-size: 13px !important;
         line-height: 1.4 !important;
@@ -48872,7 +48882,17 @@ html.dark-mode .care-request-logo img {
         [class^="wound-dressing-"],
         [class*=" wound-dressing-"],
         [class^="medication-management-"],
-        [class*=" medication-management-"]
+        [class*=" medication-management-"],
+        [class^="elderly-care-"],
+        [class*=" elderly-care-"],
+        [class^="post-surgery-"],
+        [class*=" post-surgery-"],
+        [class^="about-"],
+        [class*=" about-"],
+        [class^="caregiver-"],
+        [class*=" caregiver-"],
+        [class^="services-"],
+        [class*=" services-"]
     )[class*="-title"]:not([class*="-subtitle"]) {
         font-size: 30px !important;
         line-height: 1.22 !important;
@@ -48884,7 +48904,17 @@ html.dark-mode .care-request-logo img {
         [class^="wound-dressing-"],
         [class*=" wound-dressing-"],
         [class^="medication-management-"],
-        [class*=" medication-management-"]
+        [class*=" medication-management-"],
+        [class^="elderly-care-"],
+        [class*=" elderly-care-"],
+        [class^="post-surgery-"],
+        [class*=" post-surgery-"],
+        [class^="about-"],
+        [class*=" about-"],
+        [class^="caregiver-"],
+        [class*=" caregiver-"],
+        [class^="services-"],
+        [class*=" services-"]
     )[class*="-description"] {
         font-size: 14px !important;
         line-height: 1.7 !important;
@@ -48896,7 +48926,17 @@ html.dark-mode .care-request-logo img {
         [class^="wound-dressing-"],
         [class*=" wound-dressing-"],
         [class^="medication-management-"],
-        [class*=" medication-management-"]
+        [class*=" medication-management-"],
+        [class^="elderly-care-"],
+        [class*=" elderly-care-"],
+        [class^="post-surgery-"],
+        [class*=" post-surgery-"],
+        [class^="about-"],
+        [class*=" about-"],
+        [class^="caregiver-"],
+        [class*=" caregiver-"],
+        [class^="services-"],
+        [class*=" services-"]
     ) h3 {
         font-size: 16px !important;
         line-height: 1.4 !important;
@@ -48908,7 +48948,17 @@ html.dark-mode .care-request-logo img {
         [class^="wound-dressing-"],
         [class*=" wound-dressing-"],
         [class^="medication-management-"],
-        [class*=" medication-management-"]
+        [class*=" medication-management-"],
+        [class^="elderly-care-"],
+        [class*=" elderly-care-"],
+        [class^="post-surgery-"],
+        [class*=" post-surgery-"],
+        [class^="about-"],
+        [class*=" about-"],
+        [class^="caregiver-"],
+        [class*=" caregiver-"],
+        [class^="services-"],
+        [class*=" services-"]
     ) p {
         font-size: 13px !important;
         line-height: 1.65 !important;
@@ -48920,7 +48970,15 @@ html.dark-mode .care-request-logo img {
         [class^="wound-dressing-hero-"],
         [class*=" wound-dressing-hero-"],
         [class^="medication-management-hero-"],
-        [class*=" medication-management-hero-"]
+        [class*=" medication-management-hero-"],
+        [class^="elderly-care-hero-"],
+        [class*=" elderly-care-hero-"],
+        [class^="post-surgery-hero-"],
+        [class*=" post-surgery-hero-"],
+        [class^="about-hero-"],
+        [class*=" about-hero-"],
+        [class^="caregiver-hero-"],
+        [class*=" caregiver-hero-"]
     )[class*="-title"] {
         font-size: 38px !important;
         line-height: 1.16 !important;
@@ -48932,7 +48990,15 @@ html.dark-mode .care-request-logo img {
         [class^="wound-dressing-hero-"],
         [class*=" wound-dressing-hero-"],
         [class^="medication-management-hero-"],
-        [class*=" medication-management-hero-"]
+        [class*=" medication-management-hero-"],
+        [class^="elderly-care-hero-"],
+        [class*=" elderly-care-hero-"],
+        [class^="post-surgery-hero-"],
+        [class*=" post-surgery-hero-"],
+        [class^="about-hero-"],
+        [class*=" about-hero-"],
+        [class^="caregiver-hero-"],
+        [class*=" caregiver-hero-"]
     )[class*="-description"] {
         font-size: 15px !important;
         line-height: 1.7 !important;
@@ -48944,7 +49010,17 @@ html.dark-mode .care-request-logo img {
         [class^="wound-dressing-"],
         [class*=" wound-dressing-"],
         [class^="medication-management-"],
-        [class*=" medication-management-"]
+        [class*=" medication-management-"],
+        [class^="elderly-care-"],
+        [class*=" elderly-care-"],
+        [class^="post-surgery-"],
+        [class*=" post-surgery-"],
+        [class^="about-"],
+        [class*=" about-"],
+        [class^="caregiver-"],
+        [class*=" caregiver-"],
+        [class^="services-"],
+        [class*=" services-"]
     ) a,
     :is(
         [class^="physio-assistance-"],
@@ -48952,7 +49028,17 @@ html.dark-mode .care-request-logo img {
         [class^="wound-dressing-"],
         [class*=" wound-dressing-"],
         [class^="medication-management-"],
-        [class*=" medication-management-"]
+        [class*=" medication-management-"],
+        [class^="elderly-care-"],
+        [class*=" elderly-care-"],
+        [class^="post-surgery-"],
+        [class*=" post-surgery-"],
+        [class^="about-"],
+        [class*=" about-"],
+        [class^="caregiver-"],
+        [class*=" caregiver-"],
+        [class^="services-"],
+        [class*=" services-"]
     ) button {
         font-size: 14px !important;
         line-height: 1.35 !important;
@@ -48960,3 +49046,172 @@ html.dark-mode .care-request-logo img {
 }
 
 
+/* =========================================================
+   RESPONSIVE SMALL TEXT FIX
+   CAREGIVERS + ABOUT + SERVICE DETAIL PAGES
+========================================================= */
+
+@media (max-width: 1024px) {
+
+    :is(
+        [class^="about-"],
+        [class*=" about-"],
+        [class^="caregiver-"],
+        [class*=" caregiver-"],
+        [class^="services-"],
+        [class*=" services-"],
+        [class^="elderly-care-"],
+        [class*=" elderly-care-"],
+        [class^="elderly-companion-"],
+        [class*=" elderly-companion-"],
+        [class^="companion-care-"],
+        [class*=" companion-care-"],
+        [class^="post-surgery-"],
+        [class*=" post-surgery-"],
+        [class^="wound-dressing-"],
+        [class*=" wound-dressing-"],
+        [class^="medication-management-"],
+        [class*=" medication-management-"],
+        [class^="physio-assistance-"],
+        [class*=" physio-assistance-"]
+    ):is(
+        [class*="-eyebrow"],
+        [class*="-subtitle"]
+    ) {
+        font-size: 13px !important;
+        line-height: 1.4 !important;
+    }
+
+    :is(
+        [class^="about-"],
+        [class*=" about-"],
+        [class^="caregiver-"],
+        [class*=" caregiver-"],
+        [class^="services-"],
+        [class*=" services-"],
+        [class^="elderly-care-"],
+        [class*=" elderly-care-"],
+        [class^="elderly-companion-"],
+        [class*=" elderly-companion-"],
+        [class^="companion-care-"],
+        [class*=" companion-care-"],
+        [class^="post-surgery-"],
+        [class*=" post-surgery-"],
+        [class^="wound-dressing-"],
+        [class*=" wound-dressing-"],
+        [class^="medication-management-"],
+        [class*=" medication-management-"],
+        [class^="physio-assistance-"],
+        [class*=" physio-assistance-"]
+    ):is(
+        [class*="-heading"],
+        [class*="-title"]
+    ):not([class*="-subtitle"]) {
+        font-size: 30px !important;
+        line-height: 1.22 !important;
+    }
+
+    :is(
+        [class^="about-"],
+        [class*=" about-"],
+        [class^="caregiver-"],
+        [class*=" caregiver-"],
+        [class^="services-"],
+        [class*=" services-"],
+        [class^="elderly-care-"],
+        [class*=" elderly-care-"],
+        [class^="elderly-companion-"],
+        [class*=" elderly-companion-"],
+        [class^="companion-care-"],
+        [class*=" companion-care-"],
+        [class^="post-surgery-"],
+        [class*=" post-surgery-"],
+        [class^="wound-dressing-"],
+        [class*=" wound-dressing-"],
+        [class^="medication-management-"],
+        [class*=" medication-management-"],
+        [class^="physio-assistance-"],
+        [class*=" physio-assistance-"]
+    ):is(
+        [class*="-description"],
+        [class*="-text"],
+        [class*="-question"]
+    ) {
+        font-size: 14px !important;
+        line-height: 1.65 !important;
+    }
+
+    :is(
+        [class^="about-"],
+        [class*=" about-"],
+        [class^="caregiver-"],
+        [class*=" caregiver-"],
+        [class^="services-"],
+        [class*=" services-"],
+        [class^="elderly-care-"],
+        [class*=" elderly-care-"],
+        [class^="elderly-companion-"],
+        [class*=" elderly-companion-"],
+        [class^="companion-care-"],
+        [class*=" companion-care-"],
+        [class^="post-surgery-"],
+        [class*=" post-surgery-"],
+        [class^="wound-dressing-"],
+        [class*=" wound-dressing-"],
+        [class^="medication-management-"],
+        [class*=" medication-management-"],
+        [class^="physio-assistance-"],
+        [class*=" physio-assistance-"]
+    ) :is(h3, h4, strong, .wound-dressing-faq-question, .about-faq-question) {
+        font-size: 15px !important;
+        line-height: 1.4 !important;
+    }
+
+    :is(
+        [class^="about-"],
+        [class*=" about-"],
+        [class^="caregiver-"],
+        [class*=" caregiver-"],
+        [class^="services-"],
+        [class*=" services-"],
+        [class^="elderly-care-"],
+        [class*=" elderly-care-"],
+        [class^="elderly-companion-"],
+        [class*=" elderly-companion-"],
+        [class^="companion-care-"],
+        [class*=" companion-care-"],
+        [class^="post-surgery-"],
+        [class*=" post-surgery-"],
+        [class^="wound-dressing-"],
+        [class*=" wound-dressing-"],
+        [class^="medication-management-"],
+        [class*=" medication-management-"],
+        [class^="physio-assistance-"],
+        [class*=" physio-assistance-"]
+    ) :is(p, span, a, button, li) {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+    :is(
+        [class^="about-hero-"],
+        [class*=" about-hero-"],
+        [class^="caregiver-hero-"],
+        [class*=" caregiver-hero-"],
+        [class^="elderly-care-hero-"],
+        [class*=" elderly-care-hero-"],
+        [class^="elderly-companion-hero-"],
+        [class*=" elderly-companion-hero-"],
+        [class^="post-surgery-hero-"],
+        [class*=" post-surgery-hero-"],
+        [class^="wound-dressing-hero-"],
+        [class*=" wound-dressing-hero-"],
+        [class^="medication-management-hero-"],
+        [class*=" medication-management-hero-"],
+        [class^="physio-assistance-hero-"],
+        [class*=" physio-assistance-hero-"]
+    )[class*="-title"] {
+        font-size: 34px !important;
+        line-height: 1.16 !important;
+    }
+}
