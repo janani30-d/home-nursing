@@ -49256,21 +49256,6 @@ html.dark-mode .care-request-logo img {
 }
 
 
-/* =========================================================
-   FINAL CONSISTENT SITE GUTTER
-========================================================= */
-
-section > [class$="-container"],
-section > [class*="-container "],
-footer > .footer-container,
-.footer-bottom-container {
-    width: 100%;
-    max-width: calc(var(--container-width) + var(--site-gutter-total));
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: var(--site-gutter);
-    padding-right: var(--site-gutter);
-}
 
 
 
