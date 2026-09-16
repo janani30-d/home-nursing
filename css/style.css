@@ -153,6 +153,10 @@ iframe {
        HEADER
     ========================= */
 
+    --container-width: 1200px;
+    --site-gutter: 24px;
+    --site-gutter-total: 48px;
+
     --header-height: 82px;
 
     /* Logo size */
@@ -245,7 +249,7 @@ html.dark-mode .site-header {
 
     position: relative;
 
-    width: calc(100% - 48px);
+    width: calc(100% - var(--site-gutter-total));
 
     max-width: 1500px;
 
@@ -828,7 +832,7 @@ html.dark-mode .has-dropdown .dropdown-link:hover {
 
 .rtl-toggle {
 
-    min-width: 56px;
+    min-width: 38px;
 
 }
 
@@ -5638,6 +5642,12 @@ html[dir="rtl"] .final-cta-primary i {
 }
 
 
+.home2-hero-secondary:hover span,
+.home2-hero-secondary:hover i {
+    color: var(--white-color);
+}
+
+
 /* =========================================================
    HERO IMAGE
 ========================================================= */
@@ -5740,6 +5750,12 @@ html.dark-mode .home2-hero-secondary:hover {
 
     border-color: var(--primary-color);
 
+    color: var(--white-color);
+}
+
+
+html.dark-mode .home2-hero-secondary:hover span,
+html.dark-mode .home2-hero-secondary:hover i {
     color: var(--white-color);
 }
 
@@ -43977,8 +43993,10 @@ html.dark-mode .footer-title {
     color: #ffffff;
 }
 
-.hero-secondary-button:hover {
-    color: #ffffff;
+.hero-secondary-button:hover,
+.hero-secondary-button:hover span,
+.hero-secondary-button:hover i {
+    color: var(--primary-dark);
 }
 
 .contact-hero,
@@ -45390,4 +45408,576 @@ html.dark-mode .care-request-logo img {
 .dark-mode .contact-hero .contact-hero-eyebrow,
 [data-theme="dark"] .contact-hero .contact-hero-eyebrow {
     color: #ffffff !important;
+}
+
+
+/* =========================================================
+   CONSISTENT SITE GUTTER
+========================================================= */
+
+section > [class$="-container"],
+section > [class*="-container "],
+footer > .footer-container,
+.footer-bottom-container {
+    width: 100%;
+    max-width: calc(var(--container-width) + var(--site-gutter-total));
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--site-gutter);
+    padding-right: var(--site-gutter);
+}
+
+
+
+
+
+
+/* =========================================================
+   HOME 2 HERO — OVERRIDE CSS
+   Uses existing HTML class names
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   HERO SECTION
+--------------------------------------------------------- */
+
+.home2-hero-section {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 90px 0;
+    background: var(--bg-color, #ffffff);
+}
+
+.home2-hero-container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+
+/* ---------------------------------------------------------
+   HERO CONTENT
+--------------------------------------------------------- */
+
+.home2-hero-content {
+    width: 100%;
+    max-width: 600px;
+}
+
+.home2-hero-subtitle {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary-color, #2563eb);
+}
+
+.home2-hero-title {
+    margin: 0 0 22px;
+    font-family: "Inter", sans-serif;
+    font-size: clamp(38px, 4vw, 60px);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -0.035em;
+    color: var(--heading-color, #172033);
+}
+
+.home2-hero-description {
+    max-width: 540px;
+    margin: 0 0 32px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: var(--text-color, #667085);
+}
+
+
+/* ---------------------------------------------------------
+   HERO BUTTONS
+--------------------------------------------------------- */
+
+.home2-hero-buttons {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.home2-hero-primary,
+.home2-hero-secondary {
+    min-height: 52px;
+    padding: 0 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.home2-hero-primary {
+    background: var(--primary-color, #2563eb);
+    border: 1px solid var(--primary-color, #2563eb);
+    color: #ffffff;
+}
+
+.home2-hero-primary i {
+    font-size: 13px;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.home2-hero-primary:hover {
+    background: var(--primary-hover, #1d4ed8);
+    border-color: var(--primary-hover, #1d4ed8);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.home2-hero-primary:hover i {
+    transform: translateX(4px);
+}
+
+.home2-hero-secondary {
+    background: transparent;
+    border: 1px solid var(--primary-color, #2563eb);
+    color: var(--primary-color, #2563eb);
+}
+
+.home2-hero-secondary:hover {
+    background: var(--primary-color, #2563eb);
+    border-color: var(--primary-color, #2563eb);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+
+/* ---------------------------------------------------------
+   HERO IMAGE
+--------------------------------------------------------- */
+
+.home2-hero-image {
+    width: 100%;
+    height: 560px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.home2-hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+
+.home2-hero-image:hover img {
+    transform: scale(1.03);
+}
+
+
+/* ---------------------------------------------------------
+   RTL SUPPORT
+--------------------------------------------------------- */
+
+html[dir="rtl"] .home2-hero-content {
+    text-align: right;
+}
+
+html[dir="rtl"] .home2-hero-buttons {
+    justify-content: flex-start;
+}
+
+html[dir="rtl"] .home2-hero-primary i {
+    transform: rotate(180deg);
+}
+
+html[dir="rtl"] .home2-hero-primary:hover i {
+    transform: rotate(180deg) translateX(4px);
+}
+
+
+/* ---------------------------------------------------------
+   DARK MODE
+--------------------------------------------------------- */
+
+body.dark-mode .home2-hero-section,
+html.dark-mode .home2-hero-section {
+    background: var(--dark-bg, #101828);
+}
+
+body.dark-mode .home2-hero-title,
+html.dark-mode .home2-hero-title {
+    color: var(--dark-heading, #f8fafc);
+}
+
+body.dark-mode .home2-hero-description,
+html.dark-mode .home2-hero-description {
+    color: var(--dark-text, #aab4c3);
+}
+
+body.dark-mode .home2-hero-secondary,
+html.dark-mode .home2-hero-secondary {
+    color: var(--primary-color, #60a5fa);
+    border-color: var(--primary-color, #60a5fa);
+}
+
+body.dark-mode .home2-hero-secondary:hover,
+html.dark-mode .home2-hero-secondary:hover {
+    background: var(--primary-color, #2563eb);
+    color: #ffffff;
+}
+
+
+/* ---------------------------------------------------------
+   LARGE TABLET / SMALL DESKTOP
+--------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+
+    .home2-hero-section {
+        padding: 75px 0;
+    }
+
+    .home2-hero-container {
+        gap: 45px;
+    }
+
+    .home2-hero-title {
+        font-size: 46px;
+    }
+
+    .home2-hero-image {
+        height: 500px;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   IPAD PRO
+--------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+
+    .home2-hero-section {
+        padding: 70px 0;
+    }
+
+    .home2-hero-container {
+        width: min(92%, 900px);
+        gap: 35px;
+    }
+
+    .home2-hero-title {
+        font-size: 42px;
+    }
+
+    .home2-hero-description {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .home2-hero-image {
+        height: 450px;
+        border-radius: 20px;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   IPAD / TABLET
+--------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+    .home2-hero-section {
+        padding: 65px 0;
+    }
+
+    .home2-hero-container {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .home2-hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .home2-hero-subtitle {
+        margin-bottom: 14px;
+        font-size: 13px;
+    }
+
+    .home2-hero-title {
+        margin-bottom: 18px;
+        font-size: 40px;
+        line-height: 1.15;
+    }
+
+    .home2-hero-description {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 28px;
+        font-size: 15px;
+    }
+
+    .home2-hero-buttons {
+        justify-content: center;
+    }
+
+    .home2-hero-image {
+        width: 100%;
+        height: 430px;
+        border-radius: 20px;
+    }
+
+    html[dir="rtl"] .home2-hero-content {
+        text-align: center;
+    }
+
+    html[dir="rtl"] .home2-hero-buttons {
+        justify-content: center;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   IPAD MINI / SMALL TABLET
+--------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .home2-hero-section {
+        padding: 55px 0;
+    }
+
+    .home2-hero-container {
+        width: 92%;
+        gap: 32px;
+    }
+
+    .home2-hero-title {
+        font-size: 34px;
+    }
+
+    .home2-hero-description {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .home2-hero-buttons {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .home2-hero-primary,
+    .home2-hero-secondary {
+        width: 100%;
+        min-height: 50px;
+    }
+
+    .home2-hero-image {
+        height: 350px;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 480px) {
+
+    .home2-hero-section {
+        padding: 45px 0;
+    }
+
+    .home2-hero-container {
+        width: 92%;
+        gap: 28px;
+    }
+
+    .home2-hero-subtitle {
+        font-size: 12px;
+        letter-spacing: 0.06em;
+    }
+
+    .home2-hero-title {
+        font-size: 30px;
+        line-height: 1.18;
+        letter-spacing: -0.025em;
+    }
+
+    .home2-hero-description {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .home2-hero-primary,
+    .home2-hero-secondary {
+        min-height: 48px;
+        padding: 0 20px;
+        font-size: 14px;
+        border-radius: 7px;
+    }
+
+    .home2-hero-image {
+        height: 300px;
+        border-radius: 16px;
+    }
+}
+
+
+/* ---------------------------------------------------------
+   VERY SMALL MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 360px) {
+
+    .home2-hero-title {
+        font-size: 27px;
+    }
+
+    .home2-hero-description {
+        font-size: 13px;
+    }
+
+    .home2-hero-image {
+        height: 270px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   CTA SHAPE & CORNER ONLY
+   ========================================================= */
+
+.home2-final-cta-btn,
+.elderly-companion-hero-primary,
+.elderly-companion-hero-secondary,
+.elderly-companion-cta-primary,
+.elderly-companion-cta-secondary,
+.post-surgery-cta-primary,
+.post-surgery-cta-secondary,
+.physio-assistance-hero-primary,
+.physio-assistance-hero-secondary,
+.physio-assistance-final-cta-btn,
+.wound-dressing-hero-btn,
+.wound-dressing-cta-btn,
+.medication-management-cta-primary,
+.medication-management-cta-secondary,
+.medication-management-hero-btn,
+.caregivers-hero-primary,
+.caregivers-hero-secondary,
+.home2-hero-primary,
+.home2-hero-secondary {
+    height: 60px !important;
+    min-height: 60px !important;
+    padding: 0 30px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 12px !important;
+
+    border-radius: 8px !important;
+
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+}
+
+
+/* ---------------------------------------------------------
+   MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 767px) {
+
+    .home2-final-cta-btn,
+    .elderly-companion-hero-primary,
+    .elderly-companion-hero-secondary,
+    .elderly-companion-cta-primary,
+    .elderly-companion-cta-secondary,
+    .post-surgery-cta-primary,
+    .post-surgery-cta-secondary,
+    .physio-assistance-hero-primary,
+    .physio-assistance-hero-secondary,
+    .physio-assistance-final-cta-btn,
+    .wound-dressing-hero-btn,
+    .wound-dressing-cta-btn,
+    .medication-management-cta-primary,
+    .medication-management-cta-secondary,
+    .medication-management-hero-btn,
+    .caregivers-hero-primary,
+    .caregivers-hero-secondary,
+    .home2-hero-primary,
+    .home2-hero-secondary {
+        height: 56px !important;
+        min-height: 56px !important;
+        padding: 0 24px !important;
+        border-radius: 8px !important;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .home2-final-cta-btn,
+    .elderly-companion-hero-primary,
+    .elderly-companion-hero-secondary,
+    .elderly-companion-cta-primary,
+    .elderly-companion-cta-secondary,
+    .post-surgery-cta-primary,
+    .post-surgery-cta-secondary,
+    .physio-assistance-hero-primary,
+    .physio-assistance-hero-secondary,
+    .physio-assistance-final-cta-btn,
+    .wound-dressing-hero-btn,
+    .wound-dressing-cta-btn,
+    .medication-management-cta-primary,
+    .medication-management-cta-secondary,
+    .medication-management-hero-btn,
+    .caregivers-hero-primary,
+    .caregivers-hero-secondary,
+    .home2-hero-primary,
+    .home2-hero-secondary {
+        height: 54px !important;
+        min-height: 54px !important;
+        padding: 0 20px !important;
+        border-radius: 8px !important;
+    }
 }

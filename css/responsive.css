@@ -29,7 +29,7 @@
 
     .header-container {
 
-        width: calc(100% - 24px);
+        width: calc(100% - var(--site-gutter-total));
 
         min-height: 76px;
 
@@ -644,7 +644,7 @@
 
     .header-container {
 
-        width: calc(100% - 20px);
+        width: calc(100% - var(--site-gutter-total));
 
         min-height: 72px;
     }
@@ -695,7 +695,7 @@
 
     .header-container {
 
-        width: calc(100% - 16px);
+        width: calc(100% - var(--site-gutter-total));
 
         min-height: 68px;
     }
@@ -775,7 +775,7 @@
 
     .header-container {
 
-        width: calc(100% - 12px);
+        width: calc(100% - var(--site-gutter-total));
 
         min-height: 64px;
     }
@@ -46895,6 +46895,11 @@ html.dark-mode .register-apple {
 
 @media (max-width: 1024px) {
 
+    :root {
+        --site-gutter: 20px;
+        --site-gutter-total: 40px;
+    }
+
     html,
     body {
         overflow-x: hidden;
@@ -46907,7 +46912,7 @@ html.dark-mode .register-apple {
 
     [class$="-container"],
     [class*="-container "] {
-        width: calc(100% - 40px);
+        width: calc(100% - var(--site-gutter-total));
         max-width: 100%;
         min-width: 0;
         margin-left: auto;
@@ -46945,9 +46950,14 @@ html.dark-mode .register-apple {
 
 @media (max-width: 768px) {
 
+    :root {
+        --site-gutter: 16px;
+        --site-gutter-total: 32px;
+    }
+
     [class$="-container"],
     [class*="-container "] {
-        width: calc(100% - 32px);
+        width: calc(100% - var(--site-gutter-total));
     }
 
     [class$="-grid"] {
@@ -46985,9 +46995,14 @@ html.dark-mode .register-apple {
 
 @media (max-width: 480px) {
 
+    :root {
+        --site-gutter: 12px;
+        --site-gutter-total: 24px;
+    }
+
     [class$="-container"],
     [class*="-container "] {
-        width: calc(100% - 24px);
+        width: calc(100% - var(--site-gutter-total));
     }
 
     [class$="-header"],
@@ -47035,9 +47050,14 @@ html.dark-mode .register-apple {
 
 @media (max-width: 380px) {
 
+    :root {
+        --site-gutter: 10px;
+        --site-gutter-total: 20px;
+    }
+
     [class$="-container"],
     [class*="-container "] {
-        width: calc(100% - 20px);
+        width: calc(100% - var(--site-gutter-total));
     }
 
     [class$="-title"],
@@ -47082,8 +47102,27 @@ html.dark-mode .register-apple {
     color: #ffffff;
 }
 
-.hero-secondary-button:hover {
-    color: #ffffff;
+.hero-secondary-button:hover,
+.hero-secondary-button:hover span,
+.hero-secondary-button:hover i {
+    color: var(--primary-dark);
+}
+
+
+/* =========================================================
+   CONSISTENT SITE GUTTER
+========================================================= */
+
+section > [class$="-container"],
+section > [class*="-container "],
+footer > .footer-container,
+.footer-bottom-container {
+    width: 100%;
+    max-width: calc(var(--container-width) + var(--site-gutter-total));
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--site-gutter);
+    padding-right: var(--site-gutter);
 }
 
 .contact-hero,
@@ -49214,4 +49253,94 @@ html.dark-mode .care-request-logo img {
         font-size: 34px !important;
         line-height: 1.16 !important;
     }
+}
+
+
+/* =========================================================
+   FINAL CONSISTENT SITE GUTTER
+========================================================= */
+
+section > [class$="-container"],
+section > [class*="-container "],
+footer > .footer-container,
+.footer-bottom-container {
+    width: 100%;
+    max-width: calc(var(--container-width) + var(--site-gutter-total));
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--site-gutter);
+    padding-right: var(--site-gutter);
+}
+
+
+
+
+
+
+
+/* =========================================================
+   MEDICATION MANAGEMENT HERO
+   768px — TITLE & SUBTITLE VISIBILITY ONLY
+   ========================================================= */
+
+@media (min-width: 700px) and (max-width: 768px) {
+
+    .medication-management-hero {
+        padding-top: 80px !important;
+    }
+
+    .medication-management-hero-container {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .medication-management-hero-content {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
+    }
+
+    .medication-management-hero-subtitle {
+        margin-top: 0 !important;
+    }
+
+    .medication-management-hero-title {
+        margin-top: 0 !important;
+    }
+}
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .physio-assistance-benefits-image {
+        transform: translateX(-110px) !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   PHYSIO BENEFITS CONTENT
+   1024px — CONTENT ALIGNMENT ONLY
+   ========================================================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .physio-assistance-benefits-heading {
+        padding-left: 25px !important;
+        padding-right: 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    .physio-assistance-benefits-title {
+        max-width: 420px !important;
+    }
+
+    .physio-assistance-benefits-description {
+        max-width: 430px !important;
+    }
+
 }
