@@ -46439,3 +46439,18 @@ html.dark-mode .home2-hero-secondary:hover {
     color: #2a9288 !important;
     font-weight: 700 !important;
 }
+
+
+
+
+/* =========================================================
+   PRICING CARD — GAP BEFORE BUTTON
+========================================================= */
+
+.pricing-card-features {
+    margin-bottom: 24px !important;
+}
+
+.pricing-card-button {
+    margin-top: 10px !important;
+}
