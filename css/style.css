@@ -5603,9 +5603,9 @@ html[dir="rtl"] .final-cta-primary i {
 
 
 .home2-hero-primary:hover {
-    background: var(--primary-dark);
+    background: var(--primary-color);
 
-    border-color: var(--primary-dark);
+    border-color: var(--primary-color);
 
     color: var(--white-color);
 
@@ -17399,6 +17399,8 @@ html[dir="rtl"] .elderly-companion-cta-primary i {
     background: var(--primary-hover);
 
     border-color: var(--primary-hover);
+
+    color:var(--primary-color);
 }
 
 
@@ -23319,7 +23321,7 @@ html[dir="rtl"] .wound-dressing-cta-btn-primary:hover i {
 
     border-color: var(--primary-hover);
 
-    color: #ffffff;
+    color:var(--primary-color);
 
     transform: translateY(-2px);
 }
@@ -36425,7 +36427,7 @@ html[dir="rtl"] .register-submit-btn:hover i {
 ========================================================= */
 
 .auth-controls {
-    position: fixed;
+    position: absolute;
 
     top: 24px;
     right: 24px;
@@ -45980,4 +45982,394 @@ html.dark-mode .home2-hero-secondary:hover {
         padding: 0 20px !important;
         border-radius: 8px !important;
     }
+}
+
+
+
+
+
+
+/* =========================================================
+   CARE REQUEST — CENTER ALIGN
+========================================================= */
+
+.care-request-section {
+    width: 100%;
+}
+
+.care-request-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.care-request-card {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* =========================================================
+   FORM HEADER — CENTER
+========================================================= */
+
+.care-request-header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.care-request-eyebrow {
+    display: block;
+
+    width: 100%;
+
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.care-request-title {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.care-request-description {
+    width: 100%;
+    max-width: 700px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .care-request-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .care-request-card {
+        text-align: center;
+    }
+
+    .care-request-header {
+        align-items: center;
+        text-align: center;
+    }
+
+    .care-request-eyebrow,
+    .care-request-title,
+    .care-request-description {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   AUTH CONTROLS — KEEP BOTH BUTTONS SQUARE
+========================================================= */
+
+.auth-controls .auth-control-btn {
+    width: 52px !important;
+    height: 52px !important;
+
+    min-width: 52px !important;
+    min-height: 52px !important;
+
+    max-width: 52px !important;
+    max-height: 52px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    border-radius: 10px !important;
+
+    aspect-ratio: 1 / 1 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex: 0 0 52px !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .auth-controls .auth-control-btn {
+        width: 42px !important;
+        height: 42px !important;
+
+        min-width: 42px !important;
+        min-height: 42px !important;
+
+        max-width: 42px !important;
+        max-height: 42px !important;
+
+        flex: 0 0 42px !important;
+
+        border-radius: 9px !important;
+    }
+
+}
+
+
+/* =========================================================
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .auth-controls .auth-control-btn {
+        width: 40px !important;
+        height: 40px !important;
+
+        min-width: 40px !important;
+        min-height: 40px !important;
+
+        max-width: 40px !important;
+        max-height: 40px !important;
+
+        flex-basis: 40px !important;
+
+        border-radius: 8px !important;
+    }
+
+}
+
+
+
+
+
+/* =========================================================
+   CARE JOURNEY — LINE BETWEEN CIRCLES
+========================================================= */
+
+.home2-care-stage-steps {
+    position: relative !important;
+}
+
+
+/* ---------------------------------------------------------
+   HORIZONTAL CONNECTING LINE
+--------------------------------------------------------- */
+
+.home2-care-stage-steps::before {
+    content: "";
+    position: absolute;
+
+    top: 24px;
+
+    left: 12.5%;
+    right: 12.5%;
+
+    height: 2px;
+
+    background: #dfe9e8;
+
+    z-index: 0;
+}
+
+
+/* ---------------------------------------------------------
+   NUMBER CIRCLES — ABOVE THE LINE
+--------------------------------------------------------- */
+
+.home2-care-stage-number {
+    position: relative !important;
+
+    z-index: 2 !important;
+
+    background: #ffffff !important;
+
+    border: 2px solid #b8d9d6 !important;
+
+    border-radius: 50% !important;
+
+    width: 50px !important;
+    height: 50px !important;
+
+    min-width: 50px !important;
+    min-height: 50px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* ---------------------------------------------------------
+   STEP ITEM ABOVE LINE
+--------------------------------------------------------- */
+
+.home2-care-stage-item {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+
+
+
+
+
+/* =========================================================
+   PRICING PLANS — REDUCE SPACE BELOW CARDS
+========================================================= */
+
+.pricing-plans {
+    padding-bottom: 40px !important;
+}
+
+.pricing-plans-container {
+    padding-bottom: 0 !important;
+}
+
+.pricing-cards {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.pricing-card {
+    margin-bottom: 0 !important;
+}
+
+
+/* =========================================================
+   BUTTON — KEEP NORMAL BOTTOM SPACING
+========================================================= */
+
+.pricing-card-button {
+    margin-bottom: 0 !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .pricing-plans {
+        padding-bottom: 30px !important;
+    }
+
+    .pricing-cards {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+}
+
+
+
+
+/* =========================================================
+   ADVANCED CARE CARD — REDUCE BOTTOM SPACE
+========================================================= */
+
+.pricing-card.pricing-card-featured {
+    padding-bottom: 20px !important;
+    margin-bottom: 0 !important;
+}
+
+.pricing-card.pricing-card-featured .pricing-card-button {
+    margin-bottom: 0 !important;
+}
+
+
+
+
+/* =========================================================
+   MEDICATION HERO PRIMARY BUTTON — HOVER TEXT COLOR
+========================================================= */
+
+.medication-management-hero
+.medication-management-hero-actions
+.medication-management-hero-btn.medication-management-hero-primary:hover span,
+
+.medication-management-hero
+.medication-management-hero-actions
+.medication-management-hero-btn.medication-management-hero-primary:hover i {
+    color: #2a9288 !important;
+    -webkit-text-fill-color: #2a9288 !important;
+}
+
+
+/* Keep the anchor itself green on hover */
+
+.medication-management-hero
+.medication-management-hero-actions
+.medication-management-hero-btn.medication-management-hero-primary:hover {
+    color: #2a9288 !important;
+    -webkit-text-fill-color: #2a9288 !important;
+}
+
+
+
+
+/* =========================================================
+   HOME2 HERO — PRIMARY BUTTON
+========================================================= */
+
+.home2-hero-primary {
+    background: var(--primary-color) !important;
+    border: 2px solid var(--primary-color) !important;
+    color: #ffffff !important;
+}
+
+.home2-hero-primary span,
+.home2-hero-primary i {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON — HOVER
+========================================================= */
+
+.home2-hero-primary:hover {
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: #ffffff !important;
+
+    transform: none !important;
+}
+
+.home2-hero-primary:hover span,
+.home2-hero-primary:hover i {
+    color: #ffffff !important;
 }
