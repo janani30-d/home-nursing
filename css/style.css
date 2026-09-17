@@ -46373,3 +46373,69 @@ html.dark-mode .home2-hero-secondary:hover {
 .home2-hero-primary:hover i {
     color: #ffffff !important;
 }
+
+
+
+/* Move ONLY the hero image down */
+.medication-management-hero-visual {
+    padding-top: 40px !important;
+}
+
+
+.medication-management-hero-visual {
+    transform: translateY(40px) !important;
+}
+
+
+
+/* =====================================================
+   MEDICATION HERO — IMAGE TOP GAP
+===================================================== */
+
+.medication-management-hero-visual {
+    padding-top: 35px !important;
+    box-sizing: border-box !important;
+}
+
+.medication-management-hero-image-wrapper {
+    margin-top: 0 !important;
+}
+
+
+
+.medication-management-hero-visual {
+    position: relative !important;
+    top: 35px !important;
+}
+
+
+
+
+
+
+/* =========================================================
+   CARE JOURNEY — NUMBER CIRCLE FIX
+========================================================= */
+
+.home2-care-stage-number {
+    position: relative !important;
+    z-index: 10 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    overflow: visible !important;
+}
+
+/* Keep the number itself above hover/decorations */
+.home2-care-stage-number::before,
+.home2-care-stage-number::after {
+    z-index: -1 !important;
+}
+
+/* Make the number clearly visible */
+.home2-care-stage-number {
+    color: #2a9288 !important;
+    font-weight: 700 !important;
+}
