@@ -21,7 +21,7 @@
    TABLET / MOBILE
 ========================================================= */
 
-@media (max-width: 1024px) {
+@media (max-width: 1367px) {
 
     /* -----------------------------------------
        HEADER
@@ -1081,7 +1081,7 @@ html.dark-mode .mobile-menu .care-button {
    TABLET + MOBILE
 ========================================================= */
 
-@media (max-width: 1024px) {
+@media (max-width: 1367px) {
 
     /* -----------------------------------------------------
        HAMBURGER BUTTON
@@ -49329,3 +49329,6 @@ html.dark-mode .care-request-logo img {
     }
 
 }
+
+
+
