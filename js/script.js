@@ -434,29 +434,21 @@ mobileDropdownToggles.forEach(function (toggle) {
         "resize",
         function () {
 
-            if (
-                window.innerWidth > 1024 &&
-                mobileMenu
-            ) {
+           if (window.innerWidth > 1367 && mobileMenu)
+ {
+    mobileMenu.classList.remove("active");
 
-                mobileMenu.classList.remove(
-                    "active"
-                );
+    document
+        .querySelectorAll(
+            ".mobile-menu .mobile-has-dropdown.open"
+        )
+        .forEach(function (item) {
 
+            item.classList.remove("open");
 
-                document
-                    .querySelectorAll(
-                        ".mobile-menu .has-dropdown.open"
-                    )
-                    .forEach(function (item) {
-
-                        item.classList.remove(
-                            "open"
-                        );
-
-                    });
-
-            }
+        });
+}
+                  
 
         }
     );
@@ -990,3 +982,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+
+
+
+
+
