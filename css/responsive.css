@@ -1853,7 +1853,7 @@ html.dark-mode .mobile-care-button {
    MOBILE MENU - ACTIVE COLOR
 ========================================================= */
 
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
 
     /* Active normal menu item */
     .mobile-nav-link.active {
