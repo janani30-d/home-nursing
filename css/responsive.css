@@ -2,7 +2,12 @@
    SITE 8
    PART 3 - RESPONSIVE + RTL + RTL RESPONSIVE
 ========================================================= */
-
+/* Desktop */
+@media (min-width: 1367px) {
+    .header-container {
+        max-width: 1500px;
+    }
+}
 
 /* =========================================================
    DESKTOP
@@ -21,7 +26,7 @@
    TABLET / MOBILE
 ========================================================= */
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
 
     /* -----------------------------------------
        HEADER
