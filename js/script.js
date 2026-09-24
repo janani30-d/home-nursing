@@ -434,7 +434,7 @@ mobileDropdownToggles.forEach(function (toggle) {
         "resize",
         function () {
 
-           if (window.innerWidth > 1367 && mobileMenu)
+           if (window.innerWidth > 1199 && mobileMenu)
  {
     mobileMenu.classList.remove("active");
 
