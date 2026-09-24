@@ -46454,3 +46454,81 @@ html.dark-mode .home2-hero-secondary:hover {
 .pricing-card-button {
     margin-top: 10px !important;
 }
+
+
+
+
+
+/* =========================================================
+   DESKTOP HEADER - FINAL OVERRIDE
+========================================================= */
+
+@media (min-width: 1367px) {
+
+    /* HEADER CONTAINER */
+    .header-container {
+        width: 100% !important;
+        max-width: 1500px !important;
+        margin: 0 auto !important;
+
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    /* LOGO */
+    .site-logo {
+        flex-shrink: 0 !important;
+    }
+
+    .logo-image {
+        max-width: 280px !important;
+        height: auto !important;
+    }
+
+    /* NAVIGATION */
+    .main-navigation {
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
+        margin: 0 !important;
+    }
+
+    .nav-list {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        gap: 12px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+
+        white-space: nowrap !important;
+    }
+
+    .nav-item {
+        flex-shrink: 0 !important;
+    }
+
+    .nav-link {
+        white-space: nowrap !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    /* HEADER ACTIONS */
+    .header-actions {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+
+        flex-shrink: 0 !important;
+        margin-left: 10px !important;
+    }
+
+    .header-icon-button,
+    .login-button,
+    .care-button {
+        flex-shrink: 0 !important;
+        white-space: nowrap !important;
+    }
+}
